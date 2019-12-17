@@ -1,0 +1,27 @@
+.small-cards{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  
+  @media only screen and (min-width: 500px){
+    margin-left: -2%;
+    margin-right: -2%;
+  }
+}
+
+.small-card{
+  background-color: $white;
+  
+  @media only screen and (min-width: 500px){
+    flex: 0 0 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2rem;  
+  }
+
+  @include breakpoint(medium){
+    flex: 0 0 21%;
+    margin-bottom: 0;
+  }
+}

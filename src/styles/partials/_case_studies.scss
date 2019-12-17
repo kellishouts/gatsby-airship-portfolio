@@ -1,0 +1,449 @@
+.flowchart,
+.case-studies{
+  margin-top: 2rem;
+
+  @include breakpoint(medium){
+    margin-top: 3rem;
+  }
+
+  @include breakpoint(mmlarge){
+    margin-top: 2rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
+  }
+
+  @include breakpoint(large){
+    margin-top: 3rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  @include breakpoint(xlarge){
+    margin-top: 4rem;
+    margin-left: -6rem;
+    margin-right: -6rem;
+  }
+
+  @include breakpoint(xlarge){
+    margin-left: -8rem;
+    margin-right: -8rem;
+  }
+
+  @include breakpoint(xxlarge){
+    margin-left: -10rem;
+    margin-right: -10rem;
+  }
+}
+
+.case-study{
+  margin-bottom: 2.5rem;
+  background-color: $white;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+
+  @include breakpoint(medium){
+    margin-bottom: 3.5rem;
+  }
+
+  @include breakpoint(mmlarge){
+    flex-flow: row nowrap;
+    align-items: stretch;
+    margin-bottom: 1.5rem;
+  }
+
+  @include breakpoint(large){
+    margin-bottom: 2.5rem;
+  }
+
+  @include breakpoint(xxlarge){
+    margin-bottom: 3.5rem;
+  }
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+.case-study-text{
+  flex: 0 0 100%;
+  order: 2;
+  padding: 3rem 2.5rem 3rem;
+
+  @include breakpoint(medium){
+    padding: 3.5rem 3.5rem 3.5rem;
+  }
+
+  @include breakpoint(mmlarge){
+    flex: 0 0 50%;
+    order: 1;
+    padding: 2.5rem;
+  }
+
+  @include breakpoint(large){
+    padding: 3rem;
+    flex: 0 0 55%;
+  }
+
+  @include breakpoint(xlarge){
+    padding: 4rem;
+  }
+
+  h3{
+    @include uppercase;
+    @include uppercase-limit-large;
+    text-align: left;
+    margin-bottom: 0.75rem;
+
+    @include breakpoint(mmlarge){
+      margin-bottom: 1rem;
+    }
+
+    @include breakpoint(large){
+      margin-bottom: 1.25rem;
+    }
+
+    &:after{
+      display: none;
+    }
+  }
+
+  h2{
+    text-align: left;
+    margin-bottom: 1rem;
+
+    .case-study-orange &{
+      color: $flowchart-orange;
+    }
+  
+    .case-study-grey &{
+      color: $flowchart-grey;
+    }
+  
+    .case-study-teal &{
+      color: $flowchart-teal;
+    }
+  }
+
+  p{
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: $medium-dark-grey;
+
+    @include breakpoint(mmlarge){
+      margin-bottom: 2rem;
+    }
+
+    @include breakpoint(large){
+      // 2COL LARGE
+      margin-bottom: 1.5rem;
+    }
+
+    @include breakpoint(xlarge){
+      // 2COL LARGE
+      margin-bottom: 2rem;
+    }
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+
+    @include breakpoint(medium){
+      // 2COL LARGE VERTICAL
+      display: flex;
+      flex-flow: row wrap;
+      flex-flow: column wrap;
+      height: 6rem;
+    }
+
+    @include breakpoint(mmlarge){
+      display: block;
+      height: auto;
+    }
+
+    @include breakpoint(large){
+      
+      // 2COL LARGE VERTICAL
+      display: flex;
+      flex-flow: row wrap;
+      flex-flow: column wrap;
+      height: 6rem;
+    }
+    
+    li{
+      color: $medium-dark-grey;
+      list-style-type: none;
+      padding-left: 2.25rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.25rem;
+      position: relative;
+
+      @include breakpoint(medium){
+        margin-bottom: 1.75rem;
+        
+        // 2COL LARGE VERTICAL
+        flex: 0 0 50%;
+        width: 50%;
+        margin: 0;
+      }
+
+      
+      @include breakpoint(mmlarge){
+        flex: auto;
+        width: auto;
+        margin-bottom: 1.75rem;
+      }
+
+      @include breakpoint(large){
+
+        // 2COL LARGE VERTICAL
+        flex: 0 0 50%;
+        width: 50%;
+        margin: 0;
+      }
+
+      &:after{
+        left: 0.25rem;
+        top: 0;
+        position: absolute;
+        text-transform: uppercase;
+        width: 1.25rem;
+        height: 1.25rem;
+        display: inline-block;
+        text-align: center;
+        font-size: 12px;
+        color: $white;
+        line-height: 1.25rem;
+
+        .case-study-grey &{
+          color: darken($flowchart-grey, 5%);
+        }
+
+        .case-study-orange &{
+          color: darken($flowchart-orange, 10%);
+        }
+
+        .case-study-teal &{
+          color: darken($flowchart-teal, 10%);
+        }
+      }
+
+      &:before{
+        content: " ";
+        left: 0.25rem;
+        top: 0;
+        position: absolute;
+        text-transform: uppercase;
+        width: 1.25rem;
+        height: 1.25rem;
+        display: inline-block;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        color: $white;
+        line-height: 1.25rem;
+        transform: rotate(45deg);
+        
+        .case-study-grey &{
+          background-color: lighten($flowchart-grey, 45%);
+        }
+
+        .case-study-orange &{
+          background-color: lighten($flowchart-orange, 30%);
+        }
+
+        .case-study-teal &{
+          background-color: lighten($flowchart-teal, 30%);
+        }
+      }
+
+      &:nth-child(1){
+        &:after{
+          content: "1";
+        }
+      }
+
+      &:nth-child(2){
+        &:after{
+          content: "2";
+        }
+      }
+
+      &:nth-child(3){
+        &:after{
+          content: "3";
+        }
+      }
+
+      &:nth-child(4){
+        &:after{
+          content: "4";
+        }
+      }
+
+      &:nth-child(5){
+        &:after{
+          content: "5";
+        }
+      }
+    }
+  }
+}
+
+.case-study-graphic{
+  flex: 0 0 100%;
+  order: 1;
+  height: 20rem;
+  
+  position: relative;
+  overflow: hidden;
+
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 5rem 0 rgba(0,0,0,0.15);
+  
+  transition: all 0.4s ease-in-out;
+
+  @include breakpoint(medium){
+    height: 25rem;
+  }
+
+  @include breakpoint(mmlarge){
+    background-size: auto 100%;
+    box-shadow: inset 0 0 7rem 0 rgba(0,0,0,0.15);
+    flex: 1 0 50%;
+    order: 2;
+    height: auto;
+  }
+
+  @include breakpoint(large){
+    flex: 1 0 45%;
+    // background-size: 80% auto;
+  }
+
+  &:hover{
+    background-size: auto 105%;
+    box-shadow: inset 0 0 3rem 0 rgba(0,0,0,0.1);
+
+    @include breakpoint(mmlarge){
+      box-shadow: inset 0 0 5rem 0 rgba(0,0,0,0.1);
+      background-size: auto 110%;
+    }
+
+    @include breakpoint(large){
+      // background-size: auto ;
+    }
+  }
+
+  .case-study-orange &{
+    background-color: lighten($flowchart-orange, 20%);
+  }
+
+  .case-study-grey &{
+    background-color: #BDCCD2;
+  }
+
+  .case-study-teal &{
+    background-color: lighten($flowchart-teal, 30%);
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: block;
+  }
+}
+
+.button.case-study-button{
+  @include uppercase;
+  @include uppercase-limit-large;
+  background-color: transparent;
+  padding: 1rem 2.5rem;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1rem;
+
+  @include breakpoint(medium){
+    width: auto;
+  }
+  
+  @include breakpoint(mmlarge){
+    margin-top: 1rem;
+  }
+
+  @include breakpoint(xlarge){
+    margin-top: 1.25rem;
+  }
+
+  span.inline-arrow{
+    border-top-color: $white;
+    border-right-color: $white;
+  }
+
+  .case-study-orange &{
+    color: $flowchart-orange;
+    border: 1px solid lighten($flowchart-orange, 25%);
+
+    &:hover{
+      color: $white;
+      background-color: $flowchart-orange;
+      border: 1px solid $flowchart-orange;
+
+      span.inline-arrow{
+        border-top-color: $white;
+        border-right-color: $white;
+      }
+    }
+
+    span.inline-arrow{
+      border-top-color: $flowchart-orange;
+      border-right-color: $flowchart-orange;
+    }
+  }
+
+  .case-study-grey &{
+    color: $flowchart-grey;
+    border: 1px solid lighten($flowchart-grey, 40%);
+
+    &:hover{
+      color: $white;
+      background-color: $flowchart-grey;
+      border: 1px solid $flowchart-grey;
+
+      span.inline-arrow{
+        border-top-color: $white;
+        border-right-color: $white;
+      }
+    }
+
+    span.inline-arrow{
+      border-top-color: $flowchart-grey;
+      border-right-color: $flowchart-grey;
+    }
+  }
+
+  .case-study-teal &{
+    color: $flowchart-teal;
+    border: 1px solid lighten($flowchart-teal, 25%);
+
+    &:hover{
+      color: $white;
+      background-color: $flowchart-teal;
+      border: 1px solid $flowchart-teal;
+
+      span.inline-arrow{
+        border-top-color: $white;
+        border-right-color: $white;
+      }
+    }
+
+    span.inline-arrow{
+      border-top-color: $flowchart-teal;
+      border-right-color: $flowchart-teal;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.portfolio-header-container{
+
+  h1{
+    @include h1-portfolio;
+  }
+}
+
+.portfolio-header-block{
+  padding: 10px 30px 80px;
+
+  @media only screen and (min-width: 500px){
+    // padding: 70px 30px 90px;
+    padding: 20px 30px 90px;
+  }
+
+  @include breakpoint(medium){
+    padding: 110px 30px 120px;
+  }
+
+  @include breakpoint(mmlarge){
+    padding: 140px 30px 160px;
+  }
+}
+
+p.person-role{
+  @include uppercase;
+  text-align: center;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @include breakpoint(large){
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  @include breakpoint(xlarge){
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .white-container &{
+    color: $flowchart-teal;
+  }
+
+  .teal-container &{
+    color: $white;
+  }
+}
+
+p.person-description{
+  text-align: center;
+
+  .white-container &{
+    color: $medium-grey;
+  }
+
+  .teal-container &{
+    color: darken($flowchart-teal, 20%);
+  }
+
+  span{
+    font-family: 'Lora', 'Georgia', serif;
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+
+    @media only screen and (min-width: 500px){
+      display: inline;
+    }
+
+    + span{
+
+    }
+  }
+}
+
+.personal-case-studies-container{
+
+  &:after{
+    border-top-color: $light-grey;
+  }
+}

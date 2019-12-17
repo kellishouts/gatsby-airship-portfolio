@@ -1,0 +1,1206 @@
+$flowchart-top-paragraph-height-medium: 5.3rem;
+$flowchart-top-paragraph-height-mlarge: 5.3rem;
+$flowchart-top-paragraph-height-mmlarge: 5.75rem;
+$flowchart-top-paragraph-height-large: 6.7rem;
+$flowchart-top-paragraph-height-xlarge: 6.8rem;
+$flowchart-top-paragraph-height-xxlarge: 6.8rem;
+
+$flowchart-item-height-medium: 6.5rem;
+$flowchart-item-height-mlarge: 6.35rem;
+$flowchart-item-height-mmlarge: 6rem;
+$flowchart-item-height-large: 6.25rem;
+$flowchart-item-height-xlarge: 7rem;
+$flowchart-item-height-xxlarge: 8rem;
+
+$flowchart-gap-height-small: 1rem;
+$flowchart-gap-height-medium: 3rem;
+$flowchart-gap-height-large: 3.5rem;
+$flowchart-gap-height-xlarge: 4rem;
+
+p.centered + .flowchart{
+  margin-top: 2rem;
+
+  @include breakpoint(medium){
+    margin-top: 4rem;
+  }
+
+  @include breakpoint(large){
+    margin-top: 5rem;
+  }
+
+  @include breakpoint(xlarge){
+    margin-top: 6rem;
+  }
+}
+
+.flowchart{
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  margin-bottom: 2rem;
+
+  @include breakpoint(medium){
+    flex-flow: row nowrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: 4rem;
+  }
+
+  @include breakpoint(mlarge){
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+
+  @include breakpoint(xxlarge){
+    margin-bottom: 6rem;
+  }
+  
+  &.flowchart-simple{
+    @include breakpoint(medium){
+      margin-left: -4rem;
+      margin-right: -4rem;
+    }
+  
+    @include breakpoint(mlarge){
+      margin-left: -3rem;
+      margin-right: -3rem;
+    }
+
+    @include breakpoint(large){
+      margin-left: -2rem;
+      margin-right: -2rem;
+    }
+
+    @include breakpoint(xlarge){
+      margin-left: -7rem;
+      margin-right: -7rem;
+    }
+    
+    @include breakpoint(xxlarge){
+      margin-left: -11rem;
+      margin-right: -11rem;
+    }
+  }
+}
+
+.flowchart-column{
+  flex: 0 0 100%;
+  padding: 2rem 2.25rem;
+  // padding: 4.75rem 1rem 2rem;
+  position: relative;
+  border: 1px solid $flowchart-dashed-lines-color;
+
+  .white-container &{
+    border: 1px solid $flowchart-dashed-lines-color;
+  }
+
+  .dark-grey-container &{
+    border: 1px solid $flowchart-dark-dashed-lines-color;
+  }
+
+  @include breakpoint(medium){
+    border: none;
+    flex: 0 0 33.3333%;
+    padding: 0 1.25rem;
+    // padding: 1rem;
+    // padding: 3.25rem 1rem 4rem;
+
+    .white-container &{
+      border: none;
+    }
+  
+    .dark-grey-container &{
+      border: none;
+    }
+  }
+  
+  @include breakpoint(mlarge){
+    padding: 0 1.5rem;
+    // padding: 3.25rem 1.5rem 4rem;
+  }
+
+  @include breakpoint(mmlarge){
+    padding: 0 2rem;
+    // padding: 3.25rem 2rem 4rem;
+  }
+
+  @include breakpoint(large){
+    padding: 0 2.25rem;
+    // padding: 3.25rem 2rem 4rem;
+  }
+  
+  @include breakpoint(xlarge){
+    padding: 0 2.5rem;
+    // padding: 3.25rem 2rem 4rem;
+  }
+
+  + .flowchart-column{
+    margin-top: 1rem;
+
+    @include breakpoint(medium){
+      margin-top: 0;
+      border-left: 1px dashed $flowchart-dashed-lines-color;
+
+      .white-container &{
+        border-left: 1px dashed $flowchart-dashed-lines-color;
+      }
+    
+      .dark-grey-container &{
+        border-left: 1px dashed $flowchart-dark-dashed-lines-color;
+      }
+    }
+  }
+
+  &:hover{
+    h4:before{
+      transform: rotate(135deg);
+    }
+  }
+
+  h2{
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 2rem;
+
+    display: inline-block;
+    line-height: 1.2;
+
+    @include breakpoint(medium){
+      @include h1-size;
+      // display: block;
+      // border-bottom: none;
+      // margin-bottom: 1.5rem;
+    }
+
+    @include breakpoint(large){
+      margin-bottom: 1rem;
+    }
+
+    @include breakpoint(xlarge){
+      margin-bottom: 2rem;
+    }
+
+    @include breakpoint(xxlarge){
+      margin-bottom: 3rem;
+    }
+  }
+
+  p.flowchart-target,
+  p.flowchart-outcome{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.35em;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+
+    @include breakpoint(medium){
+      margin-bottom: 2rem;
+    }
+
+    @include breakpoint(large){
+      margin-bottom: 1rem;
+    }
+
+    @include breakpoint(xlarge){
+      margin-bottom: 1.5rem;
+    }
+    
+    @include breakpoint(xlarge){
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  p.flowchart-target{
+    // border: 1px solid orange;
+    
+    @include breakpoint(medium){
+      height: 7rem;
+    }
+
+    @include breakpoint(mlarge){
+      // height: 22rem;
+    }
+
+    @include breakpoint(mmlarge){
+      height: 5.5rem;
+    }
+
+    @include breakpoint(large){
+      // height: 21rem;
+    }
+
+    @include breakpoint(xlarge){
+      height: 3.5rem;
+    }
+
+    @include breakpoint(xxlarge){
+      // height: 19rem;
+    }
+  }
+
+  p.flowchart-paragraph{
+    // border: 1px solid red;
+    margin-bottom: 1.25rem;
+    text-align: left;
+
+    @include breakpoint(medium){
+      height: 8rem;
+      margin-bottom: 2rem;
+    }
+
+    @include breakpoint(mlarge){
+      height: 7rem;
+    }
+
+    @include breakpoint(mmlarge){
+      height: 6.5rem;
+    }
+
+    @include breakpoint(large){
+      height: 7rem;
+      margin-bottom: 1rem;
+    }
+
+    @include breakpoint(xlarge){
+      height: 6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @include breakpoint(xxlarge){
+      height: 6.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    span{
+      font-weight: bold;
+    }
+  }
+
+  p.flowchart-outcome{
+    // border: 1px solid orange;
+    
+    @include breakpoint(medium){
+      height: 7rem;
+    }
+
+    @include breakpoint(mlarge){
+      height: 5.5rem;
+    }
+
+    @include breakpoint(mmlarge){
+      height: 3.5rem;
+    }
+
+    @include breakpoint(large){
+      height: 3.5rem;
+    }
+
+    @include breakpoint(xlarge){
+      // height: 3.5rem;
+    }
+
+    @include breakpoint(xxlarge){
+      // height: 19rem;
+    }
+  }
+
+  p.small{
+    // font-size: 0.9em;
+    margin-top: 0.5rem;
+    text-align: left;
+
+    @include breakpoint(medium){
+      font-size: 0.9em;
+      // text-align: center;
+      // color: $medium-grey !important; // cheat
+    }
+  }
+
+  h4{
+    text-align: center;
+    padding-bottom: 0.75rem;
+    position: relative;
+
+    &:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 1.65rem;
+      height: 1.65rem;
+      border: 6px solid $medium-grey;
+      transform: rotate(45deg);
+      top: 0;
+      left: 50%;
+      margin-left: -0.25*(3.85rem);
+      margin-top: -3rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  h4 + p{
+    // border: 1px solid rgba(255,0,0,0.1);
+    max-width: 14rem;
+    margin: auto;
+
+    @include breakpoint(medium){
+      height: $flowchart-top-paragraph-height-medium;
+      max-width: none;
+    }
+
+    @include breakpoint(mlarge){
+      height: $flowchart-top-paragraph-height-mlarge;
+    }
+
+    @include breakpoint(mlarge){
+      height: $flowchart-top-paragraph-height-mmlarge;
+    }
+
+    @include breakpoint(large){
+      height: $flowchart-top-paragraph-height-large;
+    }
+
+    @include breakpoint(xlarge){
+      height: $flowchart-top-paragraph-height-xlarge;
+    }
+
+    @include breakpoint(xxlarge){
+      height: $flowchart-top-paragraph-height-xxlarge;
+    }
+  }
+
+  h5{
+    @include uppercase;
+    @include uppercase-limit-large;
+    line-height: 1.2;
+    margin-bottom: 0.4rem;
+    padding-top: 1.7rem;
+    transition: all 0.3s ease-in-out;
+
+    &:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 0.8rem;
+      height: 0.8rem;
+      transform: rotate(45deg);
+      top: 0;
+      left: 50%;
+      margin-left: -0.46rem;
+      margin-top: 0.2rem;
+      transition: all 0.3s ease-in-out;
+      background-color: $medium-grey;
+    }
+  }
+
+  p{
+    // background-color: rgba(255,0,0,0.1);
+    text-align: center;
+
+    @include breakpoint(medium){
+      line-height: 1.4;
+      color: $medium-dark-grey;
+    }
+
+    @include breakpoint(large){
+
+    }
+
+    .white-container &{
+      color: $medium-dark-grey;
+    }
+
+    .dark-grey-container &{
+      color: $medium-light-grey;
+    }
+  }
+
+  ul.flowchart-long{
+    display: none;
+    
+    @include breakpoint(medium){
+      display: block;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 1.5rem;
+    }
+  }
+
+  ul.flowchart-long li > p{
+
+    
+    .white-container &{
+      // background-color: $white;
+      // background-color: rgba(255,0,0,0.1);
+    }
+
+    .dark-grey-container &{
+      // background-color: $dark-grey;
+      // background-color: rgba(255,0,0,0.1);
+    }
+    
+    
+    @include breakpoint(medium){
+      z-index: 1;
+      position: relative;
+      opacity: 1;
+      margin: auto;
+      font-size: 0.9em;
+      line-height: 1.3;
+
+      padding-bottom: 0.2rem;
+      max-width: none;
+    }
+
+    @include breakpoint(mmlarge){
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    @include breakpoint(large){
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  ul.flowchart-long li{
+    @include breakpoint(medium){
+      // border: 1px solid rgba(255,0,0,0.1);
+      border: 1px solid transparent;
+      transition: all 0.3s ease-in-out;
+
+      position: relative;
+      margin-top: 0;
+
+      height: $flowchart-item-height-medium;
+    }
+
+    @include breakpoint(mlarge){
+      height: $flowchart-item-height-mlarge;
+    }
+
+    @include breakpoint(large){
+      height: $flowchart-item-height-large;
+    }
+
+    @include breakpoint(xlarge){
+      height: $flowchart-item-height-xlarge;
+    }
+
+    @include breakpoint(xxlarge){
+      height: $flowchart-item-height-xxlarge;
+    }
+
+    + li{
+      @include breakpoint(medium){
+        margin-top: $flowchart-gap-height-medium;
+      }
+
+      @include breakpoint(large){
+        margin-top: $flowchart-gap-height-large;
+      }
+
+      @include breakpoint(xlarge){
+        margin-top: $flowchart-gap-height-xlarge;
+      }
+    }
+
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+
+    h5:hover,
+    p:hover{
+      cursor: default;
+    }
+
+    &:after{
+      @include breakpoint(medium){
+        content: " ";
+        display: block;
+        position: absolute;
+        top: -0.5rem;
+        left: -0.5rem;
+        bottom: -1.75rem;
+        right: -0.5rem;
+        border: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
+      }
+
+      @include breakpoint(mlarge){
+        top: -1.75rem;
+        bottom: -1rem;
+      }
+    }
+
+    &:hover{
+
+      h5:before{
+        transform: rotate(135deg);
+      }
+    }
+  }
+
+  &.flowchart-analyze{
+    &:hover{
+      border-color: $flowchart-grey;
+
+      @include breakpoint(medium){
+        border-color: $flowchart-dashed-lines-color;
+      }
+    }
+
+
+    // TICK MARKS
+
+    // li:before{
+    //   @include breakpoint(medium){
+    //     content: " ";
+    //     display: block;
+    //     position: absolute;
+    //     top: -0.5rem;
+    //     left: -4.5rem;
+    //     width: 0.5rem;
+    //     height: 0;
+    //     border-top: 1px solid $flowchart-lines-color;
+    //   }
+
+    //   @include breakpoint(mlarge){
+    //     top: -1.75rem;
+    //     left: -6rem;
+    //   }
+
+    //   @include breakpoint(large){
+    //     left: -6.5rem;
+    //   }
+    // }
+
+    li:hover{
+
+      h5:before{
+        background-color: $flowchart-grey;
+      }
+
+      h5{
+        color: $flowchart-grey;
+      }
+    }
+
+    li.active,
+    li.active:hover{
+      h5:before{
+        background-color: $flowchart-grey;
+      }
+
+      h5{
+        color: $flowchart-grey;
+      }
+
+      &:after{
+        border: 1px solid rgba($flowchart-grey, 0.5);
+        background-color: rgba($flowchart-grey, 0.05);
+        // transition: border-color 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &.flowchart-design{
+    &:hover{
+      border-color: $flowchart-teal;
+
+      @include breakpoint(medium){
+        border-color: $flowchart-dashed-lines-color;
+      }
+    }
+
+    li:hover{
+
+      h5:before{
+        background-color: $flowchart-teal;
+      }
+
+      h5{
+        color: $flowchart-teal;
+      }
+    }
+
+    li.active,
+    li.active:hover{
+      h5:before{
+        background-color: $flowchart-teal;
+      }
+
+      h5{
+        color: $flowchart-teal;
+      }
+
+      &:after{
+        border: 1px solid rgba($flowchart-teal, 0.5);
+        background-color: rgba($flowchart-teal, 0.05);
+        // transition: border-color 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &.flowchart-implement{
+    &:hover{
+      border-color: $flowchart-orange;
+
+      @include breakpoint(medium){
+        border-color: $flowchart-dashed-lines-color;
+      }
+    }
+
+    // TICK MARKS 
+    // li:before{
+    //   @include breakpoint(medium){
+    //     content: " ";
+    //     display: block;
+    //     position: absolute;
+    //     top: -0.5rem;
+    //     right: -4.5rem;
+    //     width: 0.5rem;
+    //     height: 0;
+    //     border-top: 1px solid $flowchart-lines-color;
+    //   }
+
+    //   @include breakpoint(mlarge){
+    //     top: -1.75rem;
+    //     right: -6rem;
+    //   }
+    // }
+
+    li:hover{
+
+      h5:before{
+        background-color: $flowchart-orange;
+      }
+
+      h5{
+        color: $flowchart-orange;
+      }
+    }
+
+    li.active,
+    li.active:hover{
+      h5:before{
+        background-color: $flowchart-orange;
+      }
+
+      h5{
+        color: $flowchart-orange;
+      }
+
+      &:after{
+        border: 1px solid rgba($flowchart-orange, 0.5);
+        background-color: rgba($flowchart-orange, 0.05);
+        // transition: border-color 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+$arrow-point-size: 7px;
+$arrow-line-thickness: 1.35px;
+$arrow-point-center-offset: -0.55*$arrow-point-size;
+$arrow-point-end-offset: -0.5px;
+
+@mixin arrow-point{
+  width: $arrow-point-size;
+  height: $arrow-point-size;
+  position: absolute;
+  content: " ";
+  transform: rotate(45deg);
+}
+
+@mixin arrow-point-down{
+  @include arrow-point;
+  right: $arrow-point-center-offset;
+  bottom: $arrow-point-end-offset;
+  border-right: $arrow-line-thickness solid $flowchart-lines-color;
+  border-bottom: $arrow-line-thickness solid $flowchart-lines-color;
+
+  .white-container &{
+    border-right: $arrow-line-thickness solid $flowchart-lines-color;
+    border-bottom: $arrow-line-thickness solid $flowchart-lines-color;
+  }
+
+  .dark-grey-container &{
+    border-right: $arrow-line-thickness solid $flowchart-dark-lines-color;
+    border-bottom: $arrow-line-thickness solid $flowchart-dark-lines-color;
+  }
+}
+
+@mixin arrow-point-right{
+  @include arrow-point;
+  top: $arrow-point-center-offset;
+  right: $arrow-point-end-offset;
+  border-top: $arrow-line-thickness solid $flowchart-lines-color;
+  border-right: $arrow-line-thickness solid $flowchart-lines-color;
+
+  .white-container &{
+    border-top: $arrow-line-thickness solid $flowchart-lines-color;
+    border-right: $arrow-line-thickness solid $flowchart-lines-color;
+  }
+
+  .dark-grey-container &{
+    border-top: $arrow-line-thickness solid $flowchart-dark-lines-color;
+    border-right: $arrow-line-thickness solid $flowchart-dark-lines-color;
+  }
+}
+
+@mixin arrow-point-left{
+  @include arrow-point;
+  top: $arrow-point-center-offset;
+  left: $arrow-point-end-offset;
+  border-bottom: $arrow-line-thickness solid $flowchart-lines-color;
+  border-left: $arrow-line-thickness solid $flowchart-lines-color;
+
+  .white-container &{
+    border-bottom: $arrow-line-thickness solid $flowchart-lines-color;
+    border-left: $arrow-line-thickness solid $flowchart-lines-color;
+  }
+
+  .dark-grey-container &{
+    border-bottom: $arrow-line-thickness solid $flowchart-dark-lines-color;
+    border-left: $arrow-line-thickness solid $flowchart-dark-lines-color;
+  }
+}
+
+@mixin arrow-point-up{
+  @include arrow-point;
+  top: $arrow-point-end-offset;
+  left: $arrow-point-center-offset;
+  border-top: $arrow-line-thickness solid $flowchart-lines-color;
+  border-left: $arrow-line-thickness solid $flowchart-lines-color;
+
+  .white-container &{
+    border-top: $arrow-line-thickness solid $flowchart-lines-color;
+    border-left: $arrow-line-thickness solid $flowchart-lines-color;
+  }
+
+  .dark-grey-container &{
+    border-top: $arrow-line-thickness solid $flowchart-dark-lines-color;
+    border-left: $arrow-line-thickness solid $flowchart-dark-lines-color;
+  }
+}
+
+.flowchart-arrow{
+  
+  @include breakpoint(medium){
+    position: absolute;
+    top: -1.75rem;
+    width: 70%;
+    height: 0;
+    top: 1rem;
+    left: -37%;
+    border-right: 1px solid $flowchart-lines-color;
+    border-top: 1px solid $flowchart-lines-color;
+
+    .white-container &{
+      border-right: 1px solid $flowchart-lines-color;
+      border-top: 1px solid $flowchart-lines-color;
+    }
+  
+    .dark-grey-container &{
+      border-right: 1px solid $flowchart-dark-lines-color;
+      border-top: 1px solid $flowchart-dark-lines-color;
+    }
+
+    &:after{
+      @include arrow-point-right;
+    }
+  }
+}
+
+.flowchart-small-arrow{
+
+  @include breakpoint(medium){
+    position: absolute;
+    width: 0;
+    height: 50%;
+    bottom: -0.75*$flowchart-gap-height-medium;
+    left: 49.45%;
+    z-index: 0;
+    border-right: 1px solid $flowchart-lines-color;
+
+    .white-container &{
+      border-right: 1px solid $flowchart-lines-color;
+    }
+
+    .dark-grey-container &{
+      border-right: 1px solid $flowchart-dark-lines-color;
+    }
+
+    &:after{
+      @include arrow-point-down;
+    }
+  }
+
+  @include breakpoint(large){
+    bottom: -0.75*$flowchart-gap-height-large;
+  }
+
+  @include breakpoint(xlarge){
+    bottom: -0.75*$flowchart-gap-height-xlarge;
+  }
+}
+
+$flowchart-loop-segments: 3;
+
+.flowchart-loop-arrow{
+
+  @include breakpoint(medium){
+    position: absolute;
+    z-index: 2;
+    width: 1rem;
+    top: 2.15rem;
+    border-top: 1px solid $flowchart-lines-color;
+    border-right: 1px solid $flowchart-lines-color;
+    border-bottom: 1px solid $flowchart-lines-color;
+    right: -2rem;
+    height: ($flowchart-item-height-medium + $flowchart-gap-height-medium)*($flowchart-loop-segments - 1) - 0rem;
+
+    @include breakpoint(mlarge){
+      height: ($flowchart-item-height-mlarge + $flowchart-gap-height-medium)*($flowchart-loop-segments - 1) - 0rem;
+    }
+  
+    @include breakpoint(large){
+      height: ($flowchart-item-height-large + $flowchart-gap-height-large)*($flowchart-loop-segments - 1) - 0rem;
+    }
+  
+    @include breakpoint(xlarge){
+      height: ($flowchart-item-height-xlarge + $flowchart-gap-height-xlarge)*($flowchart-loop-segments - 1) - 0rem;
+    }
+  
+    @include breakpoint(xxlarge){
+      height: ($flowchart-item-height-xxlarge + $flowchart-gap-height-xlarge)*($flowchart-loop-segments - 1) - 0rem;
+    }
+
+    .white-container &{
+      border-top: 1px solid $flowchart-lines-color;
+      border-right: 1px solid $flowchart-lines-color;
+      border-bottom: 1px solid $flowchart-lines-color;
+    }
+  
+    .dark-grey-container &{
+      border-top: 1px solid $flowchart-dark-lines-color;
+      border-right: 1px solid $flowchart-dark-lines-color;
+      border-bottom: 1px solid $flowchart-dark-lines-color;
+    }
+
+    &:after{
+      @include arrow-point-left;
+    }
+
+    &:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 0.5rem;
+      height: 0.5rem;
+      transform: rotate(45deg);
+      top: 50%;
+      left: 50%;
+      margin-left: 0.2rem;
+      text-transform: uppercase;
+      font-size: 6px;
+      text-align: center;
+      background-color: $white;
+      border: 1px solid $flowchart-lines-color;
+
+      .white-container &{
+        background-color: $white;
+        border: 1px solid $flowchart-lines-color;
+      }
+  
+      .dark-grey-container &{
+        background-color: $dark-grey;
+        border: 1px solid $flowchart-dark-lines-color;
+      }
+    }
+  }
+}
+
+.flowchart-end-arrow{
+  
+  @include breakpoint(medium){
+    position: absolute;
+    width: 67%;
+    height: 1rem;
+    bottom: 1rem;
+    left: 16.5%;
+    border-left: 1px solid $flowchart-lines-color;
+    border-bottom: 1px solid $flowchart-lines-color;
+    border-right: 1px solid $flowchart-lines-color;
+    z-index: 0;
+
+    .white-container &{
+      border-left: 1px solid $flowchart-lines-color;
+      border-bottom: 1px solid $flowchart-lines-color;
+      border-right: 1px solid $flowchart-lines-color;
+    }
+  
+    .dark-grey-container &{
+      border-left: 1px solid $flowchart-dark-lines-color;
+      border-bottom: 1px solid $flowchart-dark-lines-color;
+      border-right: 1px solid $flowchart-dark-lines-color;
+    }
+
+    &:after{
+      @include arrow-point-up;
+    }
+  }
+}
+
+.flowchart-column{
+  .button.raised-button{
+    margin-top: 1rem;
+  
+    @include breakpoint(medium){
+      margin-top: 0;
+    }
+  }
+}
+
+.flowchart-grey,
+.flowchart-analyze{
+  
+  p.flowchart-target,
+  p.flowchart-outcome{
+    color: $light-grey !important;
+  }
+  
+  h2{
+    color: $light-grey;
+    border-bottom: 3px solid $light-grey;
+
+    @include breakpoint(medium){
+      // border-bottom: none;
+    }
+  }
+
+  h4{
+    color: $flowchart-grey;
+
+    &:before{
+      border-color: $flowchart-grey;
+    }
+  }
+}
+
+.flowchart-teal,
+.flowchart-design{
+
+  p.flowchart-target,
+  p.flowchart-outcome{
+    color: $flowchart-teal !important;
+  }
+
+  h2{
+    color: $flowchart-teal;
+    border-bottom: 3px solid $flowchart-teal;
+
+    @include breakpoint(medium){
+      // border-bottom: none;
+    }
+  }
+
+  h4{
+    color: $flowchart-teal;
+
+    &:before{
+      border-color: $flowchart-teal;
+    }
+  }
+}
+
+.flowchart-orange,
+.flowchart-implement{
+
+  p.flowchart-target,
+  p.flowchart-outcome{
+    color: $flowchart-orange !important;
+  }
+
+  h2{
+    color: $flowchart-orange;
+    border-bottom: 3px solid $flowchart-orange;
+
+    @include breakpoint(medium){
+      // border-bottom: none;
+    }
+  }
+
+  h4{
+    color: $flowchart-orange;
+
+    &:before{
+      border-color: $flowchart-orange;
+    }
+  }
+}
+
+// PROJECT TOGGLES
+
+ul.flowchart-project-types{
+  display: none;
+
+  @include breakpoint(medium){
+    display: block;
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    // margin: 0 auto 3.5rem; // If Paragraph Follows
+    margin: 0 auto;
+    padding: 3rem 1rem 2rem;
+    border: 1px solid $light-grey-old;
+  }
+
+  @include breakpoint(large){
+    max-width: 935px;
+    padding: 4rem 1rem 3rem;
+    // margin: 0 auto 4rem; // If Paragraph Follows
+  }
+
+  @include breakpoint(xlarge){
+    max-width: 1035px;
+    padding: 4.5rem 1rem 3.5rem;
+    // margin: 0 auto 5rem; // If Paragraph Follows
+  }
+
+  @include breakpoint(xxlarge){
+    padding: 5rem 1rem 4rem;
+  }
+
+  &:before{
+    @include uppercase;
+    content: "Examples";
+    background-color: $white;
+    padding: 0 10px;
+    position: absolute;
+    top: -0.5rem;
+
+    @include breakpoint(large){
+      top: -0.65rem;
+    }
+
+    @include breakpoint(xxlarge){
+      top: -0.75rem;
+    }
+  }
+
+  li{
+    @include uppercase;
+    @include uppercase-limit-large;
+    margin: 0 1.5rem;
+    padding: 0;
+    position: relative;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    line-height: 1.4;
+    
+    @include breakpoint(large){
+      margin: 0 2rem;
+    }
+
+    @include breakpoint(xlarge){
+      margin: 0 2.25rem;
+    }
+
+    @include breakpoint(xxlarge){
+      margin: 0 2.5rem;
+    }
+
+    &.hide-for-small{
+      display: none;
+      
+      @include breakpoint(large){
+        display: block;
+      }
+    }
+
+    &:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: transparent;
+      border: 1px solid $light-grey-old;
+      transform: rotate(45deg);
+      left: 50%;
+      margin-left: -3.5px;
+      top: - 1rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover,
+    &.active{
+      color: $flowchart-grey;
+      padding-bottom: 2px;
+      border-bottom: 1px solid $flowchart-grey;
+      cursor: pointer;
+
+      &:before{
+        background-color: $flowchart-grey;
+        border: 1px solid $flowchart-grey;
+      }
+    }
+  }
+}
+
+// HOMEPAGE
+
+.flowchart-container{
+
+  .flowchart{
+    margin-bottom: 0;
+  }
+  
+  .flowchart-column{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .flowchart-column h4 + p{
+    margin-bottom: 1rem;
+
+    @include breakpoint(medium){
+      margin-bottom: 0;
+      height: 8rem;
+    }
+  }
+}
+
+ul.flowchart-short{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  @include breakpoint(medium){
+    margin-bottom: 0;
+  }
+
+  li{
+    flex: 0 0 48%;
+    border: 1px solid lighten($medium-grey, 25%);
+    margin-bottom: 0.25rem;
+    padding: 0.5rem;
+
+    @include breakpoint(medium){
+      margin-bottom: 0.25rem;
+      flex: 0 0 100%;
+    }
+  }
+}

@@ -1,0 +1,754 @@
+// FORM LAYOUT
+
+.quote-split{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.quote-left{
+  flex: 0 0 75%;
+}
+
+.quote-right{
+  flex: 0 0 25%;
+}
+
+// LEFT-ALIGNED HEADER
+.quote-block h3{
+  text-align: left;
+
+  &:after{
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+}
+
+// FORM BLOCK STYLES
+p.quote-intro{
+  max-width: 400px;
+}
+
+.quote-summary{
+  border-top: 5px solid $medium-light-grey;
+  border-bottom: 5px solid $medium-light-grey;
+  padding: 30px 0;
+}
+
+form{
+  padding: 0;
+  margin: 30px 0;
+  border: 0;
+  border-top: 15px solid $medium-light-grey;
+  border-bottom: 1px solid $medium-light-grey;
+  border-left: 1px solid $medium-light-grey;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+
+  &:before{
+    content: "YOUR BUSINESS";
+    color: $light-grey-old;
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    width: 140px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: -70px;
+    line-height: 16px;
+    font-weight: 600;
+  }
+}
+
+// FORM FIELDS
+.form-group{
+  box-sizing: border-box;
+  height: 60px;
+  flex: 0 0 100%;
+  border-right: 1px solid $medium-light-grey;
+  border-top: 1px solid $medium-light-grey;
+  position: relative;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  &.form-group-textarea{
+    height: 120px;
+    display: flex;
+    flex-flow: row nowrap;
+
+    .form-group-field{
+      flex: 1 0 60%;
+    }
+  }
+
+  &.form-group-text{
+    &:hover{
+
+      input[type="text"]{
+        border-bottom: 4px solid aqua;
+      }
+    }
+
+    &.focus,
+    &:focus-within{
+
+      input[type="text"]{
+        border-bottom: 4px solid #ecff2b;
+      }
+    }
+  }
+
+  &.form-group-radio,
+  &.form-group-checkbox{
+
+    .form-group-field{
+      background: repeating-linear-gradient(
+        -45deg,
+        rgba(255,255,255, 0),
+        rgba(255,255,255, 0) 19.999992%,
+        rgba(255,255,255, 0.25) 19.999992%,
+        rgba(255,255,255, 0.25) 25%
+      ) top left fixed;
+      background-size: 14px 14px, 100%;
+      transition: all 0.4s ease;
+
+      &:after{
+        content: " ";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        background-color: transparent;
+        transition: all 0.4s ease;
+      }
+
+      &:hover{
+        background: repeating-linear-gradient(
+          -45deg,
+          rgba(45,254,254, 0),
+          rgba(45,254,254, 0) 19.999992%,
+          rgba(45,254,254, 0.25) 19.999992%,
+          rgba(45,254,254, 0.25) 25%
+        ) top left fixed;
+        background-size: 14px 14px, 100%;
+        transition: all 0.4s ease;
+  
+        &:after{
+          background-color: aqua;
+          transition: all 0.4s ease;
+        }
+      }
+      
+      &:focus-within,
+      &.focus{
+        background: repeating-linear-gradient(
+          -45deg,
+          rgba(236,255,43, 0),
+          rgba(236,255,43, 0) 19.999992%,
+          rgba(236,255,43, 0.25) 19.999992%,
+          rgba(236,255,43, 0.25) 25%
+        ) top left fixed;
+        background-size: 14px 14px, 100%;
+        transition: all 0.4s ease;
+        
+        &:after{
+          background-color: #ecff2b;
+          transition: all 0.4s ease;
+        }
+      }
+    }
+  }
+
+  &.form-group-submit{
+    padding: 10px 20px;
+    height: auto;
+
+    &:hover{
+      background: repeating-linear-gradient(
+      -45deg,
+      rgba(45,254,254, 0),
+      rgba(45,254,254, 0) 19.999992%,
+      rgba(45,254,254, 0.25) 19.999992%,
+      rgba(45,254,254, 0.25) 25%
+    ) top left fixed;
+    background-size: 14px 14px, 100%;
+    }
+
+    input.button{
+      border: 0;
+      display: block;
+      margin: auto;
+      padding: 15px 20px;
+      min-width: 200px;
+
+      &:focus,
+      &:hover{
+        outline: none;
+        background-color: $dark-grey;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .form-group-field{
+    position: relative;
+    flex: 0 0 100%;
+  }
+
+  // SPECIFIC FIELDS
+  &.select-projectType{
+
+    .form-group-field{
+      flex: 1 0 60%;
+      order: 2;
+    }
+  }
+
+  &.textarea-productDescription{
+    flex: 1 0 50%;
+  }
+
+  &.radio-hasSubscriptions{
+    flex: 0 0 33%;
+    height: 120px;
+
+    .radio-group{
+      padding-top: 14px;
+    }
+  }
+  
+  &.radio-existingWebsite{
+    flex: 1 0 40%;
+
+    .form-group-field{
+      flex: 1 0 40%;
+      order: 2;
+    }
+  }
+
+  &.text-websiteUrl{
+    flex: 1 0 40%;
+
+    .form-group-field{
+      
+    }
+    // display: none;
+  }
+
+  &.radio-typeOfWebsiteWork{
+    // flex: 0 0 100%;
+    border-top: 16px solid $medium-light-grey;
+    height: 75px;
+    
+    &:before{
+      content: "DEVELOPMENT";
+      color: $light-grey-old;
+      display: block;
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      width: 140px;
+      // background-color: pink;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-left: -70px;
+      line-height: 16px;
+      font-weight: 600;
+    }
+  }
+
+  &.checkbox-typeOfDevWork{
+    // flex: 0 0 100%;
+    border-top: 16px solid $medium-light-grey;
+    // height: 75px;
+    height: auto;
+    
+    &:before{
+      content: "DEVELOPMENT";
+      color: $light-grey-old;
+      display: block;
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      width: 140px;
+      // background-color: pink;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-left: -70px;
+      line-height: 16px;
+      font-weight: 600;
+    }
+
+    .checkbox-group{
+      margin-bottom: 10px;
+    }
+  }
+
+  &.checkbox-compatibility{
+    // height: 75px;
+  }
+
+  &.select-backendPlatform{
+    // border-top: 4px solid $medium-light-grey;
+  }
+
+  &.textarea-featuresDescription{
+
+  }
+
+  &.radio-budget{
+    border-top: 15px solid $medium-light-grey;
+    height: 75px;
+
+    &:before{
+      content: "BUDGET & TIMELINE";
+      color: $light-grey-old;
+      display: block;
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      width: 140px;
+      // background-color: pink;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-left: -70px;
+      line-height: 16px;
+      font-weight: 600;
+    }
+  }
+
+  &.select-timelineFlexibility{
+    flex: 1 0 50%;
+  }
+
+  &.text-deadline{
+    flex: 0 0 50%;
+  }
+
+  &.release{
+    flex: 0 0 50%;
+  }
+
+  &.radio-externalApis{
+    flex: 1 0 33%;
+    height: 120px;
+
+    .radio-group{
+      padding-top: 14px;
+    }
+
+    label:before{
+      height: 24px;
+      float: left;
+    }
+  }
+
+  &.textarea-backendDescription{
+    .form-group-field{
+      flex: 1 0 50%;
+    }
+  }
+
+  &.data-sources{
+    flex: 1 0 50%;
+    // display: none;
+  }
+
+  &.text-name{
+    border-top: 15px solid $medium-light-grey;
+    height: 75px;
+
+    &:before{
+      content: "CONTACT INFO";
+      color: $light-grey-old;
+      display: block;
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      width: 140px;
+      // background-color: pink;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-left: -70px;
+      line-height: 16px;
+      font-weight: 600;
+    }
+  }
+
+  &.text-phoneNumber, &.text-email{
+    flex: 0 0 50%;
+  }
+}
+
+.form-backend-graphic{
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1.4em;
+  text-align: center;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0) 19.999992%,
+    rgba(0, 0, 0, 0.25) 19.999992%,
+    rgba(0, 0, 0, 0.25) 25%
+  ) top left fixed;
+  background-size: 14px 14px, 100%;
+}
+
+.form-start span{
+  display: inline-block;
+  border: 5px solid $medium-dark-grey;
+  width: 20px;
+  height: 20px;
+  // margin-left: 50%;
+  margin-top: 20px;
+  transform: rotate(45deg) translateX(0) translateY(0);
+  // display: none;
+}
+
+.control-label{
+  // border: 1px solid pink;
+  position: absolute;
+  // columns: pink;
+  // display: none;
+  font-size: 11px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $medium-grey;
+  letter-spacing: 1px;
+  padding: 6px 6px;
+  // background-color: $white;
+}
+
+.control-label:before{
+  margin-right: 4px;
+  content: "◆";
+  font-size: 13px;
+  // font-weight: 700;
+}
+
+.select-group{
+  // position: relative;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+}
+
+.textarea-group{
+  height: 119px;
+  width: 100%;
+}
+
+.select-arrow{
+  width: 7px;
+  height: 7px;
+  display: block;
+  // background-color:red;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  border-bottom: 2px solid $medium-light-grey;
+  border-right: 2px solid $medium-light-grey;
+  transform: rotate(45deg) translateX(1px) translateY(36px);
+}
+
+select{
+  // z-index: 10;
+  // height: 2.4375rem;
+  height: 59px;
+  margin: 0;
+  padding: 12px 20px 0;
+  // padding: 0.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  // font-size: 1rem;
+  font-weight: normal;
+  // line-height: 1;
+  // color: $dark-grey;
+  border-bottom: 4px solid transparent;
+
+  font-weight: 300;
+  color: $dark-grey;
+  font-size: 19px;
+
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255,255,255, 0),
+    rgba(255,255,255, 0) 19.999992%,
+    rgba(255,255,255, 0.25) 19.999992%,
+    rgba(255,255,255, 0.25) 25%
+  ) top left fixed;
+  background-size: 14px 14px, 100%;
+  transition: all 0.4s ease;
+
+  &:hover{
+    outline: none;
+    border-bottom: 4px solid aqua;
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(45,254,254, 0),
+      rgba(45,254,254, 0) 19.999992%,
+      rgba(45,254,254, 0.25) 19.999992%,
+      rgba(45,254,254, 0.25) 25%
+    ) top left fixed;
+    background-size: 14px 14px, 100%;
+    transition: all 0.4s ease;
+  }
+
+  &:focus{
+    outline: none;
+    border-bottom: 4px solid #ecff2b;
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(236,255,43, 0),
+      rgba(236,255,43, 0) 19.999992%,
+      rgba(236,255,43, 0.25) 19.999992%,
+      rgba(236,255,43, 0.25) 25%
+    ) top left fixed;
+    background-size: 14px 14px, 100%;
+    transition: all 0.4s ease;
+  }
+}
+
+option{
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 6px 1px;
+}
+
+textarea{
+  margin: 0;
+  padding: 0;
+  // width: 100%;
+  background-color: transparent;
+  border: 0;
+  padding: 29px 20px 20px;
+  width: 100%;
+  min-height: 119px;
+  resize: none;
+
+  font-weight: 300;
+  color: $dark-grey;
+  font-size: 19px;
+
+  border-bottom: 4px solid transparent;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255,255,255, 0),
+    rgba(255,255,255, 0) 19.999992%,
+    rgba(255,255,255, 0.25) 19.999992%,
+    rgba(255,255,255, 0.25) 25%
+  ) top left fixed;
+  background-size: 14px 14px, 100%;
+  transition: all 0.4s ease;
+
+  &:hover{
+    outline: none;
+    border-bottom: 4px solid aqua;
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(45,254,254, 0),
+      rgba(45,254,254, 0) 19.999992%,
+      rgba(45,254,254, 0.25) 19.999992%,
+      rgba(45,254,254, 0.25) 25%
+    ) top left fixed;
+    background-size: 14px 14px, 100%;
+    transition: all 0.4s ease;
+  }
+
+  &:focus{
+    outline: none;
+    border-bottom: 4px solid #ecff2b;
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(4236,255,43, 0),
+      rgba(236,255,43, 0) 19.999992%,
+      rgba(236,255,43, 0.25) 19.999992%,
+      rgba(236,255,43, 0.25) 25%
+    ) top left fixed;
+    background-size: 14px 14px, 100%;
+    transition: all 0.4s ease;
+  }
+}
+
+input[type="text"]{
+  height: 60px;
+  width: 100%;
+  // line-height: 58px;
+  padding: 12px 20px 0;
+  border: 0;
+  border-bottom: 4px solid transparent;
+
+  font-weight: 300;
+  color: $dark-grey;
+  font-size: 19px;
+
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255,255,255, 0),
+    rgba(255,255,255, 0) 19.999992%,
+    rgba(255,255,255, 0.25) 19.999992%,
+    rgba(255,255,255, 0.25) 25%
+  ) top left fixed;
+  background-size: 14px 14px, 100%;
+  transition: all 0.4s ease;
+
+  &:hover{
+    outline: none;
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(45,254,254, 0),
+      rgba(45,254,254, 0) 19.999992%,
+      rgba(45,254,254, 0.25) 19.999992%,
+      rgba(45,254,254, 0.25) 25%
+    ) top left fixed;
+    background-size: 14px 14px, 100%;
+    border-bottom: 4px solid aqua;
+    transition: all 0.4s ease;
+  }
+  
+  &:focus{
+    outline: none;
+    border-bottom: 4px solid #ecff2b;
+
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(4236,255,43, 0),
+      rgba(236,255,43, 0) 19.999992%,
+      rgba(236,255,43, 0.25) 19.999992%,
+      rgba(236,255,43, 0.25) 25%
+    ) top left fixed;
+    background-size: 14px 14px, 100%;
+    transition: all 0.4s ease;
+  }
+}
+
+.checkbox-group,
+.radio-group{
+  margin: 23px 20px 0;
+  // border: 1px solid red;
+
+  &:after{
+    display: block;
+    content: " ";
+    clear: both;
+    width: 100%;
+    height: 1px;
+  }
+
+  .checkbox,
+  .radio{
+    float: left;
+    // border: 1px solid green;
+    margin-right: 20px;
+
+    label{
+      font-weight: 300;
+      color: $dark-grey;
+      font-size: 19px;
+      line-height: 1.75em;
+    }
+
+    input[type="radio"]{
+      margin-right: 3px;
+      transform: translateY(-2px);
+    }
+
+    input[type="checkbox"]{
+      margin-right: 3px;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+input[type="radio"]{
+  // background-color: #ecff2b;
+
+  &:hover{
+    outline: aqua auto 5px;
+  }
+  
+  &:focus{
+    outline: #ecff2b auto 5px;
+  }
+}
+
+.form-group p.small{
+  font-size: 11px;
+  line-height: 14px;
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px 10px;
+  color: $medium-grey;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $medium-light-grey;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $medium-light-grey;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $medium-light-grey;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $medium-light-grey;
+}
+
+// GRAPHICS
+
+.form-group-graphic{
+  display: block;
+  flex: 0 0 33%;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1.4em;
+  text-align: center;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0) 19.999992%,
+    rgba(0, 0, 0, 0.25) 19.999992%,
+    rgba(0, 0, 0, 0.25) 25%
+  ) top left fixed;
+  background-size: 14px 14px, 100%;
+  
+  .textarea-featuresDescription .form-group-field + &{
+    height: 120px;
+    
+    span{
+      content: "hello";
+    }
+  }
+
+  .select-projectType .form-group-field + &{
+    flex: 0 0 60px;
+    order: 1;
+  }
+
+  .radio-existingWebsite .form-group-field + &{
+    flex: 0 0 60px;
+    order: 1;
+  }
+
+  .textarea-backendDescription .form-group-field + &{
+    flex: 1 0 33%;
+    height: 120px;
+  }
+}

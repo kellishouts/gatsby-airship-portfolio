@@ -1,0 +1,1427 @@
+#___gatsby{
+  width: 100%;
+}
+
+.container{
+  position: relative;
+
+  &.darker-grey-container{
+    background-color: $darker-grey;
+
+    p, li{
+      color: $medium-grey;
+    }
+  }
+
+  &.dark-grey-container{
+    background-color: $dark-grey;
+
+    p, li{
+      color: $medium-light-grey;
+    }
+  }
+
+  // &.medium-grey-container{
+  //   background-color: $medium-light-grey;
+  // }
+  
+  // &.light-grey-container{
+  //   background-color: $light-grey-old;
+  // }
+
+  &.very-light-grey-container{
+    background-color: $very-light-grey;
+  }
+  
+  &.white-container{
+    background-color: $white;
+  }
+
+  &.teal-container{
+    background-color: $flowchart-teal;
+  }
+
+  &.feature-container{
+    
+  }
+
+  &.footer-links-container{
+    background-color: $very-dark-grey;
+  }
+
+  &.split-container{
+    background-image: linear-gradient(to right, $light-grey-old, $light-grey-old 50%, $dark-grey 50%, $dark-grey);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+// TINY TRIANGLES
+
+.case-studies-container,
+.flowchart-container,
+.cta-container,
+.promo-container,
+.approach-container{
+  &:before{
+    content: " ";
+    position: absolute;
+    width: 1.75rem;
+    height: 1.75rem;
+    top: 0;
+    left: 50%;
+    margin-left: -0.875rem;
+    border-top: 0.875rem solid $white;
+    border-bottom: 0.875rem solid transparent;
+    border-left: 0.875rem solid transparent;
+    border-right: 0.875rem solid transparent;
+  }
+
+  &:after{
+    content: " ";
+    position: absolute;
+    width: 0.75rem;
+    height: 0.75rem;
+    top: 0;
+    left: 50%;
+    margin-left: -0.375rem;
+    border-top: 0.375rem solid $flowchart-teal;
+    border-bottom: 0.375rem solid transparent;
+    border-left: 0.375rem solid transparent;
+    border-right: 0.375rem solid transparent;
+  }
+}
+
+.cta-container{
+  &:before{
+    border-top: 0.875rem solid $dark-grey;
+  }
+
+  &:after{
+    border-top: 0.375rem solid $flowchart-teal;
+  }
+}
+
+.approach-container{
+  &:before{
+    border-top: 0.875rem solid $white;
+  }
+
+  &:after{
+    border-top: 0.375rem solid $flowchart-orange;
+  }
+}
+
+.case-studies-container{
+  &:before{
+    border-top: 0.875rem solid $white;
+  }
+
+  &:after{
+    border-top: 0.375rem solid $flowchart-teal;
+  }
+}
+
+
+.flowchart-container{
+  &:before{
+    border-top: 0.875rem solid $dark-grey;
+  }
+
+  &:after{
+    border-top: 0.375rem solid $flowchart-teal;
+  }
+}
+
+.promo-container{
+
+  &:before{
+    border-top: 0.875rem solid $very-light-grey;
+  }
+
+  &:after{
+    border-top: 0.375rem solid $flowchart-orange;
+  }
+}
+
+.block{
+  // border: 1px solid yellowgreen;
+  margin: auto;
+  max-width: 1100px;
+  padding: 50px 30px 60px;
+  
+  @include breakpoint(medium){
+    padding: 75px 70px 75px;
+  }
+
+  @include breakpoint(mlarge){
+    padding: 80px 70px 80px;
+  }
+
+  @include breakpoint(mmlarge){
+    padding: 100px 70px 100px;
+  }
+
+  @include breakpoint(large){
+    padding: 125px 80px 125px;
+  }
+
+  @include breakpoint(xlarge){
+    padding: 135px 100px 135px;
+  }
+
+  // @include breakpoint(xxlarge){
+  //   padding: 150px 100px 150px;
+  // }
+
+  &.case-studies-block{
+    @include breakpoint(medium){
+      max-width: 700px;
+    }
+
+    @include breakpoint(mmlarge){
+      max-width: 1100px;
+      padding: 60px 70px 60px;
+    }
+
+    @include breakpoint(large){
+      padding: 70px 80px 75px;
+    }
+
+    @include breakpoint(xlarge){
+      padding: 110px 100px 110px;
+    }
+  }
+
+  &.articles-block{
+    
+    @include breakpoint(medium){
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    @include breakpoint(large){
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    @include breakpoint(xlarge){
+      padding-top: 90px;
+      padding-bottom: 90px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @include breakpoint(xlarge){
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    h3:after{
+      @include breakpoint(xlarge){
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &.promo-block{
+    padding-bottom: 0;
+    padding-top: 60px;
+    
+    @include breakpoint(medium){
+      padding-top: 95px;
+    }
+    
+    @include breakpoint(mlarge){
+      padding-top: 70px;
+      padding-left: 20px;
+    }
+
+    @include breakpoint(mmlarge){
+      padding-top: 90px;
+    }
+
+    @include breakpoint(large){
+      padding-top: 125px;
+      padding-left: 50px;
+    }
+
+    @include breakpoint(xlarge){
+      padding-top: 135px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @include breakpoint(xxlarge){
+      padding-top: 150px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &.footer-block{
+    @include breakpoint(xlarge){
+      padding-bottom: 100px;
+    }
+  }
+
+  &.footer-links-block{
+    @include breakpoint(medium){
+      padding: 30px;
+    }
+
+    @include breakpoint(large){
+      padding: 30px;
+    }
+
+    @include breakpoint(xlarge){
+      padding: 30px;
+    }
+
+    span.vr{
+      margin: 0 0.5rem;
+    }
+  }
+
+  &.three-part-block{
+    // z-index: 2;
+
+    @media only screen and (min-width: 825px){
+      padding-left: 30px;
+      padding-right: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    @include breakpoint(large){
+      padding-bottom: 80px;
+      max-width: 1000px;
+    }
+
+    @include breakpoint(xlarge){
+      padding-bottom: 100px;
+    }
+  }
+
+  &.split-block{
+    padding: 0;
+    
+    @include breakpoint(medium){
+      display: flex;
+    }
+  }
+
+  &.team-block{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.projects-block{
+    // border: 1px solid yellowgreen;
+    max-width: none;
+    padding: 30px 30px;
+
+    @include breakpoint(medium){
+      padding: 50px 35px;
+    }
+    
+    @media only screen and (min-width: 1600px){
+      padding: 60px 0;
+      max-width: 1520px;
+    }
+  }
+
+  &.project-block{
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 500px;
+
+    @include breakpoint(medium){
+      padding-top: 0;
+      max-width: none;
+    }
+
+    @include breakpoint(large){
+      padding-top: 0;
+    }
+
+    @include breakpoint(xlarge){
+      padding-top: 0;
+    }
+  }
+
+  &.scope-block{
+
+    @include breakpoint(medium){
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @include breakpoint(mlarge){
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+
+    @include breakpoint(large){
+      max-width: 982px;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+.split-item{
+  background-color: $light-grey-old;
+  padding: 50px 50px 60px;
+
+  @include breakpoint(medium){
+    padding: 65px 50px 65px;
+    max-width: 50%;
+    width: 50%;
+  }
+
+  @include breakpoint(mlarge){
+    padding: 65px 65px 65px;
+  }
+
+  @include breakpoint(large){
+    padding: 80px 80px 100px;
+  }
+
+  @include breakpoint(xlarge){
+    padding: 100px 100px 150px;
+  }
+
+  &.split-item-right{
+    background-color: $dark-grey;
+  }
+}
+
+.split-graphic p{
+  border: 1px solid red;
+  max-width: 300px;
+  margin: auto;
+  white-space: pre-line;
+
+  @include breakpoint(medium){
+    height: 45px;
+    overflow: hidden;
+  }
+}
+
+.large-graphic{
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 20px;
+
+  @include breakpoint(large){
+    width: 250px;
+    height: 250px;
+  }
+
+  @include breakpoint(xlarge){
+    width: 275px;
+    height: 275px;
+  }
+
+  img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.feature-image{
+  border: 4px solid $medium-grey;
+  width: 45px;
+  height: 45px;
+  transform: rotate(45deg);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @include breakpoint(large){
+    width: 55px;
+    height: 55px;
+    border: 5px solid $medium-grey;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  @include breakpoint(xlarge){
+    width: 65px;
+    height: 65px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  img{
+    transform: rotate(-45deg);
+  }
+}
+
+.small-feature-image{
+  border: 3px solid $medium-grey;
+  width: 35px;
+  height: 35px;
+  transform: rotate(45deg);
+  margin: auto;
+  margin-bottom: 20px;
+
+  @include breakpoint(medium){
+    border: 4px solid $medium-grey;
+    width: 45px;
+    height: 45px;
+    // margin-bottom: 15px;
+  }
+
+  @include breakpoint(mlarge){
+    border: 3px solid $medium-grey;
+    width: 35px;
+    height: 35px;
+    // margin-bottom: 20px;
+  }
+
+  @include breakpoint(large){
+    width: 40px;
+    height: 40px;
+    border: 4px solid $medium-grey;
+    margin-bottom: 20px;
+  }
+
+  @include breakpoint(xlarge){
+    width: 50px;
+    height: 50px;
+    border: 5px soldi $medium-grey;
+    margin-bottom: 30px;
+  }
+
+  img{
+    transform: rotate(-45deg);
+  }
+
+  .split-item-right &{
+    border-color: lighten($medium-grey, 15%);
+  }
+}
+
+.three-part-grid{
+  display: flex;
+  flex-flow: row wrap;
+
+  padding-top: 10px;
+
+  @include breakpoint(mlarge){
+    flex-flow: row nowrap;
+  }
+}
+
+.three-part-grid-item{
+  flex: 0 0 100%;
+  padding-top: 10px;
+
+  @media only screen and (min-width: 500px){
+    padding-top: 30px;
+  }
+
+  @include breakpoint(medium){
+    padding-top: 50px;
+  }
+
+
+  @include breakpoint(mlarge){
+    flex: 0 0 33.3333%;
+    padding: 0 15px;
+  }
+
+  + .three-part-grid-item{
+    margin-top: 40px;
+
+    @include breakpoint(mlarge){
+      margin-top: 0;
+    }
+  }
+
+  p{
+    text-align: center;
+    max-width: 250px;
+    margin: 15px auto 0;
+
+    @include breakpoint(medium){
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 275px;
+    }
+
+    @include breakpoint(mlarge){
+      max-width: 200px;
+      font-size: 14px;
+      line-height: 19px;
+      margin-top: 10px;
+    }
+
+    @include breakpoint(large){
+      max-width: 250px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+.feature-link{
+  margin-top: 40px;
+  text-align: center;
+  
+  @include breakpoint(medium){
+    margin-top: 50px;
+  }
+
+  @include breakpoint(large){
+    margin-top: 80px;
+  }
+
+  .footer-block &{
+    @include breakpoint(medium){
+      margin-top: 40px;
+    }
+
+    @include breakpoint(large){
+      margin-top: 40px;
+    }
+
+    a.button{
+      border-color: $medium-dark-grey;
+      color: $medium-grey;
+
+      &:hover{
+        border-color: $medium-grey;
+        color: $medium-light-grey;
+      }
+    }
+  }
+}
+
+.featured-projects{
+  margin-top: 50px;
+}
+
+.featured-project-item{
+
+  max-width: 350px;
+  margin: auto;
+
+  @include breakpoint(medium){
+    max-width: none;
+
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  a.featured-project-image{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+
+    @include breakpoint(medium){
+      display: flex;
+      flex: 0 0 50%;
+      order: 2;
+    }
+    
+    @include breakpoint(large){
+      height: 300px;
+    }
+
+    img{
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .featured-project-description{
+    margin-top: 30px;
+    // border: 1px solid pink;
+
+    @include breakpoint(medium){
+      margin-top: 0;
+      flex: 0 0 50%;
+      padding-right: 40px;
+      order: 1;
+      position: relative;
+
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+    }
+
+    // @media only screen and (min-width: 950px){
+    //   padding-right: 70px;
+    // }
+
+    @include breakpoint(large){
+      padding-right: 100px;
+    }
+
+    h4{
+      // border: 1px solid orange;
+      // padding-right: 80px;
+      max-width: 250px;
+
+      @include breakpoint(medium){
+        max-width: 300px;
+        padding-right: 40px;
+        position: absolute;
+        top: 0;
+      }
+
+      @media only screen and (min-width: 950px){
+        // padding-right: 70px;
+      }
+
+      @include breakpoint(large){
+        // padding-right: 100px;
+        max-width: 350px;
+      }
+    }
+
+    p{
+      margin-top: 15px;
+    }
+
+    a.read-more{
+      // display: inline-block;
+      margin-top: 30px;
+      // position: relative;
+      height: 20px;
+
+      @include breakpoint(medium){
+        margin-top: 30px;
+      }
+
+      span{
+        visibility: hidden;
+      }
+
+      &:before{
+        content: " ";
+        width: 50px;
+        height: 1px;
+        background-color: $medium-grey;
+        display: block;
+        position: absolute;
+        top: 9px;
+      }
+
+      &:after{
+        content: " ";
+        width: 15px;
+        height: 15px;
+        border-top: 1px solid $medium-grey;
+        border-right: 1px solid $medium-grey;
+        transform: rotate(45deg) translateX(25px) translateY(-22px);
+        display: block;
+        position: absolute;
+        top: 0;
+      }
+
+      &:hover{
+        &:before{
+          background-color: $dark-grey;
+        }
+
+        &:after{
+          border-top: 1px solid $dark-grey;
+          border-right: 1px solid $dark-grey;
+        }
+      }
+    }
+  }
+}
+
+.read-more{
+  display: inline-block;
+  margin-top: 30px;
+  position: relative;
+  height: 20px;
+
+  @include breakpoint(medium){
+    margin-top: 30px;
+  }
+
+  span{
+    visibility: hidden;
+  }
+
+  &:before{
+    content: " ";
+    width: 50px;
+    height: 1px;
+    background-color: $medium-grey;
+    display: block;
+    position: absolute;
+    top: 9px;
+  }
+
+  &:after{
+    content: " ";
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid $medium-grey;
+    border-right: 1px solid $medium-grey;
+    transform: rotate(45deg) translateX(25px) translateY(-22px);
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+
+  &:hover{
+    &:before{
+      background-color: $dark-grey;
+    }
+
+    &:after{
+      border-top: 1px solid $dark-grey;
+      border-right: 1px solid $dark-grey;
+    }
+  }
+}
+
+.feature-block{
+  position: relative;
+
+  @include breakpoint(medium){
+    padding: 65px 70px 75px;
+  }
+  
+  @include breakpoint(mlarge){
+    padding: 60px 70px 70px;
+  }
+
+  @include breakpoint(large){
+    padding: 70px 80px 80px;
+  }
+
+  @include breakpoint(xlarge){
+    padding: 100px 100px 120px;
+  }
+}
+
+.footer-block{
+  p{
+    text-align: center;
+    color: $medium-grey;
+
+    a{
+      color: $medium-grey;
+
+      &:hover{
+        color: $light-grey-old;
+      }
+    }
+  }
+}
+
+.footer-links-block{
+  p{
+    text-align: center;
+    color: $medium-dark-grey;
+
+    a{
+      color: $medium-dark-grey;
+
+      &:hover{
+        color: $flowchart-teal;
+      }
+    }
+  }
+}
+
+.team-list{
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 200px;
+  margin: auto;
+  margin-top: 50px;
+
+  @include breakpoint(medium){
+    max-width: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 550px;
+  }
+
+  @include breakpoint(mlarge){
+    max-width: none;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 710px;
+  }
+
+  @include breakpoint(large){
+    max-width: 850px;
+  }
+
+  .team-item{
+    flex: 0 0 100%;
+    margin-bottom: 50px;
+
+    @include breakpoint(medium){
+      flex: 0 0 38%;
+      margin: 0 6% 40px;
+      height: 325px;
+    }
+
+    @include breakpoint(mlarge){
+      flex: 0 0 28%;
+      margin: 0 2.6667% 50px;
+      height: 315px;
+    }
+
+    @include breakpoint(large){
+      flex: 0 0 28%;
+      margin: 0 2.6667% 50px;
+      height: 375px;
+    }
+
+    .team-image{
+      width: 100%;
+      height: 225px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      @include breakpoint(medium){
+        height: 250px;
+      }
+
+      @include breakpoint(mlarge){
+        height: 240px;
+      }
+
+      @include breakpoint(large){
+        height: 280px;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+    }
+
+    h5{
+      margin-top: 10px;
+      margin-bottom: 2px;
+
+      @include breakpoint(large){
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+    }
+
+    p{
+      text-align: center;
+      color: $medium-grey;
+    }
+  }
+}
+
+// GREYS
+
+.greydient{
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 3rem 0;
+}
+
+// .very-light-grey,
+// .light-grey,
+// .medium-light-light-grey,
+// .medium-light-grey,
+// .medium-grey,
+// .medium-dark-grey,
+// .medium-dark-dark-grey,
+// .dark-grey,
+// .darker-grey,
+// .very-dark-grey{
+//   flex: 0 0 10%;
+//   height: 80px;
+//   background-color: pink;
+// }
+
+// .very-light-grey{
+//   background-color: $very-light-grey;
+// }
+
+// .light-grey{
+//   background-color: $light-grey-old;
+// }
+
+// .medium-light-light-grey{
+//   background-color: lighten($medium-grey, 15%);
+// }
+
+// .medium-light-grey{
+//   background-color: $medium-light-grey;
+// }
+
+// .medium-grey{
+//   background-color: $medium-grey;
+// }
+
+// .medium-dark-grey{
+//   background-color: $medium-dark-grey;
+// }
+
+// .medium-dark-dark-grey{
+//   background-color: $medium-dark-dark-grey;
+// }
+
+// .dark-grey{
+//   background-color: $dark-grey;
+// }
+
+// .darker-grey{
+//   background-color: $darker-grey;
+// }
+
+// .very-dark-grey{
+//   background-color: $very-dark-grey;
+// }
+
+// PROJECTS
+
+.project-section-split{
+  margin-top: $margin-small;
+
+  @media only screen and (min-width:500px){
+    margin-top: $margin-medium;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  @include breakpoint(large){
+    margin-top: $margin-large;
+  }
+
+  .project-section-left{
+    flex: 0 0 45%;
+  }
+
+  .project-section-right{
+    flex: 0 0 45%;
+
+    @media only screen and (min-width:500px){
+      margin-top: 0;
+    }
+  }
+
+  h4{
+    text-align: left;
+  }
+
+  &.project-section-split-centered{
+    p{
+      @include breakpoint(medium){
+      }
+    }
+  }
+}
+
+.image-box{
+  @include image-margin;
+  max-height: 100%;
+
+  img.pink{
+    border: 3px solid pink;
+  }
+
+  &.image-box-timeline{
+
+    @include breakpoint(mlarge){
+      max-width: 600px;
+      margin-right: auto;
+      margin-left: auto;
+
+      p.caption{
+        max-width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+
+    @include breakpoint(mmlarge){
+      max-width: 650px;
+
+      p.caption{
+        max-width: 650px;
+      }
+    }
+    
+    @include breakpoint(large){
+      margin-top: 40px;
+      margin-bottom: 70px;
+    }
+
+    @include breakpoint(xxlarge){
+      margin-top: 50px;
+      margin-bottom: 80px;
+      max-width: 750px;
+    }
+
+    img{
+
+      .white-container &,
+      .very-light-grey-container &{
+        background-color: transparent;
+      }
+    }
+
+    img.small-image{
+      padding: 0;
+    }
+  }
+
+  &.image-box-photo{
+    @include breakpoint(mlarge){
+      max-width: 550px;
+      margin-right: auto;
+      margin-left: auto;
+
+      p.caption{
+        max-width: 550px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+
+    @include breakpoint(mmlarge){
+      max-width: 600px;
+
+      p.caption{
+        max-width: 600px;
+      }
+    }
+
+    @include breakpoint(xxlarge){
+      max-width: 700px;
+
+      p.caption{
+        max-width: 700px;
+      }
+    }
+  }
+
+  &.image-box-large{
+
+    @include breakpoint(xlarge){
+      margin-left: -100px;
+      margin-right: -100px;
+    }
+
+    @include breakpoint(xxlarge){
+      margin-left: -200px;
+      margin-right: -200px;
+    }
+
+    p.caption{
+  
+      @include breakpoint(xlarge){
+        // max-width: 900px;
+        // margin-left: auto;
+        // margin-right: auto;
+        // text-align: center;
+      }
+  
+      @include breakpoint(xxlarge){
+      }
+    }
+  }
+
+  img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+
+    .white-container &{
+      background-color: $very-light-grey; // #F6F6F6
+    }
+
+    .very-light-grey-container &{
+      background-color: $white;
+    }
+
+    &.small-image{
+      @include breakpoint(large){
+        padding: 0 10%;
+      }
+
+      + p.caption{
+        @include breakpoint(large){
+        }
+      }
+    }
+  }
+}
+
+.test-summary{
+  @include image-margin;
+
+  .very-light-grey-container &{
+    background-color: $white;
+  }
+
+  .white-container &{
+    background-color: $very-light-grey;
+  }
+
+  @media only screen and (min-width: 600px){
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .test-summary-column{
+    padding: 20px 0 25px;
+
+    @media only screen and (min-width: 600px){
+      flex: 1 0 30%;
+      padding: 15px 0 15px;
+    }
+    
+    + .test-summary-column{
+
+      .very-light-grey-container &{
+        border-top: 6px solid $very-light-grey;
+
+        @media only screen and (min-width: 600px){
+          border-top: 0;
+          border-left: 6px solid $very-light-grey;
+        }
+      }
+
+      .white-container &{
+        border-top: 6px solid $white;
+
+        @media only screen and (min-width: 600px){
+          border-top: 0;
+          border-left: 6px solid $white;
+        }
+      }
+    }
+  }
+
+  h4{
+    margin: 0 30px 15px;
+    font-size: 18px;
+    // color: $flowchart-orange;
+    color: $medium-light-grey;
+
+    @media only screen and (min-width: 600px){
+      font-size: 16px;
+      margin: 0 0 15px;
+    }
+
+    @include breakpoint(medium){
+      font-size: 17px;
+    }
+    
+    @include breakpoint(large){
+      font-size: 18px;
+    }
+    
+    @include breakpoint(xlarge){
+      font-size: 19px;
+    }
+  }
+
+  ul{
+    padding: 0;
+    margin: 0 30px;
+    
+    @media only screen and (min-width: 600px){
+      margin: 0 20px;
+      padding-left: 7px;
+    }
+  }
+
+  li{
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+    line-height: 1.3;
+    font-size: 14px;
+    color: $medium-dark-grey;
+
+    @media only screen and (min-width: 600px){
+      font-size: 13.5px;
+      line-height: 1.4;
+    }
+
+    + li{
+      margin-top: 10px;
+    }
+  }
+}
+
+.goals-summary{
+  margin-top: 20px;
+
+  @media only screen and (min-width: 375px){
+    margin-top: 25px;
+  }
+  
+  @media only screen and (min-width: 500px){
+    margin-top: 30px;
+  }
+  
+  @include breakpoint(medium){
+    margin-top: 35px;
+  }
+
+  @include breakpoint(large){
+    margin-top: 40px;
+  }
+
+  @include breakpoint(xxlarge){
+    margin-top: 55px;
+  }
+
+  .very-light-grey-container &{
+    background-color: $white;
+  }
+
+  .white-container &{
+    background-color: $very-light-grey;
+  }
+
+  p.goals-summary-row{
+    padding: 15px 20px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 0;
+
+    @media only screen and (min-width: 600px){
+      padding: 20px 30px;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+
+    @include breakpoint(large){
+      padding: 20px 25px 20px;
+    }
+
+    @include breakpoint(xlarge){
+      padding: 20px 30px 20px;
+    }
+    
+    + p.goals-summary-row{
+      margin-top: 0;
+
+      .very-light-grey-container &{
+        border-top: 6px solid $very-light-grey;
+
+      }
+
+      .white-container &{
+        border-top: 6px solid $white;
+      }
+    }
+  }
+
+  span.goal-status{
+    flex: 0 0 20px;
+    height: 30px;
+    margin-right: 10px;
+
+    @media only screen and (min-width: 600px){
+      flex: 0 0 25px;
+      height: 35px;
+      margin-right: 30px;
+    }
+
+    @include breakpoint(medium){
+      // flex: 0 0 40px;
+      // height: 40px;
+    }
+
+    i{
+      overflow: hidden;
+      color: transparent;
+      display: block;
+      width: 20px;
+      height: 30px;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      
+      @media only screen and (min-width: 600px){
+        width: 25px;
+        height: 35px;
+      }
+
+      @include breakpoint(medium){
+        // width: 40px;
+        // height: 40px;
+      }
+      
+      &.passed{
+        background-image: url(../images/passed.png);
+      }
+  
+      &.failed{
+        background-image: url(../images/failed.png);
+      }
+  
+      &.unknown{
+        background-image: url(../images/unknown.png);
+      }
+    }
+  }
+
+  span.goal-title{
+    flex: 1 0 35px;
+    line-height: 35px;
+
+    @media only screen and (min-width: 600px){
+      margin-right: 30px;
+      flex: 0 0 100px;
+      line-height: 1;
+      height: auto;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+
+    @include breakpoint(large){
+      flex: 0 0 120px;
+    }
+
+    b{
+
+    }
+  }
+
+  span.goal-description{
+    flex: 0 0 100%;
+    margin-top: 10px;
+    line-height: 1.5;
+
+    @media only screen and (min-width: 600px){
+      flex: 1 0 50px;
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,516 @@
+// TOP BAR NAV
+.top-bar {
+  // background-color: $very-dark-grey;
+  background-color: $white;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+  // STICKY
+  position: fixed;
+  z-index: 1000;
+
+  .scroll &{
+    background-color: rgba($white, 0.95);
+  }
+
+  .bodyclass-resume &{
+
+    @include breakpoint(medium) {
+      background-color: rgba($white, 1);
+    }
+  }
+
+  @include breakpoint(medium) {
+    background-color: transparent;
+    flex-flow: row nowrap;
+
+    // STICKY
+    .scroll &{
+      background-color: rgba($white, 0.95);
+    }
+  }
+}
+
+main{
+  // STICKY
+  padding-top: 60px;
+  
+
+  @include breakpoint(medium) {
+    // STICKY
+    padding-top: 62px;
+    padding-top: 0;
+  }
+}
+
+.top-bar-title {
+  flex: 0 0 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+
+  @include breakpoint(medium) {
+    flex: 0 0 auto;
+    height: auto;
+  }
+
+  @include breakpoint(large){
+    
+  }
+
+  @include breakpoint(xlarge){
+    
+  }
+}
+
+.mobile-menu-button {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 56px;
+  height: 50px;
+  outline: none;
+
+  @include breakpoint(medium) {
+    width: 70px;
+    height: 70px;
+  }
+
+  button.menu-icon{
+    display: block;
+    padding:0;
+    line-height: 14px;
+    width: 19px;
+    height: 25px;
+    margin-top: 18px;
+    margin-left: 18px;
+    background-color: transparent;
+    outline: none;
+
+    @include breakpoint(medium) {
+      margin-top: 28px;
+      margin-left: 26px;
+    }
+
+    &::after {
+      top: 8px;
+      left: 0;
+      background: $medium-grey;
+      box-shadow: 0 7px 0 $medium-grey, 0 14px 0 $medium-grey;
+      height: 1px;
+      outline: none;
+
+      @include breakpoint(medium) {
+        top: -2px;
+      }
+    }
+  }
+}
+
+// COMPANY LOGO
+a.logo{
+  display: flex;
+  flex-flow: row nowrap;
+  padding-left: 15px;
+
+  @include breakpoint(medium){
+    padding-left: 17px;
+  }
+
+  @include breakpoint(large){
+    padding-left: 35px;
+  }
+
+  @include breakpoint(xlarge){
+    // padding-left: 25px;
+  }
+
+  .logo-image{
+    flex: 0 0 auto;
+    display: block;
+    margin: auto;
+
+    width: 22px;
+    height: 22px;
+    position: relative;
+
+    .logo-image-left{
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      border: 0.15rem solid $white;
+      content: " ";
+      transform: rotate(-45deg) translateX(0px) translateY(6px);
+      transition: all 0.2s ease;
+
+      @include breakpoint(medium){
+        border-color: $dark-grey;
+      }
+
+      @include breakpoint(large){
+        border-width: 0.2rem;
+        width: 13px;
+        height: 13px;
+        transform: rotate(-45deg) translateX(0px) translateY(5px);
+      }
+
+      @include breakpoint(xxlarge){
+        border-width: 0.25rem;
+        width: 16px;
+        height: 16px;
+        transform: rotate(-45deg) translateX(0px) translateY(2px);
+      }
+    }
+
+    // .logo-image-left{
+    //   border-top-color: $white;
+    //   border-left-color: $white;
+
+    //   @include breakpoint(medium){
+    //     border-top-color: $dark-grey;
+    //     border-left-color: $dark-grey;
+    //   }
+    // }
+
+    // .logo-image-right{
+    //   border-bottom-color: $white;
+    //   border-right-color: $white;
+
+    //   @include breakpoint(medium){
+    //     border-bottom-color: $dark-grey;
+    //     border-right-color: $dark-grey;
+    //   }
+    // }
+  }
+
+  .logo-text {
+    @include uppercase;
+    flex: 0 0 auto;
+    color: $white;
+    line-height: initial;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5px;
+
+    // transition: opacity 0.6s ease;
+    transition: none;
+
+    @include breakpoint(medium){
+      color: $dark-grey;
+    }
+
+    @include breakpoint(large){
+      margin-left: 8px;
+    }
+
+    @include breakpoint(xlarge){
+      margin-left: 10px;
+    }
+
+    @include breakpoint(xxlarge){
+      margin-left: 13px;
+    }
+
+    // STICKY
+    .scroll &{
+      @include breakpoint(medium){
+        font-size: 12px;
+      }
+    
+      @include breakpoint(large){
+        font-size: 13px;
+      }
+    
+      @include breakpoint(xlarge){
+        font-size: 14px;
+      }
+    
+      @include breakpoint(xxlarge){
+        font-size: 15px;
+      }
+    }
+
+    .bodyclass-resume &{
+      transition: none;
+      
+      @include breakpoint(medium){
+        color: $white;
+        // transition: color 0.6s ease;
+      }
+    }
+    
+    .bodyclass-resume.scroll &{
+
+      @include breakpoint(medium){
+        color: $dark-grey;
+        // transition: none;
+      }
+    }
+
+    span{
+      // color: $very-dark-grey;
+      
+      &.logo-name{
+        // color: $medium-grey;
+        color: $white;
+      }
+      
+      &.logo-comma{
+        // color: $medium-grey;
+        color: $white;
+        margin-right: 4px;
+        display: none;
+
+        @media only screen and (min-width: 500px){
+          display: block;
+        }
+      }
+      
+      &.logo-job-title{
+        // color: $flowchart-teal;
+        color: $white;
+        display: none;
+
+        @media only screen and (min-width: 500px){
+          display: block;
+        }
+      }
+
+      .scroll &{
+
+        &.logo-name{
+          color: $medium-dark-grey;
+          // color: $white;
+        }
+        
+        &.logo-comma{
+          color: $medium-dark-grey;
+          // color: $white;
+          // margin-right: 4px;
+        }
+        
+        &.logo-job-title{
+          color: $flowchart-teal;
+          // color: $white;
+        }
+
+      }
+
+      @include breakpoint(medium) {
+        opacity: 0;
+        transition: opacity 0.6s ease;
+        color: $white;
+
+        .scroll &{
+          opacity: 1;
+
+          &.logo-name{
+            color: $medium-dark-grey;
+          }
+          
+          &.logo-comma{
+            color: $medium-dark-grey;
+          }
+
+          &.logo-job-title{
+            color: $flowchart-teal;
+          }
+        }
+      }
+    }
+  }
+
+  &:hover{
+
+    .logo-text{
+      color: $flowchart-orange;
+      transition: color 0.6s ease;
+
+      span{
+        // color: $flowchart-orange;
+        transition: none;
+
+        &.logo-name{
+          // color: $medium-light-grey;
+          color: $flowchart-grey;
+
+          @include breakpoint(medium) {
+            // color: $flowchart-grey;
+          }
+        }
+
+        &.logo-comma{
+          transition: none;
+          // color: $medium-light-grey;
+          color: $flowchart-grey;
+
+          @include breakpoint(medium) {
+            // color: $flowchart-grey;
+          }
+        }
+
+        &.logo-job-title{
+          transition: none;
+          color: $flowchart-orange;
+        }
+      }
+    }
+
+    .logo-image-left{
+      border-color: $flowchart-orange;
+    }
+
+    // .logo-image-right{
+    //   @include breakpoint(medium){
+    //     border-bottom-color: $flowchart-orange;
+    //     border-right-color: $flowchart-orange;
+    //   }
+    // }
+  }
+}
+
+.top-bar .responsive-menu{
+  flex: 0 0 100%;
+  
+  @include breakpoint(medium) {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+
+.top-bar ul.menu{
+  margin:0;
+  padding:0;
+  width: 100%;
+  display: none;
+  transition: padding 0.2s ease;
+  border-bottom: 1px solid $light-grey;
+
+  &.is-active{
+    display: block;
+  }
+
+  @include breakpoint(medium){
+    border-bottom: none;
+    width: auto;
+    text-align: right;
+    line-height: 40px;
+    flex: 1 1 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  @include breakpoint(mlarge){
+  }
+  
+  @include breakpoint(large){
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 25px;
+
+    // STICKY
+    .scroll &{
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  @include breakpoint(xlarge){
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-right: 20px;
+
+    // STICKY
+    .scroll &{
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.top-bar ul.menu > li{
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid $light-grey;
+  margin:0;
+  padding:0;
+
+  @include breakpoint(medium) {
+    border-top: 0;
+    width: auto;
+    flex: 0 0 auto;
+  }
+}
+
+.top-bar ul.menu > li > a {
+  @include uppercase;
+  @include uppercase-limit-large;
+  line-height: 20px;
+  padding: 15px 20px;
+  text-align: left;
+  transition: all 0.2s ease;
+  background-color: $white;
+  color: $medium-dark-grey;
+
+  @include breakpoint(medium) {
+    color: $medium-dark-grey;
+    text-align: right;
+    padding: 0 8px;
+    display: block;
+    line-height: inherit;
+    background-color: transparent;
+    // color: $white;
+  }
+
+  @include breakpoint(mlarge) {
+    padding: 0 15px;
+  }
+
+  @include breakpoint(large){
+    padding: 0 20px;
+  }
+
+  // STICKY
+  .scroll &{
+    @include breakpoint(medium){
+      font-size: 12px;
+    }
+  
+    @include breakpoint(large){
+      font-size: 13px;
+    }
+  
+    @include breakpoint(xlarge){
+      font-size: 14px;
+    }
+  
+    @include breakpoint(xxlarge){
+      font-size: 15px;
+    }
+  }
+
+  &:hover {
+    color: $flowchart-teal;
+    transition: all 0.2s ease;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

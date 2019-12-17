@@ -1,0 +1,113 @@
+// ANIMATION COLORS
+$animation-teal: #2EC6C6;
+$animation-dark-grey: #434A51;
+
+  // ON DARK
+  // $animation-orange: #E37425;
+  // $animation-white: lighten($animation-dark-grey, 60%);
+  // $animation-grey: lighten($animation-dark-grey, 50%);
+
+  // ON LIGHT
+  $animation-orange: #ED8315;
+  $animation-white: lighten($animation-dark-grey, 15%);
+  $animation-grey: lighten($animation-dark-grey, 25%);
+
+// IMPORTED FROM AIRSHIP COLORS
+$air-grey: $animation-dark-grey; // #475457;
+$air-orange: $animation-orange; // #E88823;
+$air-blue: $animation-teal; // #76C5C4;
+$air-orange-secondary: #EE9F13;
+$air-green: #9CBF1D;
+
+// TOPBAR COLORS
+$topbar-grey: $animation-dark-grey; // #475457;
+$topbar-grey-lines: #d8dedf;
+
+$white: #FFF;
+
+// medium grey
+$medium-grey: #91A0A8;
+
+// muted text color on white
+$medium-dark-grey: darken($medium-grey, 12%);
+
+// bolder text color on white
+$medium-dark-dark-grey: darken($medium-grey, 25%);
+
+// boldest text color on white
+$dark-grey: $animation-dark-grey;
+
+// darker grey bg or darker a:hover
+$darker-grey: darken($animation-dark-grey, 10%);
+
+// footer and dark topbar bg
+$very-dark-grey: darken($animation-dark-grey, 15%); 
+
+// muted grey text - for - $dark-grey & buttons
+$medium-light-grey: lighten($medium-grey, 10%);
+
+// bolder grey text - for - $dark-grey
+$light-grey: lighten($medium-grey, 30%);
+
+// light grey bg color - for - articles
+// $very-light-grey: #f6f8fb; // bluer
+$very-light-grey: #F6F6F6; // true grey
+// $very-light-grey: #f7f7f3; // warmer
+
+
+
+///////// NOT USED MUCH (DEPRECATE)
+
+$light-grey-old: lighten($medium-grey, 20%);
+// only used for old layouts
+
+
+
+
+$background-shapes-color: #f0f3f6;
+
+
+// FLOWCHART COLORS
+$flowchart-teal: darken($animation-teal, 3%);
+// $flowchart-orange: lighten($animation-orange, 7%);
+$flowchart-orange: lighten($animation-orange, 2%);
+$flowchart-grey: $medium-dark-dark-grey;
+
+$flowchart-lines-color: lighten($medium-grey, 15%);
+$flowchart-dashed-lines-color: lighten($medium-grey, 20%);
+
+$flowchart-dark-lines-color: $medium-dark-grey;
+$flowchart-dark-dashed-lines-color: darken($medium-dark-grey, 10%);
+
+@import 'node_modules/foundation-sites/scss/foundation';
+@import 'node_modules/motion-ui/motion-ui';
+@import 'partials/foundation_settings';
+@import 'partials/foundation_imports';
+
+// FIXES FOUC
+.no-js [data-responsive-toggle]{
+  display:none;
+}
+
+.no-js .responsive-menu{
+  display:none;
+}
+
+@import 'partials/typography';
+@import 'partials/flowchart';
+@import 'partials/layout';
+@import 'partials/buttons';
+@import 'partials/topbar';
+@import 'partials/projects';
+@import 'partials/project';
+@import 'partials/process';
+@import 'partials/articles';
+@import 'partials/small-cards';
+@import 'partials/case_studies';
+@import 'partials/forms';
+@import 'partials/promo';
+@import 'partials/purelyfunctional-graphic';
+@import 'partials/header-background';
+@import 'partials/personal_portfolio';
+@import 'partials/social_media';
+@import 'partials/resume';

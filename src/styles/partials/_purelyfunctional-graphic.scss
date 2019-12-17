@@ -1,0 +1,1670 @@
+$small-unit: 3vw;
+$medium-unit: 2vw;
+$large-unit: 1.75vw;
+$xlarge-unit: 1.5vw;
+
+.animation-container{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  height: $small-unit*15;
+
+  @include breakpoint(medium){
+    height: $medium-unit*15;
+  }
+
+  @include breakpoint(large){
+    height: $large-unit*15;
+  }
+
+  @include breakpoint(xlarge){
+    height: $xlarge-unit*15;
+  }
+
+  // HORIZONTAL LINE
+  // &:after{
+  //   content: " ";
+  //   position: absolute;
+  //   width: 100vw;
+  //   height: 0;
+
+  //   .darker-grey-container &{
+  //     border-top: 1px solid darken($animation-dark-grey, 5%);
+  //   }
+
+  //   .white-container &{
+  //     border-top: 1px solid $light-grey;
+  //   }
+  // }
+}
+
+// VERTICAL LINE
+// .feature-container{
+//   &:before{
+//     content: " ";
+//     display: block;
+//     position: absolute;
+//     width: 1px;
+//     height: 100%;
+//     left: 49.95%;
+//     top: 0;
+//     z-index: 0;
+    
+//   }
+
+//   &.darker-grey-container{
+//     &:before{
+//       background-color: darken($animation-dark-grey, 5%);
+//     } 
+//   }
+
+//   &.white-container{
+//     &:before{
+//       background-color: $light-grey;
+//     } 
+//   }
+// }
+
+$duration: 0.6s;
+$ease: ease;
+
+$thin-line-small: 0.15*($small-unit);
+$thin-line-medium: 0.15*($medium-unit);
+$thin-line-large: 0.15*($large-unit);
+$thin-line-xlarge: 0.15*($xlarge-unit);
+
+$thick-line-small: 0.6*($small-unit);
+$thick-line-medium: 0.6*($medium-unit);
+$thick-line-large: 0.6*($large-unit);
+$thick-line-xlarge: 0.6*($xlarge-unit);
+
+$pf-diamond-small: 4*($small-unit);
+$pf-diamond-medium: 4*($medium-unit);
+$pf-diamond-large: 4*($large-unit);
+$pf-diamond-xlarge: 4*($xlarge-unit);
+
+.graphic{
+  z-index: 100;
+  transform: rotate(0);
+  position: relative;
+  transition: all $duration $ease;
+  // filter: drop-shadow(0 0 0.15*($small-unit) rgba(0, 0, 0, 0.15));
+
+  @include breakpoint(medium){
+    // filter: drop-shadow(0 0 0.15*($medium-unit) rgba(0, 0, 0, 0.15));
+  }
+
+  @include breakpoint(large){
+    // filter: drop-shadow(0 0 0.15*($large-unit) rgba(0, 0, 0, 0.15));
+  }
+
+  @include breakpoint(xlarge){
+    // filter: drop-shadow(0 0 0.15*($xlarge-unit) rgba(0, 0, 0, 0.15));
+  }
+}
+
+
+.graphic-plain{
+  transform: rotate(-45deg);
+  border: 0.7*($small-unit) solid $animation-white;
+  width: $pf-diamond-small;
+  height: $pf-diamond-small;
+
+  @include breakpoint(medium){
+    border: 0.7*($medium-unit) solid $animation-white;
+    width: $pf-diamond-medium;
+    height: $pf-diamond-medium;
+  }
+
+  @include breakpoint(large){
+    border: 0.7*($large-unit) solid $animation-white;
+    width: $pf-diamond-large;
+    height: $pf-diamond-large;
+  }
+
+  @include breakpoint(xlarge){
+    border: 0.7*($xlarge-unit) solid $animation-white;
+    width: $pf-diamond-xlarge;
+    height: $pf-diamond-xlarge;
+  }
+}
+
+// UX --------------------------------------------- //
+$scene-ux: 4s;
+
+// .graphic-plain-* should not have transition IN
+.graphic-plain.graphic-plain-ux{
+  border-color: $animation-white;
+  transition: none;
+}
+
+.graphic-ux{
+  transform: rotate(0);
+  width: 10.2*($small-unit);
+  height: 8.7*($small-unit);
+  border: $thick-line-small solid $animation-teal;
+
+  @include breakpoint(medium){
+    width: 10.2*($medium-unit);
+    height: 8.7*($medium-unit);
+    border: $thick-line-medium solid $animation-teal;
+  }
+
+  @include breakpoint(large){
+    width: 10.2*($large-unit);
+    height: 8.7*($large-unit);
+    border: $thick-line-large solid $animation-teal;
+  }
+
+  @include breakpoint(xlarge){
+    width: 10.2*($xlarge-unit);
+    height: 8.7*($xlarge-unit);
+    border: $thick-line-xlarge solid $animation-teal;
+  }
+}
+
+// .graphic-*-plain SHOULD have transition IN
+.graphic-ux-plain{
+  border-color:  $animation-white;
+  transform: rotate(45deg);
+  transition: all $duration $ease;
+}
+
+.graphic-detail0{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+}
+
+@mixin large-X-lines{
+  content: " ";
+  position: absolute;
+  height: 0;
+  top: 1.3*($small-unit);
+  left: -0.3*($small-unit);
+  width: 7.8*($small-unit);
+  border-bottom: $thin-line-small solid $animation-teal;
+
+  @include breakpoint(medium){
+    top: 1.3*($medium-unit);
+    left: -0.3*($medium-unit);
+    width: 7.8*($medium-unit);
+    border-bottom: $thin-line-medium solid $animation-teal;
+  }
+
+  @include breakpoint(large){
+    top: 1.3*($large-unit);
+    left: -0.3*($large-unit);
+    width: 7.8*($large-unit);
+    border-bottom: $thin-line-large solid $animation-teal;
+  }
+
+  @include breakpoint(xlarge){
+    top: 1.3*($xlarge-unit);
+    left: -0.3*($xlarge-unit);
+    width: 7.8*($xlarge-unit);
+    border-bottom: $thin-line-xlarge solid $animation-teal;
+  }
+}
+  
+.graphic-detail1{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+  
+  // UX: Element 1, Large Rectangle with X
+  .graphic-ux &{
+    opacity: 1;
+    position: absolute;
+    transition: opacity $duration ($duration - 0.3s) $ease;
+
+    top: 0.7*($small-unit);
+    left: 0.75*($small-unit);
+    width: 7.5*($small-unit);
+    height: 3*($small-unit);
+    border: $thin-line-small solid $animation-teal;
+
+    @include breakpoint(medium){
+      top: 0.7*($medium-unit);
+      left: 0.75*($medium-unit);
+      width: 7.5*($medium-unit);
+      height: 3*($medium-unit);
+      border: $thin-line-medium solid $animation-teal;
+    }
+  
+    @include breakpoint(large){
+      top: 0.7*($large-unit);
+      left: 0.75*($large-unit);
+      width: 7.5*($large-unit);
+      height: 3*($large-unit);
+      border: $thin-line-large solid $animation-teal;
+    }
+  
+    @include breakpoint(xlarge){
+      top: 0.7*($xlarge-unit);
+      left: 0.75*($xlarge-unit);
+      width: 7.5*($xlarge-unit);
+      height: 3*($xlarge-unit);
+      border: $thin-line-xlarge solid $animation-teal;
+    }
+    
+    &:before{
+      @include large-X-lines();
+      transform: rotate(-21deg);
+    }
+
+    &:after{
+      @include large-X-lines();
+      transform: rotate(21deg);
+    }
+  }
+}
+  
+.graphic-detail2{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+  
+  // UX: Element 2, Small Square
+  .graphic-ux &{
+    opacity:1;
+    position: absolute;
+    transition: opacity $duration ($duration - 0.2s) $ease;
+    
+    top: 4.5*($small-unit);
+    left: 0.75*($small-unit);
+    width: 2.6*($small-unit);
+    height: 2.1*($small-unit);
+    border: $thin-line-small solid $animation-teal;
+
+    @include breakpoint(medium){
+      top: 4.5*($medium-unit);
+      left: 0.75*($medium-unit);
+      width: 2.6*($medium-unit);
+      height: 2.1*($medium-unit);
+      border: $thin-line-medium solid $animation-teal;
+    }
+  
+    @include breakpoint(large){
+      top: 4.5*($large-unit);
+      left: 0.75*($large-unit);
+      width: 2.6*($large-unit);
+      height: 2.1*($large-unit);
+      border: $thin-line-large solid $animation-teal;
+    }
+  
+    @include breakpoint(xlarge){
+      top: 4.5*($xlarge-unit);
+      left: 0.75*($xlarge-unit);
+      width: 2.6*($xlarge-unit);
+      height: 2.1*($xlarge-unit);
+      border: $thin-line-xlarge solid $animation-teal;
+    }
+  }
+}
+
+@mixin ux-lines{
+  opacity: 1;
+  position: absolute;
+  height: 0;
+  left: 4.25*($small-unit);
+  width: 3.75*($small-unit);
+  border-bottom: $thin-line-small solid $animation-teal;
+
+  @include breakpoint(medium){
+    left: 4.25*($medium-unit);
+    width: 3.75*($medium-unit);
+    border-bottom: $thin-line-medium solid $animation-teal;
+  }
+
+  @include breakpoint(large){
+    left: 4.25*($large-unit);
+    width: 3.75*($large-unit);
+    border-bottom: $thin-line-large solid $animation-teal;
+  }
+
+  @include breakpoint(xlarge){
+    left: 4.25*($xlarge-unit);
+    width: 3.75*($xlarge-unit);
+    border-bottom: $thin-line-xlarge solid $animation-teal;
+  }
+}
+
+.graphic-detail3{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+  
+  // UX: Element 3, Line 1
+  .graphic-ux &{
+    @include ux-lines();
+    top: 4.55*($small-unit);
+    transition: opacity $duration ($duration - 0.0s) $ease;
+
+    @include breakpoint(medium){
+      top: 4.55*($medium-unit);
+    }
+  
+    @include breakpoint(large){
+      top: 4.55*($large-unit);
+    }
+  
+    @include breakpoint(xlarge){
+      top: 4.55*($xlarge-unit);
+    }
+  }
+}
+
+.graphic-detail4{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+  
+  // UX: Element 3, Line 2
+  .graphic-ux &{
+    @include ux-lines();
+    top: 4.55*($small-unit) + 0.9*($small-unit);
+    transition: opacity $duration ($duration + 0.15s) $ease;
+
+    @include breakpoint(medium){
+      top: 4.55*($medium-unit) + 0.9*($medium-unit);
+    }
+  
+    @include breakpoint(large){
+      top: 4.55*($large-unit) + 0.9*($large-unit);
+    }
+  
+    @include breakpoint(xlarge){
+      top: 4.55*($xlarge-unit) + 0.9*($xlarge-unit);
+    }
+  }
+}
+
+.graphic-detail5{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+  
+  // UX: Element 5, Line 3
+  .graphic-ux &{
+    @include ux-lines();
+    top: 4.55*($small-unit) + 0.9*($small-unit) + 0.9*($small-unit);
+    transition: opacity $duration ($duration + 0.3s) $ease;
+
+    @include breakpoint(medium){
+      top: 4.55*($medium-unit) + 0.9*($medium-unit) + 0.9*($medium-unit);
+    }
+  
+    @include breakpoint(large){
+      top: 4.55*($large-unit) + 0.9*($large-unit) + 0.9*($large-unit);
+    }
+  
+    @include breakpoint(xlarge){
+      top: 4.55*($xlarge-unit) + 0.9*($xlarge-unit) + 0.9*($xlarge-unit);
+    }
+  }
+}
+
+// LEFT OFF HERE WITH DYNAMIC SIZING
+
+// DEVX --------------------------------------------- //
+$scene-devex: 5s;
+
+$scene-width-small: 20*($small-unit);
+$scene-width-medium: 20*($medium-unit);
+$scene-width-large: 20*($large-unit);
+$scene-width-xlarge: 20*($xlarge-unit);
+
+$scene-height-small: 12*($small-unit);
+$scene-height-medium: 12*($medium-unit);
+$scene-height-large: 12*($large-unit);
+$scene-height-xlarge: 12*($xlarge-unit);
+
+// .graphic-plain-* should not have transition IN
+.graphic-plain.graphic-plain-devex,
+.graphic-plain.graphic-devex-plain{
+  opacity: 1;
+  transform: rotate(0);
+  position: relative;
+  transition: none;
+  border: 0;
+  
+  width: $scene-width-small;
+  height: $scene-height-small;
+
+  @include breakpoint(medium){
+    width: $scene-width-medium;
+    height: $scene-height-medium;
+  }
+
+  @include breakpoint(large){
+    width: $scene-width-large;
+    height: $scene-height-large;
+  }
+
+  @include breakpoint(xlarge){
+    width: $scene-width-xlarge;
+    height: $scene-height-xlarge;
+  }
+  
+  .graphic-detail0{
+    // FAKE CONTAINER
+    opacity: 1;
+    transform: rotate(0);
+    position: absolute;
+    transform: rotate(135deg);
+    left: 50%;
+    transition: none;
+
+    width: $pf-diamond-small;
+    height: $pf-diamond-small;
+    margin-left: -2*($small-unit);
+    border: 0.7*($small-unit) solid $animation-white;
+    top: $scene-height-small*0.5 - $pf-diamond-small*0.5;
+    // filter: drop-shadow(0 0 0.15*($small-unit) rgba(0, 0, 0, 0.15));
+    
+
+    @include breakpoint(medium){
+      width: $pf-diamond-medium;
+      height: $pf-diamond-medium;
+      margin-left: -2*($medium-unit);
+      border: 0.7*($medium-unit) solid $animation-white;
+      top: 12*($medium-unit)*0.5 - $pf-diamond-medium*0.5;
+      // filter: drop-shadow(0 0 0.15*($medium-unit) rgba(0, 0, 0, 0.15));
+    }
+
+    @include breakpoint(large){
+      width: $pf-diamond-large;
+      height: $pf-diamond-large;
+      margin-left: -2*($large-unit);
+      border: 0.7*($large-unit) solid $animation-white;
+      top: 12*($large-unit)*0.5 - $pf-diamond-large*0.5;
+      // filter: drop-shadow(0 0 0.15*($large-unit) rgba(0, 0, 0, 0.15));
+    }
+
+    @include breakpoint(xlarge){
+      width: $pf-diamond-xlarge;
+      height: $pf-diamond-xlarge;
+      margin-left: -2*($xlarge-unit);
+      border: 0.7*($xlarge-unit) solid $animation-white;
+      top: 12*($xlarge-unit)*0.5 - $pf-diamond-xlarge*0.5;
+      // filter: drop-shadow(0 0 0.15*($xlarge-unit) rgba(0, 0, 0, 0.15));
+    }
+  }
+}
+
+// .graphic-*-plain SHOULD have transition IN
+.graphic-plain.graphic-devex-plain{
+  border-color: $animation-white;
+  transition: none;
+  
+  .graphic-detail0{
+     border-color: $animation-white;
+     transform: rotate(135deg);
+     transition: all $duration $ease;
+  }
+}
+
+.graphic-devex{
+  opacity: 1;
+  transition: none;
+  transform: rotate(0);
+  position: relative;
+  width: $scene-width-small;
+  height: $scene-height-small;
+
+  @include breakpoint(medium){
+    width: $scene-width-medium;
+    height: $scene-height-medium;
+  }
+
+  @include breakpoint(large){
+    width: $scene-width-large;
+    height: $scene-height-large;
+  }
+
+  @include breakpoint(xlarge){
+    width: $scene-width-xlarge;
+    height: $scene-height-xlarge;
+  }
+}
+
+// DIAGRAM
+
+// DIAGRAM DURATIONS
+$left-line-L-duration: 0.3s;
+$left-line-horizontal-duration: 0.1s;
+$box-line-duration: 0.05s;
+
+$left-line-L-delay: $duration;
+$left-line-horizontal-delay: $left-line-L-delay + $left-line-L-duration;
+
+$box1-delay: $left-line-horizontal-delay + $left-line-horizontal-duration;
+$box2-delay: $left-line-horizontal-delay + $left-line-horizontal-duration + 0.2s;
+$box3-delay: $left-line-horizontal-delay + $left-line-horizontal-duration + 0.4s;
+
+$right-line-L-delay: $box3-delay + 0.2s;
+$right-line-horizontal-delay: $right-line-L-delay + $left-line-L-duration;
+$right-diamond-delay: ($right-line-horizontal-delay + $left-line-L-duration) - 0.2s;
+
+// ELEMENTS
+$box-height-small: 2*($small-unit);
+$box-width-small: 5.75*($small-unit);
+$box-gap-small: 0.65*($small-unit);
+$box-top-gap-small: ($scene-height-small - ($box-height-small*3 + $box-gap-small*2))/2;
+$line-segment-width-small: 1.6*($small-unit);
+$line-segment-height-small: $box-height-small*0.5 + $box-gap-small + $box-height-small*0.5;
+$diamond-size-small: 3.5*($small-unit);
+$box-line-height-small: $box-gap-small*1.25;
+
+$box-height-medium: 2*($medium-unit);
+$box-width-medium: 5.75*($medium-unit);
+$box-gap-medium: 0.65*($medium-unit);
+$box-top-gap-medium: ($scene-height-medium - ($box-height-medium*3 + $box-gap-medium*2))/2;
+$line-segment-width-medium: 1.6*($medium-unit);
+$line-segment-height-medium: $box-height-medium*0.5 + $box-gap-medium + $box-height-medium*0.5;
+$diamond-size-medium: 3.5*($medium-unit);
+$box-line-height-medium: $box-gap-medium*1.25;
+
+$box-height-large: 2*($large-unit);
+$box-width-large: 5.75*($large-unit);
+$box-gap-large: 0.65*($large-unit);
+$box-top-gap-large: ($scene-height-large - ($box-height-large*3 + $box-gap-large*2))/2;
+$line-segment-width-large: 1.6*($large-unit);
+$line-segment-height-large: $box-height-large*0.5 + $box-gap-large + $box-height-large*0.5;
+$diamond-size-large: 3.5*($large-unit);
+$box-line-height-large: $box-gap-large*1.25;
+
+$box-height-xlarge: 2*($xlarge-unit);
+$box-width-xlarge: 5.75*($xlarge-unit);
+$box-gap-xlarge: 0.65*($xlarge-unit);
+$box-top-gap-xlarge: ($scene-height-xlarge - ($box-height-xlarge*3 + $box-gap-xlarge*2))/2;
+$line-segment-width-xlarge: 1.6*($xlarge-unit);
+$line-segment-height-xlarge: $box-height-xlarge*0.5 + $box-gap-xlarge + $box-height-xlarge*0.5;
+$diamond-size-xlarge: 3.5*($xlarge-unit);
+$box-line-height-xlarge: $box-gap-xlarge*1.25;
+
+@mixin box{
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  width: $box-width-small;
+  height: $box-height-small;
+  margin-left: $box-width-small*-0.5; 
+  border: $thick-line-small*0.85 solid $animation-grey;
+
+  @include breakpoint(medium){
+    width: $box-width-medium;
+    height: $box-height-medium;
+    margin-left: $box-width-medium*-0.5; 
+    border: $thick-line-medium*0.85 solid $animation-grey;
+  }
+
+  @include breakpoint(large){
+    width: $box-width-large;
+    height: $box-height-large;
+    margin-left: $box-width-large*-0.5; 
+    border: $thick-line-large*0.85 solid $animation-grey;
+  }
+
+  @include breakpoint(xlarge){
+    width: $box-width-xlarge;
+    height: $box-height-xlarge;
+    margin-left: $box-width-xlarge*-0.5; 
+    border: $thick-line-xlarge*0.85 solid $animation-grey;
+  }
+}
+
+@mixin box-line{
+  opacity: 1;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  border-right: $thin-line-small solid $animation-grey;
+
+  @include breakpoint(medium){
+    border-right: $thin-line-medium solid $animation-grey;
+  }
+
+  @include breakpoint(large){
+    border-right: $thin-line-large solid $animation-grey;
+  }
+
+  @include breakpoint(xlarge){
+    border-right: $thin-line-xlarge solid $animation-grey;
+  }
+}
+
+@mixin diamond(){
+  opacity: 1;
+  position: absolute;
+  transform: rotate(45deg);
+  transition: all $duration $ease;
+
+  width: $diamond-size-small;
+  height: $diamond-size-small;
+  border: $thick-line-small solid $animation-grey;
+
+  @include breakpoint(medium){
+    width: $diamond-size-medium;
+    height: $diamond-size-medium;
+    border: $thick-line-medium solid $animation-grey;
+  }
+
+  @include breakpoint(large){
+    width: $diamond-size-large;
+    height: $diamond-size-large;
+    border: $thick-line-large solid $animation-grey;
+  }
+
+  @include breakpoint(xlarge){
+    width: $diamond-size-xlarge;
+    height: $diamond-size-xlarge;
+    border: $thick-line-xlarge solid $animation-grey;
+  }
+}
+
+@mixin line-L-mixin(){
+  opacity: 1;
+  position: absolute;
+  height: 0;
+
+  width: $line-segment-width-small;
+  border-right: $thin-line-small solid $animation-grey; 
+  border-bottom: $thin-line-small solid $animation-grey;
+
+  @include breakpoint(medium){
+    width: $line-segment-width-medium;
+    border-right: $thin-line-medium solid $animation-grey; 
+    border-bottom: $thin-line-medium solid $animation-grey;
+  }
+
+  @include breakpoint(large){
+    width: $line-segment-width-large;
+    border-right: $thin-line-large solid $animation-grey; 
+    border-bottom: $thin-line-large solid $animation-grey;
+  }
+
+  @include breakpoint(xlarge){
+    width: $line-segment-width-xlarge;
+    border-right: $thin-line-xlarge solid $animation-grey; 
+    border-bottom: $thin-line-xlarge solid $animation-grey;
+  }
+  
+  &:after{
+    opacity: 1;
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0; 
+    height: 0;
+    top: 0;
+
+    border-bottom: $thin-line-small solid $animation-grey;
+    left: $line-segment-width-small; 
+
+    @include breakpoint(medium){
+      border-bottom: $thin-line-medium solid $animation-grey;
+      left: $line-segment-width-medium; 
+    }
+  
+    @include breakpoint(large){
+      border-bottom: $thin-line-large solid $animation-grey;
+      left: $line-segment-width-large; 
+    }
+  
+    @include breakpoint(xlarge){
+      border-bottom: $thin-line-xlarge solid $animation-grey;
+      left: $line-segment-width-xlarge; 
+    }
+  }
+}
+
+@keyframes line-segment-L-small{
+  0%{
+    width: 0; 
+    height: 0;
+  }
+  
+  40%{
+    height: 0;
+    width: $line-segment-width-small;
+  }
+
+  100%{
+    height: $line-segment-height-small;
+  }
+}
+
+@keyframes line-segment-L-medium{
+  0%{
+    width: 0; 
+    height: 0;
+  }
+  
+  40%{
+    height: 0;
+    width: $line-segment-width-medium;
+  }
+
+  100%{
+    height: $line-segment-height-medium;
+  }
+}
+
+@keyframes line-segment-L-large{
+  0%{
+    width: 0; 
+    height: 0;
+  }
+  
+  40%{
+    height: 0;
+    width: $line-segment-width-large;
+  }
+
+  100%{
+    height: $line-segment-height-large;
+  }
+}
+
+@keyframes line-segment-L-xlarge{
+  0%{
+    width: 0; 
+    height: 0;
+  }
+  
+  40%{
+    height: 0;
+    width: $line-segment-width-xlarge;
+  }
+
+  100%{
+    height: $line-segment-height-xlarge;
+  }
+}
+
+@keyframes line-segment-horizontal-small{
+  0%{
+    width: 0; 
+  }
+
+  100%{
+    width: $line-segment-width-small;
+  }
+}
+
+@keyframes line-segment-horizontal-medium{
+  0%{
+    width: 0; 
+  }
+
+  100%{
+    width: $line-segment-width-medium;
+  }
+}
+
+@keyframes line-segment-horizontal-large{
+  0%{
+    width: 0; 
+  }
+
+  100%{
+    width: $line-segment-width-large;
+  }
+}
+
+@keyframes line-segment-horizontal-xlarge{
+  0%{
+    width: 0; 
+  }
+
+  100%{
+    width: $line-segment-width-xlarge;
+  }
+}
+
+@keyframes box-line-small{
+  0%{
+    height: 0; 
+  }
+
+  100%{
+    height: $box-line-height-small;
+  }
+}
+
+@keyframes box-line-medium{
+  0%{
+    height: 0; 
+  }
+
+  100%{
+    height: $box-line-height-medium;
+  }
+}
+
+@keyframes box-line-large{
+  0%{
+    height: 0; 
+  }
+
+  100%{
+    height: $box-line-height-large;
+  }
+}
+
+@keyframes box-line-xlarge{
+  0%{
+    height: 0; 
+  }
+
+  100%{
+    height: $box-line-height-xlarge;
+  }
+}
+
+.graphic-detail0{
+  opacity: 0;
+  
+  // DevEx: Left Diamond
+  .graphic-devex &{    
+    @include diamond;
+    left: 0;
+    top: 50%;
+    transition: all $duration $ease;
+    
+    margin-top: $diamond-size-small*-0.5;
+
+    @include breakpoint(medium){
+      margin-top: $diamond-size-medium*-0.5;
+    }
+  
+    @include breakpoint(large){
+      margin-top: $diamond-size-large*-0.5;
+    }
+  
+    @include breakpoint(xlarge){
+      margin-top: $diamond-size-xlarge*-0.5;
+    }
+    
+    // DevEx: Lambda
+    &:before{
+      opacity: 1;
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 40%;
+      left: 44%;
+      width: 0;
+      transform: rotate(-15deg);
+
+      height: 0.7*($small-unit);
+      border-right: $thin-line-small*1.2 solid $animation-grey;
+
+      @include breakpoint(medium){
+        height: 0.7*($medium-unit);
+        border-right: $thin-line-medium*1.2 solid $animation-grey;
+      }
+    
+      @include breakpoint(large){
+        height: 0.7*($large-unit);
+        border-right: $thin-line-large*1.2 solid $animation-grey;
+      }
+    
+      @include breakpoint(xlarge){
+        height: 0.7*($xlarge-unit);
+        border-right: $thin-line-xlarge*1.2 solid $animation-grey;
+      }
+    }
+    
+    &:after{
+      opacity: 1;
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 35%;
+      left: 24%;
+      height: 0;
+      transform: rotate(15deg);
+
+      width: 1.2*($small-unit);
+      border-top: $thin-line-small*1.2 solid $animation-grey;
+
+      @include breakpoint(medium){
+        width: 1.2*($medium-unit);
+        border-top: $thin-line-medium*1.2 solid $animation-grey;
+      }
+    
+      @include breakpoint(large){
+        width: 1.2*($large-unit);
+        border-top: $thin-line-large*1.2 solid $animation-grey;
+      }
+    
+      @include breakpoint(xlarge){
+        width: 1.2*($xlarge-unit);
+        border-top: $thin-line-xlarge*1.2 solid $animation-grey;
+      }
+    }
+  }
+}
+  
+.graphic-detail1{
+  opacity: 0;
+  
+  // DevEx: Left Line L
+  .graphic-devex &{
+    @include line-L-mixin();
+    transition: opacity 0.1s $ease ($duration+0.1s); // appear after diamond rotates in
+    
+    left: 4*($small-unit);
+    bottom: 5.85*($small-unit);
+    animation: 
+      $left-line-L-duration linear $left-line-L-delay forwards 1 line-segment-L-small;
+    ;
+
+    @include breakpoint(medium){
+      left: 4*($medium-unit);
+      bottom: 5.85*($medium-unit);
+      animation: 
+        $left-line-L-duration linear $left-line-L-delay forwards 1 line-segment-L-medium;
+      ;
+    }
+  
+    @include breakpoint(large){
+      left: 4*($large-unit);
+      bottom: 5.85*($large-unit);
+      animation: 
+        $left-line-L-duration linear $left-line-L-delay forwards 1 line-segment-L-large;
+      ;
+    }
+  
+    @include breakpoint(xlarge){
+      left: 4*($xlarge-unit);
+      bottom: 5.9*($xlarge-unit);
+      animation: 
+        $left-line-L-duration linear $left-line-L-delay forwards 1 line-segment-L-xlarge;
+      ;
+    }
+    
+    // DevEx: Left Line Horizontal
+    &:after{
+      animation: $left-line-horizontal-duration linear $left-line-horizontal-delay forwards 1 line-segment-horizontal-small;
+
+      @include breakpoint(medium){
+        animation: $left-line-horizontal-duration linear $left-line-horizontal-delay forwards 1 line-segment-horizontal-medium;
+      }
+    
+      @include breakpoint(large){
+        animation: $left-line-horizontal-duration linear $left-line-horizontal-delay forwards 1 line-segment-horizontal-large;
+      }
+    
+      @include breakpoint(xlarge){
+        animation: $left-line-horizontal-duration linear $left-line-horizontal-delay forwards 1 line-segment-horizontal-xlarge;
+      }
+    }
+  }
+}
+
+.graphic-detail2{
+  opacity: 0;
+  
+  // DevEx: Box 1
+  .graphic-devex &{
+    @include box;
+    transition: opacity $duration $ease $box1-delay;
+    
+    top: $box-top-gap-small;
+
+    @include breakpoint(medium){
+      top: $box-top-gap-medium;
+    }
+  
+    @include breakpoint(large){
+      top: $box-top-gap-large;
+    }
+  
+    @include breakpoint(xlarge){
+      top: $box-top-gap-xlarge;
+    }
+  }
+}
+
+.graphic-detail3{
+  opacity: 0;
+  
+  // DevEx: Box 1 Line
+  .graphic-devex &{
+    @include box-line;
+    top: $box-top-gap-small + $box-height-small;
+    animation: $box-line-duration linear ($box1-delay + 0.1s) forwards 1 box-line-small;
+
+    @include breakpoint(medium){
+      top: $box-top-gap-medium + $box-height-medium;
+      animation: $box-line-duration linear ($box1-delay + 0.1s) forwards 1 box-line-medium;
+    }
+  
+    @include breakpoint(large){
+      top: $box-top-gap-large + $box-height-large;
+      animation: $box-line-duration linear ($box1-delay + 0.1s) forwards 1 box-line-large;
+    }
+  
+    @include breakpoint(xlarge){
+      top: $box-top-gap-xlarge + $box-height-xlarge;
+      animation: $box-line-duration linear ($box1-delay + 0.1s) forwards 1 box-line-xlarge;
+    }
+  }
+}
+
+.graphic-detail4{
+  opacity: 0;
+  
+  // DevEx: Box 2
+  .graphic-devex &{
+    @include box;
+    transition: opacity $duration $ease $box2-delay;
+    
+    top: $box-top-gap-small + $box-height-small + $box-gap-small;
+
+    @include breakpoint(medium){
+      top: $box-top-gap-medium + $box-height-medium + $box-gap-medium;
+    }
+  
+    @include breakpoint(large){
+      top: $box-top-gap-large + $box-height-large + $box-gap-large;
+    }
+  
+    @include breakpoint(xlarge){
+      top: $box-top-gap-xlarge + $box-height-xlarge + $box-gap-xlarge;
+    }
+  }
+}
+
+.graphic-detail5{
+  opacity: 0;
+  
+  // DevEx: Box 2 Line
+  .graphic-devex &{
+    @include box-line;
+    
+    top: $box-top-gap-small + $box-height-small + $box-gap-small + $box-height-small;
+    animation: $box-line-duration linear ($box2-delay + 0.1s) forwards 1 box-line-small;
+
+    @include breakpoint(medium){
+      top: $box-top-gap-medium + $box-height-medium + $box-gap-medium + $box-height-medium;
+      animation: $box-line-duration linear ($box2-delay + 0.1s) forwards 1 box-line-medium;
+    }
+  
+    @include breakpoint(large){
+      top: $box-top-gap-large + $box-height-large + $box-gap-large + $box-height-large;
+      animation: $box-line-duration linear ($box2-delay + 0.1s) forwards 1 box-line-large;
+    }
+  
+    @include breakpoint(xlarge){
+      top: $box-top-gap-xlarge + $box-height-xlarge + $box-gap-xlarge + $box-height-xlarge;
+      animation: $box-line-duration linear ($box2-delay + 0.1s) forwards 1 box-line-xlarge;
+    }
+  }
+}
+
+.graphic-detail6{
+  opacity: 0;
+  
+  // DevEx: Box 3
+  .graphic-devex &{
+    @include box;
+    transition: opacity $duration $ease $box3-delay;
+    
+    top: $box-top-gap-small + $box-height-small + $box-gap-small + $box-height-small + $box-gap-small;
+
+    @include breakpoint(medium){
+      top: $box-top-gap-medium + $box-height-medium + $box-gap-medium + $box-height-medium + $box-gap-medium;
+    }
+  
+    @include breakpoint(large){
+      top: $box-top-gap-large + $box-height-large + $box-gap-large + $box-height-large + $box-gap-large;
+    }
+  
+    @include breakpoint(xlarge){
+      top: $box-top-gap-xlarge + $box-height-xlarge + $box-gap-xlarge + $box-height-xlarge + $box-gap-xlarge;
+    }
+  }
+}
+
+.graphic-detail8{
+  opacity: 0;
+  
+  // DevEx: Right Line L 
+  .graphic-devex &{
+    @include line-L-mixin();
+    transition: opacity 0.1s $ease $right-line-L-delay; // appear after diamond rotates
+    
+    bottom: 3.45*($small-unit);
+    left: 12.7*($small-unit);
+    animation: 
+      $left-line-L-duration linear $right-line-L-delay forwards 1 line-segment-L-small;
+    ;
+
+    @include breakpoint(medium){
+      bottom: 3.45*($medium-unit);
+      left: 12.7*($medium-unit);
+      animation: 
+        $left-line-L-duration linear $right-line-L-delay forwards 1 line-segment-L-medium;
+      ;
+    }
+  
+    @include breakpoint(large){
+      bottom: 3.45*($large-unit);
+      left: 12.7*($large-unit);
+      animation: 
+        $left-line-L-duration linear $right-line-L-delay forwards 1 line-segment-L-large;
+      ;
+    }
+  
+    @include breakpoint(xlarge){
+      bottom: 3.4*($xlarge-unit);
+      left: 12.7*($xlarge-unit);
+      animation: 
+        $left-line-L-duration linear $right-line-L-delay forwards 1 line-segment-L-xlarge;
+      ;
+    }
+    
+    // DevEx: Left Line Horizontal 
+    &:after{
+      animation: $left-line-horizontal-duration linear $right-line-horizontal-delay forwards 1 line-segment-horizontal-small;
+
+      @include breakpoint(medium){
+        animation: $left-line-horizontal-duration linear $right-line-horizontal-delay forwards 1 line-segment-horizontal-medium;
+      }
+    
+      @include breakpoint(large){
+        animation: $left-line-horizontal-duration linear $right-line-horizontal-delay forwards 1 line-segment-horizontal-large;
+      }
+    
+      @include breakpoint(xlarge){
+        animation: $left-line-horizontal-duration linear $right-line-horizontal-delay forwards 1 line-segment-horizontal-xlarge;
+      }
+    }
+  } 
+}
+
+.graphic-detail9{
+  opacity: 0;
+  
+  // DevEx: Right Diamond
+  .graphic-devex &{
+    @include diamond;
+    right: 0;
+    top: 50%;
+    transition: opacity $duration $ease $right-diamond-delay;
+    
+    margin-top: $diamond-size-small*-0.5;
+
+    @include breakpoint(medium){
+      margin-top: $diamond-size-medium*-0.5;
+    }
+  
+    @include breakpoint(large){
+      margin-top: $diamond-size-large*-0.5;
+    }
+  
+    @include breakpoint(xlarge){
+      margin-top: $diamond-size-xlarge*-0.5;
+    }
+  }
+}
+
+// DEV2 --------------------------------------------- //
+$scene-dev2: 4s;
+$code-line-duration: 0.3s;
+$cursor-duration: 0.8s;
+$code-line-1-delay: 0.4s;
+$code-line-2-delay: 0.7s;
+$code-line-3-delay: 1.0s;
+$arrow-delay: 1.2s;
+$cursor-delay: 1.4s;
+
+$code-line-top-gap-small: 1.2*($small-unit);
+$code-line-thickness-small: $thick-line-small*0.75;
+$code-line-gap-small: 0.75*($small-unit);
+
+$code-line-top-gap-medium: 1.2*($medium-unit);
+$code-line-thickness-medium: $thick-line-medium*0.75;
+$code-line-gap-medium: 0.75*($medium-unit);
+
+$code-line-top-gap-large: 1.2*($large-unit);
+$code-line-thickness-large: $thick-line-large*0.75;
+$code-line-gap-large: 0.75*($large-unit);
+
+$code-line-top-gap-xlarge: 1.2*($xlarge-unit);
+$code-line-thickness-xlarge: $thick-line-xlarge*0.75;
+$code-line-gap-xlarge: 0.75*($xlarge-unit);
+
+@keyframes code-line-1-small{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 6.25*($small-unit);
+  }
+}
+
+@keyframes code-line-1-medium{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 6.25*($medium-unit);
+  }
+}
+
+@keyframes code-line-1-large{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 6.25*($large-unit);
+  }
+}
+
+@keyframes code-line-1-xlarge{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 6.25*($xlarge-unit);
+  }
+}
+
+@keyframes code-line-2-small{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: $pf-diamond-small;
+  }
+}
+
+@keyframes code-line-2-medium{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: $pf-diamond-medium;
+  }
+}
+
+@keyframes code-line-2-large{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: $pf-diamond-large;
+  }
+}
+
+@keyframes code-line-2-xlarge{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: $pf-diamond-xlarge;
+  }
+}
+
+@keyframes code-line-3-small{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 5*($small-unit);
+  }
+}
+
+@keyframes code-line-3-medium{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 5*($medium-unit);
+  }
+}
+
+@keyframes code-line-3-large{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 5*($large-unit);
+  }
+}
+
+@keyframes code-line-3-xlarge{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 5*($xlarge-unit);
+  }
+}
+
+@keyframes cursor{
+  0%{
+    opacity: 0;
+  }
+  
+  50%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+// .graphic-plain-* should not have transition IN 
+.graphic-plain.graphic-plain-dev2{
+  border-color: $animation-white;
+  transition: none;
+}
+
+.graphic-dev2{
+  transform: rotate(0);
+  
+  border: $thick-line-small solid $animation-orange;
+  width: 11*($small-unit);
+  height: 9*($small-unit);
+
+  @include breakpoint(medium){
+    border: $thick-line-medium solid $animation-orange;
+    width: 11*($medium-unit);
+    height: 9*($medium-unit);
+  }
+
+  @include breakpoint(large){
+    border: $thick-line-large solid $animation-orange;
+    width: 11*($large-unit);
+    height: 9*($large-unit);
+  }
+
+  @include breakpoint(xlarge){
+    border: $thick-line-xlarge solid $animation-orange;
+    width: 11*($xlarge-unit);
+    height: 9*($xlarge-unit);
+  }
+}
+
+// .graphic-*-plain should have transition IN
+.graphic-dev2-plain{
+  border-color: $animation-white;
+  transform: rotate(45deg);
+  transition: all $duration $ease;
+}
+
+.graphic-detail0{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+}
+  
+.graphic-detail1{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+  
+  // Dev2: Code Line 1
+  .graphic-dev2 &{
+    opacity: 1;
+    position: absolute;
+    width: 0;
+    background-color: $animation-orange;
+
+    top: $code-line-top-gap-small;
+    left: 2.25*($small-unit);
+    height: $code-line-thickness-small;
+    animation: $code-line-duration linear $code-line-1-delay forwards 1 code-line-1-small;
+
+    @include breakpoint(medium){
+      top: $code-line-top-gap-medium;
+      left: 2.25*($medium-unit);
+      height: $code-line-thickness-medium;
+      animation: $code-line-duration linear $code-line-1-delay forwards 1 code-line-1-medium;
+    }
+  
+    @include breakpoint(large){
+      top: $code-line-top-gap-large;
+      left: 2.25*($large-unit);
+      height: $code-line-thickness-large;
+      animation: $code-line-duration linear $code-line-1-delay forwards 1 code-line-1-large;
+    }
+  
+    @include breakpoint(xlarge){
+      top: $code-line-top-gap-xlarge;
+      left: 2.25*($xlarge-unit);
+      height: $code-line-thickness-xlarge;
+      animation: $code-line-duration linear $code-line-1-delay forwards 1 code-line-1-xlarge;
+    }
+  }
+}
+  
+.graphic-detail2{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+  
+  // Dev2: Code Line 2
+  .graphic-dev2 &{
+    opacity: 1;
+    position: absolute;
+    width: 0;
+    background-color: $animation-orange;
+
+    top: $code-line-top-gap-small + $code-line-thickness-small + $code-line-gap-small;
+    left: 2.25*($small-unit);
+    height: $code-line-thickness-small;
+    animation: $code-line-duration linear $code-line-2-delay forwards 1 code-line-2-small;
+
+    @include breakpoint(medium){
+      top: $code-line-top-gap-medium + $code-line-thickness-medium + $code-line-gap-medium;
+      left: 2.25*($medium-unit);
+      height: $code-line-thickness-medium;
+      animation: $code-line-duration linear $code-line-2-delay forwards 1 code-line-2-medium;
+    }
+  
+    @include breakpoint(large){
+      top: $code-line-top-gap-large + $code-line-thickness-large + $code-line-gap-large;
+      left: 2.25*($large-unit);
+      height: $code-line-thickness-large;
+      animation: $code-line-duration linear $code-line-2-delay forwards 1 code-line-2-large;
+    }
+  
+    @include breakpoint(xlarge){
+      top: $code-line-top-gap-xlarge + $code-line-thickness-xlarge + $code-line-gap-xlarge;
+      left: 2.25*($xlarge-unit);
+      height: $code-line-thickness-xlarge;
+      animation: $code-line-duration linear $code-line-2-delay forwards 1 code-line-2-xlarge;
+    }
+  }
+}
+
+.graphic-detail3{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+  
+  // Dev2: Code Line 3
+  .graphic-dev2 &{
+    opacity: 1;
+    position: absolute;
+    width: 0;
+    background-color: $animation-orange;
+
+    top: $code-line-top-gap-small + $code-line-thickness-small + $code-line-gap-small + $code-line-thickness-small + $code-line-gap-small;
+    left: 2.25*($small-unit);
+    height: $code-line-thickness-small;
+    animation: $code-line-duration linear $code-line-3-delay forwards 1 code-line-3-small;
+
+    @include breakpoint(medium){
+      top: $code-line-top-gap-medium + $code-line-thickness-medium + $code-line-gap-medium + $code-line-thickness-medium + $code-line-gap-medium;
+      left: 2.25*($medium-unit);
+      height: $code-line-thickness-medium;
+      animation: $code-line-duration linear $code-line-3-delay forwards 1 code-line-3-medium;
+    }
+  
+    @include breakpoint(large){
+      top: $code-line-top-gap-large + $code-line-thickness-large + $code-line-gap-large + $code-line-thickness-large + $code-line-gap-large;
+      left: 2.25*($large-unit);
+      height: $code-line-thickness-large;
+      animation: $code-line-duration linear $code-line-3-delay forwards 1 code-line-3-large;
+    }
+  
+    @include breakpoint(xlarge){
+      top: $code-line-top-gap-xlarge + $code-line-thickness-xlarge + $code-line-gap-xlarge + $code-line-thickness-xlarge + $code-line-gap-xlarge;
+      left: 2.25*($xlarge-unit);
+      height: $code-line-thickness-xlarge;
+      animation: $code-line-duration linear $code-line-3-delay forwards 1 code-line-3-xlarge;
+    }
+  }
+}
+
+.graphic-detail4{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+  
+  // Dev2: Arrow 
+  .graphic-dev2 &{
+    opacity: 1;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: opacity 0.1s $ease $arrow-delay;
+
+    bottom: 1.5*($small-unit);
+    left: 0.5*($small-unit);
+    width: 1*($small-unit);
+    height: 1*($small-unit);
+    border-top: $code-line-thickness-small*0.75 solid $animation-orange;
+    border-right: $code-line-thickness-small*0.75 solid $animation-orange;
+
+    @include breakpoint(medium){
+      bottom: 1.5*($medium-unit);
+      left: 0.5*($medium-unit);
+      width: 1*($medium-unit);
+      height: 1*($medium-unit);
+      border-top: $code-line-thickness-medium*0.75 solid $animation-orange;
+      border-right: $code-line-thickness-medium*0.75 solid $animation-orange;
+    }
+  
+    @include breakpoint(large){
+      bottom: 1.5*($large-unit);
+      left: 0.5*($large-unit);
+      width: 1*($large-unit);
+      height: 1*($large-unit);
+      border-top: $code-line-thickness-large*0.75 solid $animation-orange;
+      border-right: $code-line-thickness-large*0.75 solid $animation-orange;
+    }
+  
+    @include breakpoint(xlarge){
+      bottom: 1.5*($xlarge-unit);
+      left: 0.5*($xlarge-unit);
+      width: 1*($xlarge-unit);
+      height: 1*($xlarge-unit);
+      border-top: $code-line-thickness-xlarge*0.75 solid $animation-orange;
+      border-right: $code-line-thickness-xlarge*0.75 solid $animation-orange;
+    }
+  }
+}
+
+.graphic-detail5{
+  opacity: 0;
+  
+  &:before,
+  &:after{
+    opacity: 0;
+  }
+  
+  // Dev2: Cursor
+  .graphic-dev2 &{
+    opacity: 1;
+    position: absolute;
+    background-color: $animation-orange;
+    transition: opacity 0.1s $ease $cursor-delay;
+    animation: $cursor-duration linear $cursor-delay infinite cursor;
+
+    bottom: 1.25*($small-unit);
+    left: 2.25*($small-unit);
+    width: 1.25*($small-unit);
+    height: $code-line-thickness-small;
+
+    @include breakpoint(medium){
+      bottom: 1.25*($medium-unit);
+      left: 2.25*($medium-unit);
+      width: 1.25*($medium-unit);
+      height: $code-line-thickness-medium;
+    }
+  
+    @include breakpoint(large){
+      bottom: 1.25*($large-unit);
+      left: 2.25*($large-unit);
+      width: 1.25*($large-unit);
+      height: $code-line-thickness-large;
+    }
+  
+    @include breakpoint(xlarge){
+      bottom: 1.25*($xlarge-unit);
+      left: 2.25*($xlarge-unit);
+      width: 1.25*($xlarge-unit);
+      height: $code-line-thickness-xlarge;
+    }
+  }
+}

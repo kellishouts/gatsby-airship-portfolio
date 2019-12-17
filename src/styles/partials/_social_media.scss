@@ -1,0 +1,190 @@
+.social-media{
+  text-align: center;
+
+  .social-media-icon{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 8px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  
+    &.instagram{
+      background-image: url(../static/instagram-bluegrey.svg);
+  
+      &:hover{
+        background-image: url(../static/instagram-blue.svg); 
+      }
+    }
+  
+    &.github{
+      background-image: url(../static/github-bluegrey.svg);
+  
+      &:hover{
+        background-image: url(../static/github-blue.svg); 
+      }
+    }
+  
+    &.linkedin{
+      background-image: url(../static/linkedin-bluegrey.svg);
+  
+      &:hover{
+        background-image: url(../static/linkedin-blue.svg); 
+      }
+    }
+  
+    &.codepen{
+      background-image: url(../static/codepen-bluegrey.svg);
+  
+      &:hover{
+        background-image: url(../static/codepen-blue.svg); 
+      }
+    }
+  
+    &.airship{
+      background-image: url(../static/airshipcms-bluegrey.svg);
+  
+      &:hover{
+        background-image: url(../static/airshipcms-blue.svg); 
+      }
+    }
+  
+    &.email{
+      background-image: url(../static/email-bluegrey.svg);
+  
+      &:hover{
+        background-image: url(../static/email-blue.svg); 
+      }
+    }
+  
+    span{
+      opacity: 0;
+    }
+  }
+}
+
+
+.social-media-header{
+  text-align: center;
+  // margin-top: 30px;
+
+  max-width: 300px;
+  margin: 30px auto 0;
+
+  @include breakpoint(large){
+    max-width: none;
+    margin: 20px auto 0;
+  }
+
+  @include breakpoint(xlarge){
+    margin: 25px auto 0;
+  }
+
+  .social-media-icon{
+    color: $medium-grey;
+    height: 25px;
+    display: inline-block;
+    margin: 0 8px;
+    background-size: 20px auto;
+    background-repeat: no-repeat;
+
+    background-position: left center;
+    margin: 0 10px;
+    padding: 0;
+    padding-left: 26px;
+    line-height: 25px;  
+
+    font-family: 'Lora', 'Georgia', serif;
+    // font-size: 15px;
+    // line-height: 26px;
+    // color: $medium-dark-dark-grey;
+
+    font-size: 14px;
+    // line-height: 21px;
+
+    @include breakpoint(medium){
+      font-size: 15px;
+      background-size: 22px auto;
+      padding-left: 27px;
+      height: 30px;
+      line-height: 30px;
+      // line-height: 22px;
+    }
+    
+    @include breakpoint(large){
+      font-size: 16px;
+      background-size: 25px auto;
+      padding-left: 30px;
+      
+      // line-height: 23px;
+    }
+
+    @include breakpoint(xlarge){
+      font-size: 17px;
+      // line-height: 25px;
+    }
+
+    @include breakpoint(xxlarge){
+      font-size: 19px;
+      // line-height: 27px;
+    }
+
+    &:hover{
+      color: $flowchart-teal;
+    }
+
+    &.instagram{
+      background-image: url(../static/instagram-bluegrey.svg);
+
+      &:hover{
+        background-image: url(../static/instagram-blue.svg); 
+      }
+    }
+
+    &.github{
+      background-image: url(../static/github-bluegrey.svg);
+
+      &:hover{
+        background-image: url(../static/github-blue.svg); 
+      }
+    }
+
+    &.linkedin{
+      background-image: url(../static/linkedin-bluegrey.svg);
+
+      &:hover{
+        background-image: url(../static/linkedin-blue.svg); 
+      }
+    }
+
+    &.codepen{
+      background-image: url(../static/codepen-bluegrey.svg);
+
+      &:hover{
+        background-image: url(../static/codepen-blue.svg); 
+      }
+    }
+
+    &.airship{
+      background-image: url(../static/airshipcms-bluegrey.svg);
+
+      &:hover{
+        background-image: url(../static/airshipcms-blue.svg); 
+      }
+    }
+
+    &.email{
+      background-image: url(../static/email-bluegrey.svg);
+
+      &:hover{
+        background-image: url(../static/email-blue.svg); 
+      }
+    }
+
+    span{
+      // opacity: 0;
+    }
+  }
+}

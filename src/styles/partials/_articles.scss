@@ -1,0 +1,218 @@
+.articles{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  
+  @include breakpoint(mlarge){
+    margin-left: -2%;
+    margin-right: -2%;
+  }
+
+  @include breakpoint(large){
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @include breakpoint(xxlarge){
+    margin-left: -75px;
+    margin-right: -75px;
+  }
+}
+
+.article{
+  flex: 0 0 100%;
+  display: flex;
+  flex-flow: row nowrap;
+
+  @include breakpoint(mlarge){
+    flex: 0 0 29.3333%;
+    flex-flow: column nowrap;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2rem;
+  }
+
+  @include breakpoint(xxlarge){
+    // margin-bottom: 4rem;
+    flex: 0 0 26%;
+    margin-left: 3.667%;
+    margin-right: 3.667%;
+  }
+
+  + .article{
+
+    margin-top: 1.5rem;
+    border-top: 1px solid $flowchart-dashed-lines-color;
+    padding-top: 1.5rem;
+
+    @include breakpoint(mlarge){
+      margin-top: 0;
+      border-top: none;
+      padding-top: 0;
+    }
+  }
+}
+
+.article-image{
+  order: 1;
+  flex: 0 0 5.25rem;
+  height: 5.25rem;
+  background-color: $white;
+  background-image: url('https://placehold.it/650x300/FFFFFF/EEEEEE');
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin-top: 0.35rem;
+
+  box-shadow: inset 0 0 2.5rem 0 rgba(0,0,0,0.2);
+  
+  @include breakpoint(mlarge){
+    flex: 0 0 12rem;
+    width: 100%;
+    // height: 11rem;
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+  }
+
+  @include breakpoint(mmlarge){
+    flex: 0 0 13rem;
+    // height: 14rem;
+  }
+  
+  @include breakpoint(large){
+    flex: 0 0 16rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .design &{
+    background-image: url('https://placehold.it/650x300/5DC4C4/FFFFFF');
+  }
+
+  .process &{
+    background-image: url('https://placehold.it/650x300/86969E/FFFFFF');
+  }
+
+  .development &{
+    background-image: url('https://placehold.it/650x300/E47C3D/FFFFFF');
+  }
+
+  // &:after{
+  //   content: " ";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   background-color: transparent;
+  //   transition: all 0.3s ease-in-out;
+  // }
+
+  &:hover{
+    background-size: auto 110%; 
+    box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.1);
+
+    &:after{
+      // background-color: rgba($darker-grey, 0.4);
+    }
+  }
+}
+
+.article-text{
+  order: 2;
+  flex: 1 0 50%;
+  padding-left: 1rem;
+
+  @include breakpoint(mlarge){
+    flex: 1 0 auto;
+    order: 2;
+    padding-left: 0;
+  }
+}
+
+.article-tags{
+
+}
+
+.article-tag{
+  @include uppercase;
+  @include uppercase-limit-large;
+  display: inline-block;
+  color: $medium-grey;
+  margin-bottom: 0.1rem;
+  
+  @include breakpoint(mlarge){
+    margin-bottom: 0.4rem;
+  }
+  
+  @include breakpoint(large){
+    margin-bottom: 0.6rem;
+  }
+
+  .design &{
+    color: $flowchart-teal;
+  }
+
+  .process &{
+    color: $medium-grey;
+  }
+  
+  .development &{
+    color: $flowchart-orange;
+  }
+}
+
+h2.article-title{
+  @include h2-size-articles;
+  text-align: left;
+  margin-bottom: 0.1rem;
+  line-height: 1.2;
+  
+  @include breakpoint(mlarge){
+    margin-bottom: 0.6rem;
+  }
+  
+  @include breakpoint(large){
+    margin-bottom: 0.6rem;
+  }
+  
+  a{
+    color: $medium-dark-dark-grey;
+    display: block;
+
+    &:hover{
+      .design &{
+        color: darken($flowchart-teal, 10%);
+      }
+    
+      .process &{
+        color: $darker-grey;
+      }
+      
+      .development &{
+        color: darken($flowchart-orange, 10%);
+      }
+    }
+  }
+}
+
+.article-details{
+  @include paragraph;
+  @include paragraph-limit-large;
+  color: $medium-dark-grey;
+
+  a{
+    color: $medium-dark-grey;
+
+    &:hover{
+      color: $darker-grey;
+    }
+  }
+}
+
+.article-dot-divider{
+  display: inline-block;
+  font-size: 0.75em;
+  margin: 0 0.4rem;
+}

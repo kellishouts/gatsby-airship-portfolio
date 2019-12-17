@@ -1,0 +1,273 @@
+.block.resume-block{
+  @include breakpoint(medium){
+    max-width: 950px;
+  }
+  
+  @include breakpoint(xlarge){
+    max-width: 1100px;
+  }
+
+  @include breakpoint(xxlarge){
+    max-width: 1150px;
+  }
+}
+
+.bodyclass-resume{
+
+  ul.awards,
+  ul.education,
+  ul.experience{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    > li{
+
+      + li{
+        margin-top: 35px;
+
+        @media only screen and (min-width: 600px){
+          margin-top: 40px;
+        }
+  
+        @include breakpoint(medium){
+          margin-top: 60px;
+        }
+
+        @include breakpoint(large){
+          margin-top: 70px;
+        }
+  
+        @include breakpoint(xlarge){
+          margin-top: 80px;
+        }
+      }
+    }
+
+    span.comma{
+      margin-right: 4px;
+    }
+
+    span.pipe{
+      margin: 0px 6px;
+      transform: translateY(3px);
+      display: inline-block;
+      font-weight: 100;
+      color: $medium-grey;
+      font-size: 1.5em;
+    }
+
+    a{
+      color: $medium-dark-grey;
+      border-bottom: 1px dashed $medium-light-grey;
+  
+      &:hover{
+        color: $flowchart-orange;
+      }
+    }
+  }
+
+  ul.education,
+  ul.awards{
+    > li{
+
+      + li{
+        margin-top: 25px;
+
+        @media only screen and (min-width: 600px){
+          margin-top: 30px;
+        }
+  
+        @include breakpoint(medium){
+          margin-top: 30px;
+        }
+  
+        @include breakpoint(xlarge){
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+
+  h4{
+    // @include h2-size-articles;
+    // text-transform: none;
+    // letter-spacing: 0;
+    // font-family: $body-font-family;
+    line-height: 1.4;
+    color: $flowchart-teal;
+    text-align: left;
+  }
+
+  h5{
+    @include paragraph;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: $body-font-family;
+    color: $medium-dark-grey;
+    text-align: left;
+    font-weight: 400;
+
+    + p{
+      margin-top: 10px;
+    }
+  }
+
+  ul p, ul.experience-projects{
+    color: $medium-dark-grey;
+  }
+
+  ul.experience-projects{
+    margin-top: 15px;
+
+    @media only screen and (min-width: 600px){
+      margin-top: 20px;
+    }
+
+    @include breakpoint(medium){
+      margin-top: 25px;
+    }
+
+    @include breakpoint(xxlarge){
+      margin-top: 30px;
+    }
+
+    li{
+      + li{
+        margin-top: 15px;
+
+        @media only screen and (min-width: 600px){
+          margin-top: 20px;
+        }
+  
+        @include breakpoint(medium){
+          margin-top: 25px;
+        }
+  
+        @include breakpoint(xxlarge){
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  ul.skills{
+    @include breakpoint(large){
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .highlight{
+    font-weight: 700;
+  }
+}
+
+.resume-other,
+.resume-skills,
+.social-media-row{
+  h3{
+    margin-top: 50px;
+
+    @include breakpoint(medium){
+      margin-top: 70px;
+    }
+    
+    @include breakpoint(large){
+      margin-top: 90px;
+    }
+  }
+}
+
+.resume-skills-column{
+
+  @include breakpoint(medium){
+    padding-right: 30px;
+  }
+
+  @include breakpoint(large){
+    padding-right: 60px;
+  }
+
+  @include breakpoint(xlarge){
+    padding-right: 80px;
+  }
+
+  + .resume-skills-column{
+    margin-top: 20px;
+
+    @include breakpoint(medium){
+      margin-top: 0;
+    }
+  }
+
+  // &:nth-of-type(1){
+  //   @include breakpoint(xlarge){
+  //     width: 25%;
+  //   }
+  // }
+  
+  // &:nth-of-type(2){
+  //   @include breakpoint(xlarge){
+  //     width: 25%;
+  //   }
+  // }
+  
+  &:nth-of-type(3){
+    @include breakpoint(medium){
+      margin-top: 30px;
+    }
+
+    @include breakpoint(large){
+      margin-top: 40px;
+    }
+
+    @include breakpoint(xlarge){
+      margin-top: 50px;
+    }
+
+    // @include breakpoint(xlarge){
+    //   margin-top: 0;
+    //   width: 25%;
+    // }
+  }
+
+  &:nth-of-type(4){
+    @include breakpoint(medium){
+      margin-top: 30px;
+    }
+
+    @include breakpoint(large){
+      margin-top: 40px;
+    }
+
+    @include breakpoint(xlarge){
+      margin-top: 50px;
+    }
+
+    // @include breakpoint(xlarge){
+    //   margin-top: 0;
+    //   width: 25%;
+    // }
+  }
+}
+
+.resume-other-column{
+  padding-right: 30px;
+
+  @include breakpoint(large){
+    padding-right: 60px;
+  }
+
+  @include breakpoint(xlarge){
+    padding-right: 80px;
+  }
+
+  h3{
+    @include breakpoint(medium){
+      // text-align: left;
+      display: none;
+    }
+  }
+}
