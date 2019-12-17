@@ -183,6 +183,14 @@
       }
     }
 
+    &.download{
+      background-image: url(../static/download-bluegrey.svg);
+
+      &:hover{
+        background-image: url(../static/download-blue.svg); 
+      }
+    }
+
     span{
       // opacity: 0;
     }

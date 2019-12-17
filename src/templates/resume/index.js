@@ -40,14 +40,10 @@ export default () => {
           <div className="block portfolio-header-block">
             <h1>Kelli Borgonia</h1>
             <p className="person-role">Product Designer</p>
-            <p className="person-description">
-              <span>Pragmatic Designer + </span> 
-              <span>Inventive Problem-Solver</span>
-            </p>
             <div className="social-media-header">
               <a href="mailto:kelli.borgonia@gmail.com" className="social-media-icon email" target="_blank" ><span>kelli.borgonia@gmail.com</span></a>
               <a href="https://www.linkedin.com/in/kelli-borgonia/" className="social-media-icon linkedin" target="_blank" ><span>linkedin.com/in/kelli-borgonia</span></a>
-              <a href="https://www.linkedin.com/in/kelli-borgonia/" className="social-media-icon linkedin" target="_blank" ><span>Download Resume</span></a>
+              <a href="#" className="social-media-icon download" target="_blank" ><span>Download Resume</span></a>
             </div>
           </div>
         </div>
