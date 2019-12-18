@@ -26,17 +26,35 @@ p.person-role{
   @include uppercase;
   text-align: center;
 
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
+  
+  @media only screen and (min-width: 500px){
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  @include breakpoint(medium){
+  }
+
+  @include breakpoint(mlarge){
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
 
   @include breakpoint(large){
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 35px;
   }
   
   @include breakpoint(xlarge){
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  @include breakpoint(xxlarge){
+    margin-top: 22px;
+    margin-bottom: 45px;
   }
 
   .white-container &{
@@ -49,8 +67,51 @@ p.person-role{
 }
 
 p.person-description{
-  text-align: center;
+  font-family: 'Lora', 'Georgia', serif;
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  font-size: 14px;
+  // text-align: center;
 
+  @media only screen and (min-width: 375px){
+    font-size: 15px;
+  }
+
+  @media only screen and (min-width: 500px){
+    font-size: 16px;
+  }
+
+  @include breakpoint(medium){
+    // text-align: center;
+    max-width: 560px;
+    line-height: 1.8;
+    font-size: 16.5px;
+    margin: auto;
+  }
+
+  @include breakpoint(mlarge){
+    font-size: 17px;
+    max-width: 650px;
+  }
+
+  @include breakpoint(large){
+    font-size: 17px;
+    max-width: 650px;
+  }
+
+  @include breakpoint(xlarge){
+    line-height: 1.9;
+    font-size: 18px;
+    max-width: 680px;
+  }
+
+  @include breakpoint(xxlarge){
+    font-size: 18.5px;
+    max-width: 690px;
+  }
+  
   .white-container &{
     color: $medium-grey;
   }
@@ -59,21 +120,21 @@ p.person-description{
     color: darken($flowchart-teal, 20%);
   }
 
-  span{
-    font-family: 'Lora', 'Georgia', serif;
-    display: block;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
+  // span{
+  //   font-family: 'Lora', 'Georgia', serif;
+  //   display: block;
+  //   margin: 0;
+  //   padding: 0;
+  //   line-height: 1.5;
 
-    @media only screen and (min-width: 500px){
-      display: inline;
-    }
+  //   @media only screen and (min-width: 500px){
+  //     display: inline;
+  //   }
 
-    + span{
+  //   + span{
 
-    }
-  }
+  //   }
+  // }
 }
 
 .personal-case-studies-container{

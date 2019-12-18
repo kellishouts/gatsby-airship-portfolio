@@ -1,126 +1,27 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 
 import Layout from "../components/layout"
 
-import caseStudyAdminImage from '../images/case-study-admin.png'
 import caseStudyDesignImage from '../images/article-iata3.png'
 
 
 import caseStudyFlightPlan from '../images/portfolio-flight-plan.png'
 import caseStudyUnicornyGmail from '../images/portfolio-unicorny-gmail4.png'
 
-import HeaderBg from '../svgs/header-background.svg'
 import { setBgImage } from '../utils'
 // import SEO from "../components/seo"
 
-export default ({ pageContext: { root, threePartBlock, projects } }) => {
-  let [content, setContent] = useState(null)
-  let [projectType, setProjectType] = useState('application')
-  let [
-    graphicClass,
-    setGraphicClass
-  ] = useState('graphic graphic-plain graphic-plain-ux')
-
-  useEffect(() => {
-    startAnimationInterval()
-    threePartBlock = formatCollection(threePartBlock)
-    let featuredProjects = formatCollection(projects)
-    root.fields.map(field => {
-      if (field.variable_name === 'three_part_block') {
-        field.related_collection = threePartBlock
-      }
-      if (field.variable_name === 'featured_projects') {
-        field.related_collection = featuredProjects
-      }
-      root[field.variable_name] = field.type === 'related aerostats' ? field : field.value
-      return field
-    })
-    setContent(root)
-  }, [])
-
-  const formatCollection = (collection) => {
-    return collection.map(item => {
-      item.fields.map(field => {
-        item[field.variable_name] = field.value
-        return item
-      })
-      return item
-    })
-  }
-
-  const startAnimationInterval = () => {
-    animate()
-    setInterval(() => {
-      animate()
-    }, 22000)
-  }
-
-  const animate = () => {
-    setTimeout(() => {
-      setGraphicClass(`graphic graphic-plain graphic-plain-ux`)
-    }, 1500)
-
-    // duration of the above is 1500
-
-    setTimeout(() => {
-      setGraphicClass(`graphic graphic-ux`)
-    }, 3000)
-
-    // duration of the above is 4000
-
-    setTimeout(() => {
-      setGraphicClass(`graphic graphic-plain graphic-ux-plain`)
-    }, 7000)
-
-    // duration of the above is 1500
-
-    setTimeout(() => {
-      setGraphicClass(`graphic graphic-plain graphic-plain-devex`)
-    }, 8500)
-
-    // duration of the above is 1500
-
-    setTimeout(() => {
-      setGraphicClass(`graphic graphic-devex`)
-    }, 10000)
-
-    // duration of the above is 5000
-
-    setTimeout(() => {
-      setGraphicClass(`graphic graphic-plain graphic-devex-plain`)
-    }, 15000)
-
-    // duration of the above is 1500
-
-    setTimeout(() => {
-      setGraphicClass(`graphic graphic-plain graphic-plain-dev2`)
-    }, 16500)
-
-    // duration of the above is 1500
-
-    setTimeout(() => {
-      setGraphicClass(`graphic graphic-dev2`)
-    }, 18000)
-
-    // duration of the above is 4000
-
-    setTimeout(() => {
-      setGraphicClass(`graphic graphic-plain graphic-dev2-plain`)
-    }, 22000)
-  }
-
-  const getRelatedItem = (item, collection) => collection.find(realtedItem => realtedItem.id === item.id)
-
+export default () => {
   return (
     <Layout bodyClass='bodyclass-home'>
-      {content ? <div>
+      <div>
         {/* <SEO {...content.pageMetadata} /> */}
         <div className="container portfolio-header-container white-container">
           <div className="block portfolio-header-block">
             <h1>Kelli Borgonia</h1>
             <p class="person-role">Product Designer</p>
             <p className="person-description">
-              <span>I am an extremely <b>pragmatic designer</b> who is passionate about creating things that are both <b>functional and delightful</b>. I love <b>solving problems</b> and <b>working with engineers</b> to <b>architect complex systems</b> that transform ideas into tangible products.</span>
+            I am an extremely <b>pragmatic designer</b> who is passionate about creating things that are both <b>functional and delightful</b>. I love <b>solving problems with engineers</b> and <b>architecting complex systems</b> that transform ideas into tangible products.
             </p>
           </div>
         </div>
@@ -171,7 +72,7 @@ export default ({ pageContext: { root, threePartBlock, projects } }) => {
                   <img src={caseStudyDesignImage} alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
-              
+
               <div className="case-study case-study-orange">
                 <div className="case-study-text">
                   <h3>UX / UI</h3>
@@ -204,8 +105,7 @@ export default ({ pageContext: { root, threePartBlock, projects } }) => {
           </div>
         </div>
 
-      </div> : <div></div>
-}
+      </div>
     </Layout >
   )
 }

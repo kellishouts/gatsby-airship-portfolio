@@ -284,7 +284,7 @@ export default () => {
                 </div>
                 <div className="row social-media-row">
                   <div className="small-12 columns">
-                    <h3>Links</h3>
+                    <h3>Websites &amp; Other Links</h3>
                     <div className="social-media">
                       <a href="https://www.instagram.com/kellishouts/" className="social-media-icon instagram" target="_blank"><span>instagram.com/kellishouts</span></a>
                       <a href="https://github.com/kellishouts" className="social-media-icon github" target="_blank" ><span>github.com/kellishouts</span></a>
@@ -292,7 +292,7 @@ export default () => {
                       <a href="https://airshipcms.io" className="social-media-icon airship" target="_blank" ><span>airshipcms.io</span></a>
                       <a href="https://github.com/airshipcms" className="social-media-icon github" target="_blank" ><span>github.com/gomagames</span></a>
                       <a href="https://www.instagram.com/airshipcms/" className="social-media-icon instagram" target="_blank"><span>instagram.com/airshipcms</span></a>
-                      <a href="https://www.gomagames.com" className="social-media-icon github" target="_blank" ><span>gomagames.com</span></a>
+                      <a href="https://www.gomagames.com" className="social-media-icon gomagames" target="_blank" ><span>gomagames.com</span></a>
                     </div>
                   </div>
                 </div>
