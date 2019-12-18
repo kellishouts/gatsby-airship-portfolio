@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Purely Functional`,
-    og_url: 'https://purelyfunctional.co',
-    og_image: `https://purelyfunctional.co/....jpg`, //this image should be placed in static/
+    title: `Kelli Borgonia, PRODUCT DESIGNER`,
+    og_url: '',
+    og_image: `/....jpg`, //this image should be placed in static/
     description: ``,
     twitter_creator: '@',
     keywords: ''
@@ -55,8 +55,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `purelyfunctional`,
-        short_name: `purelyfunctional`,
+        name: `Kelli Borgonia`,
+        short_name: `Kelli Borgonia`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

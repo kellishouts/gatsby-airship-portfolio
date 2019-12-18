@@ -1,4 +1,4 @@
-# purelyfunctional.co
+# kelli@airshipcms.io
 Purely Functional Website
 
 # Install
@@ -34,7 +34,7 @@ Global site metadata is located in `gatsby-config.js`
 ```
 siteMetadata: {
   og_image: `./src/images/gatsby-icon.png`,
-  og_url: 'https://purelyfunctional.co',
+  og_url: 'https://kelli@airshipcms.io',
   title: ``,
   description: `default description here`,
   twitter_creator: '',
@@ -48,7 +48,7 @@ Since the OG image isn't used anywhere when the source files are compiled, the f
 
 og_image: `/OG-Image-Main@300px.jpg`
 
-`git push` on the `master` branch will launch `compartments/` to `purelyfunctional.airshipcms-alpha.io`
+`git push` on the `master` branch will launch `compartments/` to `kelli@airshipcms.io`
 
 # Building for Production
 
