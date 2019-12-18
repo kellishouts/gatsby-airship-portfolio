@@ -41,7 +41,7 @@ export default () => {
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/the-launch" style={setBgImage(caseStudyTheLaunch)}>
-                  <img src={caseStudyTheLaunch} alt="TO DO: DESCRIPTION" />
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-the-launch3.png" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
 
@@ -55,7 +55,7 @@ export default () => {
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/airship-cms" style={setBgImage(caseStudyAirshipCMS)}>
-                  <img src={caseStudyAirshipCMS} alt="TO DO: DESCRIPTION" />
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
 
@@ -69,7 +69,7 @@ export default () => {
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/root-and-stem" style={setBgImage(caseStudyRootAndStem)}>
-                  <img src={caseStudyRootAndStem} alt="TO DO: DESCRIPTION" />
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
 
@@ -83,7 +83,7 @@ export default () => {
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/unicorny-gmail" style={setBgImage(caseStudyUnicornyGmail)}>
-                  <img src={caseStudyUnicornyGmail} alt="A Chrome Extension with custom CSS overrides for Gmail" />
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-unicorny-gmail.png" alt="A Chrome Extension with custom CSS overrides for Gmail" />
                 </a>
               </div>
 
@@ -97,7 +97,7 @@ export default () => {
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/flight-plan" style={setBgImage(caseStudyFlightPlan)}>
-                  <img src={caseStudyFlightPlan} alt="Flight Plan: The re-imagined theoretical user experience for an online airline ticketing platform." />
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png" alt="Flight Plan: The re-imagined theoretical user experience for an online airline ticketing platform." />
                 </a>
               </div>
               
