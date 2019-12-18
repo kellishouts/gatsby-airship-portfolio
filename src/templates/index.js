@@ -2,8 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-import caseStudyDesignImage from '../images/article-iata3.png'
-
 import caseStudyTheLaunch from '../images/portfolio-the-launch3.png'
 import caseStudyAirshipCMS from '../images/portfolio-airshipcms3.png'
 import caseStudyRootAndStem from '../images/portfolio-root-and-stem3.png'
