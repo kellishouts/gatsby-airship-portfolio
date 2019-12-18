@@ -120,9 +120,8 @@ export default ({ pageContext: { root, threePartBlock, projects } }) => {
             <h1>Kelli Borgonia</h1>
             <p class="person-role">Product Designer</p>
             <p className="person-description">
-              <span>Pragmatic Designer + </span> 
-              <span>Inventive Problem-Solver</span>
-              </p>
+              <span>I am an extremely <b>pragmatic designer</b> who is passionate about creating things that are both <b>functional and delightful</b>. I love <b>solving problems</b> and <b>working with engineers</b> to <b>architect complex systems</b> that transform ideas into tangible products.</span>
+            </p>
           </div>
         </div>
 
@@ -199,14 +198,6 @@ export default ({ pageContext: { root, threePartBlock, projects } }) => {
                 <a className="case-study-graphic" href="#" style={setBgImage(caseStudyFlightPlan)}>
                   <img src={caseStudyFlightPlan} alt="Flight Plan: The re-imagined theoretical user experience for an online airline ticketing platform." />
                 </a>
-              </div>
-
-              <div className="social-media">
-                <a href="https://www.linkedin.com/in/kelli-borgonia/" className="social-media-icon linkedin" target="_blank" ><span>LinkedIn</span></a>
-                <a href="https://github.com/kellishouts" className="social-media-icon github" target="_blank" ><span>GitHub</span></a>
-                <a href="https://codepen.io/kellishouts" className="social-media-icon codepen" target="_blank" ><span>Codepen.io</span></a>
-                <a href="https://www.instagram.com/kellishouts/" className="social-media-icon instagram" target="_blank"><span>Instagram</span></a>
-                <a href="https://airshipcms.io" className="social-media-icon airship" target="_blank" ><span>AirshipCMS.io</span></a>
               </div>
               
             </div>

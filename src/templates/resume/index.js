@@ -3,33 +3,6 @@ import React from "react"
 import Layout from "../../components/layout"
 // import SEO from "../../components/seo"
 
-import launchIllustrationBackground from '../../images/illustration-background.png'
-import launchTimelineBoth from '../../images/timeline-centered.png'
-import launchSketchesWide from '../../images/launch-sketches-wide.jpg'
-import launchFlowchartGameElements from '../../images/flowchart-game-elements.png'
-import launchIllustrationInitialScenario from '../../images/illustration-initial-scenario.png'
-import launchIllustrationUIMockups from '../../images/illustration-ui-mockups.png'
-import launchSpreadsheet from '../../images/spreadsheet-screenshot.png'
-import launchPaperMockups from '../../images/paper-mockups.png'
-import launchTimeline03Test from '../../images/timeline-03-test.png'
-import launchPhotoGroupA1 from '../../images/photo-group-a-1.jpg'
-import launchPhotoGroupA2 from '../../images/photo-group-a-2.jpg'
-import launchSketchV1 from '../../images/sketch-v1-all-screens-small.png'
-import launchTimeline05Test from '../../images/timeline-05-test.png'
-import launchPhotoGroupB1 from '../../images/photo-group-b-1.jpg'
-import launchPhotoGroupB2 from '../../images/photo-group-b-2.jpg'
-import launchPhotoGroupB3 from '../../images/photo-group-b-3.jpg'
-import launchSketchV2 from '../../images/sketch-v2-all-screens-small.png'
-import launchIllustrationChaosVsCollaboration from '../../images/illustration-chaos-vs-collaboration.png'
-import launchTimeline07Test from '../../images/timeline-07-test.png'
-import launchPhotoGroupC1 from '../../images/photo-group-c-1.jpg'
-import launchPhotoGroupC2 from '../../images/photo-group-c-2.jpg'
-import launchTimeline10Launch from '../../images/timeline-10-launch.png'
-import launchPhotoConference1 from '../../images/photo-conference-1.jpg'
-import launchPhotoConference2 from '../../images/photo-conference-2.jpg'
-import launchPhotoConference3 from '../../images/photo-conference-3.jpg'
-import launchPhotoGameAssets from '../../images/photo-game-assets.jpg'
-
 export default () => {
 
   return (

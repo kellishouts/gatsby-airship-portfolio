@@ -42,13 +42,37 @@ siteMetadata: {
 },
 ```
 
-### OG:Image
+# Images
+
+## Image `<img>`
+
+Import at the top:
+`import launchIllustrationBackground from '../../images/illustration-background.png'`
+
+Include in `<img src>`:
+`src={launchIllustrationBackground}`
+
+## Inline Background Image `style="background-image:url()`
+
+## SCSS Background Image
+
+### Images
+In SCSS, the path is `background-image: url(../images/download-bluegrey.png);`
+Images need to be dropped into `src/images`
+
+### SVGs
+In SCSS, the path is `background-image: url(../static/download-bluegrey.svg);`
+Images need to be dropped into `src/static`
+
+
+## OG:Image
 
 Since the OG image isn't used anywhere when the source files are compiled, the file (or files, if alternate images are used on other pages) must be placed manually in the static/ folder. Then the image can be linked as:
 
 og_image: `/OG-Image-Main@300px.jpg`
 
 `git push` on the `master` branch will launch `compartments/` to `purelyfunctional.airshipcms-alpha.io`
+
 
 # Building for Production
 
