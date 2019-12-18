@@ -15,7 +15,7 @@ import { setBgImage } from '../utils'
 
 export default () => {
   return (
-    <Layout bodyclassName='bodyclass-home'>
+    <Layout bodyClass='bodyclass-home'>
       <div>
         {/* <SEO {...content.pageMetadata} /> */}
         <div className="container portfolio-header-container white-container">

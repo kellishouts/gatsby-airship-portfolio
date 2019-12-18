@@ -6,7 +6,7 @@ import Layout from "../../components/layout"
 export default () => {
 
   return (
-    <Layout bodyclassName='bodyclass-resume'>
+    <Layout bodyClass='bodyclass-resume'>
       <div>
 
         <div className="container portfolio-header-container white-container">
