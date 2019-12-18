@@ -26,19 +26,20 @@ const getData = () => (
 
 exports.createPages = async ({ actions }) => {
   const { createPage } = actions
-  const data = await getData()
-  data.projects.forEach(project => {
-    createPage({
-      path: `/projects/${project.permalink}/`,
-      component: path.resolve('src/templates/projects/project.js'),
-      context: { project }
-    })
-  })
+  // const data = await getData()
+  const data = {}
+  // data.projects.forEach(project => {
+  //   createPage({
+  //     path: `/projects/${project.permalink}/`,
+  //     component: path.resolve('src/templates/projects/project.js'),
+  //     context: { project }
+  //   })
+  // })
   pages.forEach((page) => {
     let context = {}
-    page.keys.map(key => {
-      context[key] = data[key]
-    })
+    // page.keys.map(key => {
+    //   context[key] = data[key]
+    // })
     createPage({
       path: page.path,
       component: path.resolve(`src/templates${page.component}`),
