@@ -6,7 +6,7 @@ import Layout from "../../components/layout"
 export default () => {
 
   return (
-    <Layout bodyClass='bodyclass-resume'>
+    <Layout bodyclassName='bodyclass-resume'>
       <div>
 
         <div className="container portfolio-header-container white-container">
@@ -265,7 +265,7 @@ export default () => {
                         </h5>
                         <ul className="education-details">
                           <li>Suma cum laude</li>
-                          <li>Full-tuition scholarship</li>
+                          <li>Full-tuition Regents Scholarship</li>
                           <li>Honored as top Graphic Design student</li>
                         </ul>
                       </li>

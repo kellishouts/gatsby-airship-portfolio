@@ -4,24 +4,26 @@ import Layout from "../components/layout"
 
 import caseStudyDesignImage from '../images/article-iata3.png'
 
-
+import caseStudyTheLaunch from '../images/portfolio-the-launch3.png'
+import caseStudyAirshipCMS from '../images/portfolio-airshipcms3.png'
+import caseStudyRootAndStem from '../images/portfolio-root-and-stem3.png'
 import caseStudyFlightPlan from '../images/portfolio-flight-plan.png'
-import caseStudyUnicornyGmail from '../images/portfolio-unicorny-gmail4.png'
+import caseStudyUnicornyGmail from '../images/portfolio-unicorny-gmail.png'
 
 import { setBgImage } from '../utils'
 // import SEO from "../components/seo"
 
 export default () => {
   return (
-    <Layout bodyClass='bodyclass-home'>
+    <Layout bodyclassName='bodyclass-home'>
       <div>
         {/* <SEO {...content.pageMetadata} /> */}
         <div className="container portfolio-header-container white-container">
           <div className="block portfolio-header-block">
             <h1>Kelli Borgonia</h1>
-            <p class="person-role">Product Designer</p>
+            <p className="person-role">Product Designer</p>
             <p className="person-description">
-            I am an extremely <b>pragmatic designer</b> who is passionate about creating things that are both <b>functional and delightful</b>. I love <b>solving problems with engineers</b> and <b>architecting complex systems</b> that transform ideas into tangible products.
+            I am an extremely <b>pragmatic designer</b> who is passionate about creating things that are both <b>functional and delightful</b>. I love <b>collaborating with engineers</b> to <b>architect systems</b> that transform ideas into inventive products.
             </p>
           </div>
         </div>
@@ -40,8 +42,8 @@ export default () => {
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="/the-launch" style={setBgImage(caseStudyDesignImage)}>
-                  <img src={caseStudyDesignImage} alt="TO DO: DESCRIPTION" />
+                <a className="case-study-graphic" href="/the-launch" style={setBgImage(caseStudyTheLaunch)}>
+                  <img src={caseStudyTheLaunch} alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
 
@@ -50,12 +52,12 @@ export default () => {
                   <h3>Product Owner</h3>
                   <h2>Airship CMS</h2>
                   <p>Product Owner and UX/UI Designer for the content management and web development platform currently in the beta release stage. Worked closely with software engineers to design the information architecture of the API as well as the user experience of the platform's developer tooling and workflow.</p>
-                  <a className="button button-solid case-study-button" href="#">
+                  <a className="button button-solid case-study-button" href="/airship-cms">
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="#" style={setBgImage(caseStudyDesignImage)}>
-                  <img src={caseStudyDesignImage} alt="TO DO: DESCRIPTION" />
+                <a className="case-study-graphic" href="/airship-cms" style={setBgImage(caseStudyAirshipCMS)}>
+                  <img src={caseStudyAirshipCMS} alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
 
@@ -64,12 +66,12 @@ export default () => {
                   <h3>Data Visualization</h3>
                   <h2>Root + STEM</h2>
                   <p>Designed a contribution platform in conjunction with an interactive, dynamically generated map of collected data. Worked closely with the team to identify datapoints that could be creatively visualized accross STEM disciplines.</p>
-                  <a className="button button-solid case-study-button" href="#">
+                  <a className="button button-solid case-study-button" href="/root-and-stem">
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="#" style={setBgImage(caseStudyDesignImage)}>
-                  <img src={caseStudyDesignImage} alt="TO DO: DESCRIPTION" />
+                <a className="case-study-graphic" href="/root-and-stem" style={setBgImage(caseStudyRootAndStem)}>
+                  <img src={caseStudyRootAndStem} alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
 
@@ -78,11 +80,11 @@ export default () => {
                   <h3>UX / UI</h3>
                   <h2>Unicorny Gmail</h2>
                   <p>A Chrome Extension with custom CSS overrides for Gmail, built to preserve the minimalist appearance of Google's former product "Inbox" and strip out all non-essential elements from Gmail's current UI.</p>
-                  <a className="button button-solid case-study-button" href="#">
+                  <a className="button button-solid case-study-button" href="/unicorny-gmail">
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="#" style={setBgImage(caseStudyUnicornyGmail)}>
+                <a className="case-study-graphic" href="/unicorny-gmail" style={setBgImage(caseStudyUnicornyGmail)}>
                   <img src={caseStudyUnicornyGmail} alt="A Chrome Extension with custom CSS overrides for Gmail" />
                 </a>
               </div>
@@ -92,11 +94,11 @@ export default () => {
                   <h3>UX / UI</h3>
                   <h2>Flight Plan</h2>
                   <p>During a 24-hour hackathon, re-imagined and built a theoretical user experience for an online airline ticketing platform. Unlike most contemporary platforms for price-conscious flyers, this project targets users that value peace-of-mind and simplicity over cost.</p>
-                  <a className="button button-solid case-study-button" href="#">
+                  <a className="button button-solid case-study-button" href="/flight-plan">
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="#" style={setBgImage(caseStudyFlightPlan)}>
+                <a className="case-study-graphic" href="/flight-plan" style={setBgImage(caseStudyFlightPlan)}>
                   <img src={caseStudyFlightPlan} alt="Flight Plan: The re-imagined theoretical user experience for an online airline ticketing platform." />
                 </a>
               </div>

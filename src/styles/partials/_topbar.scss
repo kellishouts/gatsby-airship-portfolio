@@ -1,7 +1,6 @@
 // TOP BAR NAV
 .top-bar {
-  // background-color: $very-dark-grey;
-  background-color: $white;
+  background-color: rgba($white, 0.95);
   display: flex;
   flex-flow: row wrap;
   width: 100%;
@@ -10,32 +9,27 @@
   position: fixed;
   z-index: 1000;
 
+  @include breakpoint(medium) {
+    background-color: rgba($white, 0.95);
+    flex-flow: row nowrap;
+  }
+
   .scroll &{
     background-color: rgba($white, 0.95);
   }
 
-  .bodyclass-resume &{
-
-    @include breakpoint(medium) {
-      background-color: rgba($white, 1);
-    }
+  .bodyclass-case-study &{
+    background-color: $flowchart-teal;
   }
 
-  @include breakpoint(medium) {
-    background-color: transparent;
-    flex-flow: row nowrap;
-
-    // STICKY
-    .scroll &{
-      background-color: rgba($white, 0.95);
-    }
+  .bodyclass-case-study.scroll &{
+    background-color: rgba($white, 0.95);
   }
 }
 
 main{
   // STICKY
   padding-top: 60px;
-  
 
   @include breakpoint(medium) {
     // STICKY
@@ -56,14 +50,6 @@ main{
     flex: 0 0 auto;
     height: auto;
   }
-
-  @include breakpoint(large){
-    
-  }
-
-  @include breakpoint(xlarge){
-    
-  }
 }
 
 .mobile-menu-button {
@@ -72,12 +58,27 @@ main{
   right: 0;
   top: 0;
   width: 56px;
-  height: 50px;
+  height: 60px;
   outline: none;
 
   @include breakpoint(medium) {
     width: 70px;
     height: 70px;
+  }
+
+  &:hover,
+  &:focus{
+    button.menu-icon{
+      &::after {
+        background: $flowchart-teal;
+        box-shadow: 0 7px 0 $flowchart-teal, 0 14px 0 $flowchart-teal;
+
+        .bodyclass-case-study &{
+          background: darken($flowchart-teal, 20%);
+          box-shadow: 0 7px 0 darken($flowchart-teal, 20%), 0 14px 0 darken($flowchart-teal, 20%);
+        }
+      }
+    }
   }
 
   button.menu-icon{
@@ -99,13 +100,18 @@ main{
     &::after {
       top: 8px;
       left: 0;
-      background: $medium-grey;
-      box-shadow: 0 7px 0 $medium-grey, 0 14px 0 $medium-grey;
+      background: $medium-light-grey;
+      box-shadow: 0 7px 0 $medium-light-grey, 0 14px 0 $medium-light-grey;
       height: 1px;
       outline: none;
 
       @include breakpoint(medium) {
         top: -2px;
+      }
+
+      .bodyclass-case-study &{
+        background: $white;
+        box-shadow: 0 7px 0 $white, 0 14px 0 $white;
       }
     }
   }
@@ -125,10 +131,6 @@ a.logo{
     padding-left: 35px;
   }
 
-  @include breakpoint(xlarge){
-    // padding-left: 25px;
-  }
-
   .logo-image{
     flex: 0 0 auto;
     display: block;
@@ -139,11 +141,11 @@ a.logo{
     position: relative;
 
     .logo-image-left{
+      content: " ";
       position: absolute;
       width: 11px;
       height: 11px;
       border: 0.15rem solid $white;
-      content: " ";
       transform: rotate(-45deg) translateX(0px) translateY(6px);
       transition: all 0.2s ease;
 
@@ -165,26 +167,6 @@ a.logo{
         transform: rotate(-45deg) translateX(0px) translateY(2px);
       }
     }
-
-    // .logo-image-left{
-    //   border-top-color: $white;
-    //   border-left-color: $white;
-
-    //   @include breakpoint(medium){
-    //     border-top-color: $dark-grey;
-    //     border-left-color: $dark-grey;
-    //   }
-    // }
-
-    // .logo-image-right{
-    //   border-bottom-color: $white;
-    //   border-right-color: $white;
-
-    //   @include breakpoint(medium){
-    //     border-bottom-color: $dark-grey;
-    //     border-right-color: $dark-grey;
-    //   }
-    // }
   }
 
   .logo-text {
@@ -200,8 +182,6 @@ a.logo{
     justify-content: flex-start;
     align-items: center;
     margin-left: 5px;
-
-    // transition: opacity 0.6s ease;
     transition: none;
 
     @include breakpoint(medium){
@@ -239,33 +219,52 @@ a.logo{
       }
     }
 
-    .bodyclass-resume &{
-      transition: none;
-      
-      @include breakpoint(medium){
+    .bodyclass-case-study &{
+
+      span.logo-name{
         color: $white;
-        // transition: color 0.6s ease;
+
+        @include breakpoint(medium){
+          opacity: 1;
+        }
+      }
+
+      span.logo-comma{
+        color: $white;
+        
+        @include breakpoint(medium){
+          opacity: 1;
+        }
+      }
+
+      span.logo-job-title{
+        color: darken($flowchart-teal, 20%);
+        opacity: 1;
       }
     }
-    
-    .bodyclass-resume.scroll &{
 
-      @include breakpoint(medium){
-        color: $dark-grey;
-        // transition: none;
+    .bodyclass-case-study.scroll &{
+
+      span.logo-name{
+        color: $medium-dark-grey;
+      }
+
+      span.logo-comma{
+        color: $medium-dark-grey;
+      }
+
+      span.logo-job-title{
+        color: $flowchart-teal;
       }
     }
 
     span{
-      // color: $very-dark-grey;
       
       &.logo-name{
-        // color: $medium-grey;
-        color: $white;
+        color: transparent;
       }
       
       &.logo-comma{
-        // color: $medium-grey;
         color: $white;
         margin-right: 4px;
         display: none;
@@ -276,7 +275,6 @@ a.logo{
       }
       
       &.logo-job-title{
-        // color: $flowchart-teal;
         color: $white;
         display: none;
 
@@ -289,18 +287,14 @@ a.logo{
 
         &.logo-name{
           color: $medium-dark-grey;
-          // color: $white;
         }
         
         &.logo-comma{
           color: $medium-dark-grey;
-          // color: $white;
-          // margin-right: 4px;
         }
         
         &.logo-job-title{
           color: $flowchart-teal;
-          // color: $white;
         }
 
       }
@@ -336,31 +330,52 @@ a.logo{
       transition: color 0.6s ease;
 
       span{
-        // color: $flowchart-orange;
         transition: none;
 
         &.logo-name{
-          // color: $medium-light-grey;
-          color: $flowchart-grey;
-
+          
           @include breakpoint(medium) {
-            // color: $flowchart-grey;
+            color: $flowchart-grey;
           }
         }
 
         &.logo-comma{
           transition: none;
-          // color: $medium-light-grey;
-          color: $flowchart-grey;
-
+          
           @include breakpoint(medium) {
-            // color: $flowchart-grey;
+            color: $flowchart-grey;
           }
         }
 
         &.logo-job-title{
           transition: none;
-          color: $flowchart-orange;
+
+          @include breakpoint(medium) {
+            color: $flowchart-orange;
+          }
+        }
+      }
+
+      .scroll &{
+        span{
+          transition: none;
+  
+          &.logo-name{
+            color: $flowchart-grey;
+          }
+  
+          &.logo-comma{
+            transition: none;
+            color: $flowchart-grey;
+          }
+  
+          &.logo-job-title{
+            transition: none;
+            color: $flowchart-orange;
+  
+            @include breakpoint(medium) {
+            }
+          }
         }
       }
     }
@@ -369,12 +384,42 @@ a.logo{
       border-color: $flowchart-orange;
     }
 
-    // .logo-image-right{
-    //   @include breakpoint(medium){
-    //     border-bottom-color: $flowchart-orange;
-    //     border-right-color: $flowchart-orange;
-    //   }
-    // }
+    // hover color
+    .bodyclass-case-study &{
+
+      span{
+
+        &.logo-name{
+          color: $white;
+        }
+
+        &.logo-comma{
+          color: $white;
+        }
+
+        &.logo-job-title{
+          color: darken($flowchart-teal, 20%);
+        }
+      }
+    }
+
+    .bodyclass-case-study.scroll &{
+
+      span{
+
+        &.logo-name{
+          color: $dark-grey;
+        }
+
+        &.logo-comma{
+          color: $dark-grey;
+        }
+
+        &.logo-job-title{
+          color: $flowchart-orange;
+        }
+      }
+    }
   }
 }
 
@@ -465,7 +510,7 @@ a.logo{
   padding: 15px 20px;
   text-align: left;
   transition: all 0.2s ease;
-  background-color: $white;
+  background-color: transparent;
   color: $medium-dark-grey;
 
   @include breakpoint(medium) {
@@ -484,6 +529,26 @@ a.logo{
 
   @include breakpoint(large){
     padding: 0 20px;
+  }
+
+  .bodyclass-case-study &{
+    @include breakpoint(medium){
+      color: darken($flowchart-teal, 20%);
+
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+
+  .bodyclass-case-study.scroll &{
+    @include breakpoint(medium){
+      color: $medium-dark-grey;
+
+      &:hover{
+        color: $flowchart-teal;
+      }
+    }
   }
 
   // STICKY
@@ -507,10 +572,38 @@ a.logo{
 
   &:hover {
     color: $flowchart-teal;
+    background-color: $very-light-grey;
     transition: all 0.2s ease;
+
+    @include breakpoint(medium) {
+      background-color: transparent;
+    } 
   }
 
   &:focus {
     outline: none;
+    color: $flowchart-teal;
+    background-color: $very-light-grey;
+    transition: all 0.2s ease;
+
+    @include breakpoint(medium) {
+      background-color: transparent;
+    } 
+  }
+}
+
+ul.accordion.menu{
+  background-color: transparent;
+
+  .bodyclass-case-study &{
+    background-color: rgba($white, 0.95);
+
+    @include breakpoint(medium) {
+      background-color: transparent;
+    }
+  }
+
+  .bodyclass-case-study.scroll &{
+    background-color: transparent;
   }
 }

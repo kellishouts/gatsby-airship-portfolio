@@ -33,7 +33,7 @@ import launchPhotoGameAssets from '../../images/photo-game-assets.jpg'
 export default () => {
 
   return (
-    <Layout bodyClass='bodyclass-case-study'>
+    <Layout bodyClass='bodyclass-the-launch'>
       <div>
         <div className="container teal-container product-header-container">
           <div className="block product-header-block">
