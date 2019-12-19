@@ -52,7 +52,14 @@ Import at the top:
 Include in `<img src>`:
 `src={launchIllustrationBackground}`
 
-## Inline Background Image `style="background-image:url()`
+## Inline Background Image
+import `setBgImage` from `src/utils/index.js`
+
+usage:
+
+```
+style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-the-launch3.png')}
+```
 
 ## SCSS Background Image
 
@@ -77,10 +84,7 @@ og_image: `/OG-Image-Main@300px.jpg`
 # Building for Production
 
 To generate static files in the simplest way, run:
-```
-gatsby build
-```
-or
+
 ```
 npm run build
 ```
