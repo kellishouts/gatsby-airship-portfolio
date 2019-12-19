@@ -2,12 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-import caseStudyTheLaunch from '../images/portfolio-the-launch3.png'
-import caseStudyAirshipCMS from '../images/portfolio-airshipcms3.png'
-import caseStudyRootAndStem from '../images/portfolio-root-and-stem3.png'
-import caseStudyFlightPlan from '../images/portfolio-flight-plan.png'
-import caseStudyUnicornyGmail from '../images/portfolio-unicorny-gmail.png'
-
 import { setBgImage } from '../utils'
 // import SEO from "../components/seo"
 
@@ -40,7 +34,7 @@ export default () => {
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="/the-launch" style={setBgImage(caseStudyTheLaunch)}>
+                <a className="case-study-graphic" href="/the-launch" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-the-launch3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-the-launch3.png" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
@@ -54,7 +48,7 @@ export default () => {
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="/airship-cms" style={setBgImage(caseStudyAirshipCMS)}>
+                <a className="case-study-graphic" href="/airship-cms" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
@@ -68,7 +62,7 @@ export default () => {
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="/root-and-stem" style={setBgImage(caseStudyRootAndStem)}>
+                <a className="case-study-graphic" href="/root-and-stem" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
@@ -82,7 +76,7 @@ export default () => {
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="/unicorny-gmail" style={setBgImage(caseStudyUnicornyGmail)}>
+                <a className="case-study-graphic" href="/unicorny-gmail" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-unicorny-gmail.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-unicorny-gmail.png" alt="A Chrome Extension with custom CSS overrides for Gmail" />
                 </a>
               </div>
@@ -96,7 +90,7 @@ export default () => {
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="/flight-plan" style={setBgImage(caseStudyFlightPlan)}>
+                <a className="case-study-graphic" href="/flight-plan" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png" alt="Flight Plan: The re-imagined theoretical user experience for an online airline ticketing platform." />
                 </a>
               </div>
