@@ -1,12 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Layout from "../../components/layout"
+import LightBox from "../../components/light-box"
 // import SEO from "../../components/seo"
 
 export default () => {
+  let [lightboxImage, setLightboxImage] = useState()
+  const closeLightbox = () => setLightboxImage(null)
+  const openLightLightbox = (image) => {
+    return () => setLightboxImage(image)
+  }
 
   return (
     <Layout bodyClass='bodyclass-case-study'>
+      <LightBox close={closeLightbox} image={lightboxImage} />
       <div>
         <div className="container teal-container product-header-container">
           <div className="block product-header-block">
@@ -75,14 +82,14 @@ export default () => {
               <p>We did our best to ensure that our game was simple, thought-provoking, and technically viable to build in the timeframe available.</p>
               
               <div className="image-box image-box-large">
-                <img className="large-image" src="https://kelli.airshipcms.io/assets/images/launch-sketches-wide.jpg" alt="Initial UI Sketches" />
+                <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/launch-sketches-wide.jpg")} className="large-image" src="https://kelli.airshipcms.io/assets/images/launch-sketches-wide.jpg" alt="Initial UI Sketches" />
                 <p className="caption">Notes on game UI, logic, intended outcomes, and software development.</p>
               </div>
 
               <p>Organizing all of our ideas, we mapped <b>key game mechanics</b>, <b>player actions</b>, and all possible <b>win/lose scenarios</b> to potential player insights.</p>
               
               <div className="image-box image-box-large">
-                <img className="large-image" src="https://kelli.airshipcms.io/assets/images/flowchart-game-elements.png" alt="Flowchart - Game Elements" />
+                <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/flowchart-game-elements.png")}  className="large-image" src="https://kelli.airshipcms.io/assets/images/flowchart-game-elements.png" alt="Flowchart - Game Elements" />
                 <p className="caption">Game mechanics, actions, and win/lose scenarios mapped to player insights.</p>
               </div>
 
@@ -204,7 +211,7 @@ export default () => {
               <p>We preemptively set up our second test session for the following Saturday. This gave us 1 week to build the game UI.</p>
               <p>We met up with Te Vallee in person to sync up for our development sprint. During a 6-hour hackathon-style Sunday sprint, we were able to complete about 60% of the core game logic and UI. </p>
               <div className="image-box image-box-large">
-                <img className="large-image" src="https://kelli.airshipcms.io/assets/images/sketch-v1-all-screens-small.png" alt="Version 1 Sketch mockups." />
+                <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/sketch-v1-all-screens-small.png")} className="large-image" src="https://kelli.airshipcms.io/assets/images/sketch-v1-all-screens-small.png" alt="Version 1 Sketch mockups." />
                 <p className="caption">Version 1 mockups showing 4 player roles and various game outcomes.</p>
               </div>
               <p>Jon tackled game states and logic. Te worked on building out the UI and controls. I focused on layout, rudimentary styling and Q/A.</p>
@@ -304,7 +311,7 @@ export default () => {
               <p>The only thing the app really needed to do was serve as an input/output device in response to player actions. With this in mind, we <b>stripped out 75% of the digital game UI functionality.</b></p>
               <p>We also <b>simplified the rules</b> and user roles. Originally, we had created the roles of Captain, Chief Analyst, Commander, and Engineer. In practice, the separation of roles made things complex and negatively impacted gameplay. Omitting this complication made it easier to scale the game to larger group sizes.</p>
               <div className="image-box image-box-large">
-                <img className="large-image" src="https://kelli.airshipcms.io/assets/images/sketch-v2-all-screens-small.png" alt="Four separate user flows were simplified to a single flow in the game UI." />
+                <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/sketch-v2-all-screens-small.png")} className="large-image" src="https://kelli.airshipcms.io/assets/images/sketch-v2-all-screens-small.png" alt="Four separate user flows were simplified to a single flow in the game UI." />
                 <p className="caption">Four separate user flows were simplified to a single flow in the game UI.</p>
               </div>
               <p>Randy had noted that there would only be 1 hour available to play the game. We needed to account for this, so we <b>added a time constraint</b> as an optional game factor.</p>
@@ -409,7 +416,7 @@ export default () => {
               </div>
               <p>We held our breath during Randy’s conference. We were in call for technical support, though things must have gone smoothly, because we received no calls. Soon after the conference, Randy called with a report. </p>
               <div className="image-box image-box-large">
-                <img className="large-image" src="https://kelli.airshipcms.io/assets/images/photo-conference-1.jpg" alt="In each group, participants organized game materials differently." />
+                <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/photo-conference-1.jpg")} className="large-image" src="https://kelli.airshipcms.io/assets/images/photo-conference-1.jpg" alt="In each group, participants organized game materials differently." />
                 <p className="caption">In each group, participants organized game materials differently.</p>
               </div>
               <p>Teams sorted cards differently than in our test groups. Often, participants stood around a small round table, so they could all see the game components.</p>
@@ -426,7 +433,7 @@ export default () => {
               </blockquote>
               <p>It was thrilling to hear that everything went so smoothly. The game even scaled well to a larger conference size of about 100 participants, each split into teams of 5 - 6 team members.</p>
               <div className="image-box image-box-large">
-                <img className="large-image" src="https://kelli.airshipcms.io/assets/images/photo-conference-3.jpg" alt="The game scaled easily to 100-person conference." />
+                <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/photo-conference-3.jpg")} className="large-image" src="https://kelli.airshipcms.io/assets/images/photo-conference-3.jpg" alt="The game scaled easily to 100-person conference." />
                 <p className="caption">The game scaled easily to 100-person conference.</p>
               </div>
               <blockquote className="long-quote">
