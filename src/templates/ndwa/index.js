@@ -17,28 +17,23 @@ export default () => {
       <div>
         <div className="container teal-container product-header-container">
           <div className="block product-header-block">
-            <h3>User-Centered Design</h3>
-            <h1 className="white-text h1-product">Case Study: The Launch</h1>
+            <h3>UX Design</h3>
+            <h1 className="white-text h1-product">NDWA Membership Onboarding</h1>
           </div>
         </div>
 
         <div className="container white-container">
           <div className="block">
             <div className="project-section">
-              <h3>Background</h3>
-              <p>In 2018, we were challenged with creating a space-themed game that could be used as a communication tool to inspire corporate-level board members and executives to step out of their comfort zone and take a more creative approach to decision making.</p>
-              <div className="image-box">
-                <img className="small-image" src="https://kelli.airshipcms.io/assets/images/illustration-background.png" alt="How do you get executives to role-play a SciFi game?" />
-                <p className="caption">How do you get executives to to role-play a SciFi game during a conference?</p>
-              </div>
-              <p>Randy Harrington, Ph.D., had confidently asserted that he would be using the game during a <em>real conference</em> the following month. No matter what, we needed to design, test, and deliver a product in 6 weeks.</p>
-              <p>A typical product development cycle normally consists of thorough discovery and design phases, followed by a single development phase (or time permitting, iterative dev cycles).</p>
-              <p>Unlike typical projects, we were given complete creative freedom to define what we were going to build and how we were going to build it, as long as the final deliverable was an engaging user experience.</p>
-              <div className="image-box image-box-timeline">
-                <img className="small-image" src="https://kelli.airshipcms.io/assets/images/timeline-centered.png" alt="Software Development vs. Launch Timeline" />
-              </div>
-              <p>Instead of following our normal software development process, we approached the project like a hybrid of a UX project and a hackathon. That meant ultra quick planning, thorough user testing, rapid development, and ad-hoc visual design. Above all else, we needed to prove that our game concept was viable. We needed to strategically engineer <em>fun</em>.
+              <h3>Project Overview</h3>
+              <p>In December 2019, I was asked to improve the user onboarding flow for the National Domestic Workers Alliance membership website. For this project, the team had already done some initial user testing and had determined the key pain points experienced by members. It would be important that the new website:
               </p>
+              <ol>
+                <li><b>Prioritizes Mobile Devices</b>. Most of their membership uses a mobile phone as their primary device.</li>
+                <li><b>Deprioritizes Email for Sign In</b>. Most of their membership does not check their email regularly.</li>
+                <li><b>Utilizes SMS / Text Messaging</b>. The most effective communication with members occurs via text messages.</li>
+              </ol>
+
             </div>
           </div>
         </div>
@@ -46,40 +41,30 @@ export default () => {
         <div className="container very-light-grey-container">
           <div className="block">
             <div className="project-section">
-              <h3>The Challenge</h3>
-              <h2>We had 6-weeks to build a game.</h2>
-              <p>We needed to design an engaging space-themed game in less than 6 weeks that would be:</p>
-              <ol>
-                <li><b>Simple</b>, so that participants understand the game objectives immediately.</li>
-                <li><b>Inferential</b>, so that participants develop insights about strategic planning through the game.</li>
-                <li><b>Flexible</b>, so a facilitator can make adjustments to the game setup, duration, and wrap-up.</li>
-                <li><b>Scalable</b>, so the game can be played with an audience of 4 to upwards of 100 participants.</li>
-              </ol>
-              <div className="project-section-split">
-                <div className="project-section-left">
-                  <h4>Our Team</h4>
-                  <p>
-                    <b>Jon Borgonia</b>, Project Lead, Senior Architect, Test Group Moderator<br></br>
-                    <b>Kelli Borgonia</b>, Game Designer, UX / UI Designer, Project Manager<br></br>
-                    <b>Te Vallee</b>, Full-Stack Developer, SFX
-                  </p>
-                </div>
-                <div className="project-section-right">
-                  <h4>My Role</h4>
-                  <p>For this project, I designed the game economy and script, developed the game’s overall UX and UI, and served as the project manager during the software development phase.</p>
-                </div>
+              <h3>Membership Signup Flow</h3>
+              <p>With these priorities in mind, I audited the sign up process on both mobile and desktop web browers, which revealed a lengthy 10-step signup process containing 3 separate emails.</p>
+
+              <div className="image-box image-box-large">
+                <a href="https://kelli.airshipcms.io/assets/images/NDWAUserRegistrationFlows-Jan13.png" target="_blank"><img className="large-image" src="https://kelli.airshipcms.io/assets/images/NDWAUserRegistrationFlows-Jan13.png" alt="Old Member Sign-in Steps" /></a>
+                <p className="caption">Old Member Sign-in Steps</p>
               </div>
+
+              <p>I then mapped out a proposed user flow that would reduce the number of sign-in steps down to 4 web pages, a single email, and a SMS authentication trigger.</p>
+
+              <div className="image-box image-box-large">
+                <a href="https://kelli.airshipcms.io/assets/images/NDWAUserRegistrationFlows-Jan13.png" target="_blank"><img className="large-image" src="https://kelli.airshipcms.io/assets/images/NDWAUserRegistrationFlows-Jan13.png" alt="Old Member Sign-in Steps" /></a>
+                <p className="caption">Proposed Member Sign-in </p>
+              </div>
+
             </div>
           </div>
         </div>
         <div className="container white-container">
           <div className="block">
             <div className="project-section">
-              <h3>Brainstorming</h3>
-              <h2>We imagined science fiction as reality.</h2>
-              <p>We watched <em>Star Trek</em>. We played co-op board games. We analyzed what made question-based deduction games like <em>Spyfall</em> successful. We were especially inspired by the co-op mobile game <em>Space Team</em>.</p>
-              <p>We expanded on Randy’s concept that players need to <b>ask questions and launch probes</b> to investigate the possible hazards of space.</p>
-              <p>We did our best to ensure that our game was simple, thought-provoking, and technically viable to build in the timeframe available.</p>
+              <h3>Title</h3>
+              <h2>Subtitle</h2>
+              <p><a href="https://invis.io/BAVIFLJWPK9#/400322978_User_Registration_Flows_">User Flows</a></p>
               
               <div className="image-box image-box-large">
                 {/* <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/launch-sketches-wide.jpg")} className="large-image" src="https://kelli.airshipcms.io/assets/images/launch-sketches-wide.jpg" alt="Initial UI Sketches" /> */}

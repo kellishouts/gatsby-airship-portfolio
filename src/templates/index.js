@@ -53,12 +53,26 @@ export default () => {
                 </a>
               </div>
 
-              <div className="case-study case-study-grey">
+              {/* <div className="case-study case-study-grey">
                 <div className="case-study-text">
                   <h3>Data Visualization</h3>
                   <h2>Root + STEM</h2>
                   <p>Designed a contribution platform in conjunction with an interactive, dynamically generated map of collected data. Worked closely with the team to identify datapoints that could be creatively visualized accross STEM disciplines.</p>
                   <a className="button button-solid case-study-button" href="/root-and-stem">
+                    Case Study <span className="inline-arrow"></span>
+                  </a>
+                </div>
+                <a className="case-study-graphic" href="/root-and-stem" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="TO DO: DESCRIPTION" />
+                </a>
+              </div> */}
+
+              <div className="case-study case-study-grey">
+                <div className="case-study-text">
+                  <h3>UX</h3>
+                  <h2>NDWA Membership Signup Flow</h2>
+                  <p>Currently redesigning the flow for membership signup for users without relying on email for multi-factor authentication. Working on reducing steps from about 11 screens to about 5 by leveraging SMS authenntication.</p>
+                  <a className="button button-solid case-study-button" href="/ndwa">
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
@@ -81,7 +95,7 @@ export default () => {
                 </a>
               </div>
 
-              <div className="case-study case-study-teal">
+              {/* <div className="case-study case-study-teal">
                 <div className="case-study-text">
                   <h3>UX / UI</h3>
                   <h2>Flight Plan</h2>
@@ -93,7 +107,7 @@ export default () => {
                 <a className="case-study-graphic" href="/flight-plan" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png" alt="Flight Plan: The re-imagined theoretical user experience for an online airline ticketing platform." />
                 </a>
-              </div>
+              </div> */}
               
             </div>
           </div>

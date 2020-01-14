@@ -8,6 +8,10 @@ const pages = [
     component: '/the-launch/index.js'
   },
   {
+    path: '/ndwa',
+    component: '/ndwa/index.js'
+  },
+  {
     path: '/unicorny-gmail',
     component: '/unicorny-gmail/index.js'
   },
