@@ -71,13 +71,13 @@ export default () => {
                 <div className="case-study-text">
                   <h3>UX</h3>
                   <h2>NDWA Membership Signup Flow</h2>
-                  <p>Currently redesigning the flow for membership signup for users without relying on email for multi-factor authentication. Working on reducing steps from about 11 screens to about 5 by leveraging SMS authenntication.</p>
+                  <p>Refactored the user sign up flow for a nonprofit membership organization from a lengthy 13-step process to a 5-step user flow.</p>
                   <a className="button button-solid case-study-button" href="/ndwa">
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="/root-and-stem" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
-                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="TO DO: DESCRIPTION" />
+                <a className="case-study-graphic" href="/ndwa" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-ndwa.png')}>
+                  <img src="https://kelli.airshipcms.io/assets/images/ndwa.png" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
 
@@ -85,7 +85,7 @@ export default () => {
                 <div className="case-study-text">
                   <h3>UX / UI</h3>
                   <h2>Unicorny Gmail</h2>
-                  <p>A Chrome Extension with custom CSS overrides for Gmail, built to preserve the minimalist appearance of Google's former product "Inbox" and strip out all non-essential elements from Gmail's current UI.</p>
+                  <p>Identified the UX and UI pain points in Gmail’s user interface, and hacked Google Chrome to fix the problems, then publish my own Chrome Extension.</p>
                   <a className="button button-solid case-study-button" href="/unicorny-gmail">
                     Case Study <span className="inline-arrow"></span>
                   </a>

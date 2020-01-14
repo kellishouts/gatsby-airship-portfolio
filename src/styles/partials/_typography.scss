@@ -881,6 +881,16 @@ $margin-large: 70px;
         margin-top: $margin-large*0.5;
       }
   }
+
+  a{
+    color: darken($flowchart-teal, 5%);;
+    border-bottom: 1px dashed lighten($flowchart-teal, 10%);;
+
+    &:hover{
+      color: darken($flowchart-teal, 10%);
+      border-bottom: 1px dashed darken($flowchart-teal, 10%);
+    }
+  }
 }
 
 p.caption{
