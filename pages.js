@@ -26,6 +26,10 @@ const pages = [
   {
     path: '/resume',
     component: '/resume/index.js'
+  },
+  {
+    path: '/404',
+    component: '/404.js'
   }
 ]
 module.exports = { pages }
