@@ -44,11 +44,11 @@ export default () => {
                   <h3>Product Owner</h3>
                   <h2>Airship CMS</h2>
                   <p>Product Owner and UX/UI Designer for the content management and web development platform currently in the beta release stage. Worked closely with software engineers to design the information architecture of the API as well as the user experience of the platform's developer tooling and workflow.</p>
-                  <a className="button button-solid case-study-button" href="/airship-cms">
+                  {/* <a className="button button-solid case-study-button" href="/airship-cms">
                     Case Study <span className="inline-arrow"></span>
-                  </a>
+                  </a> */}
                 </div>
-                <a className="case-study-graphic" href="/airship-cms" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png')}>
+                <a className="case-study-graphic" href="#" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
@@ -85,7 +85,7 @@ export default () => {
                 <div className="case-study-text">
                   <h3>UX / UI</h3>
                   <h2>Unicorny Gmail</h2>
-                  <p>Identified the UX and UI pain points in Gmail’s user interface, and hacked Google Chrome to fix the problems, then publish my own Chrome Extension.</p>
+                  <p>Identified the UX and UI pain points in Gmail’s user interface, hacked Google Chrome with CSS overrides to fix the problems, then published my own Chrome Extension.</p>
                   <a className="button button-solid case-study-button" href="/unicorny-gmail">
                     Case Study <span className="inline-arrow"></span>
                   </a>

@@ -773,7 +773,6 @@ $margin-large: 70px;
         margin-top: $margin-large;
       }
     }
-
     + h4{
       margin-top: $margin-small;
 
@@ -828,7 +827,8 @@ $margin-large: 70px;
   ol{
     @include serif-paragraph;
 
-    + h4{
+    + h4,
+    + h2{
       margin-top: $margin-medium;
 
       @include breakpoint(large){

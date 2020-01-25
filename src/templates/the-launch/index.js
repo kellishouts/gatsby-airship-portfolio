@@ -118,7 +118,7 @@ export default () => {
           <div className="block">
             <div className="project-section">
               <h3>Version 1</h3>
-              <h2>We paper-prototyped the game.</h2>
+              <h2>We translated the digital UI into a quick paper prototype.</h2>
               <p>We intended for the game to utilize mobile phones, so I cleaned up the mockups and created low-fidelity paper prototypes of the game UI. Elements that would later be programmed game functions were simulated using various game tokens and cards. </p>
               <div className="image-box">
                 <img className="medium-image" src="https://kelli.airshipcms.io/assets/images/paper-mockups.png" alt="Digital components converted to a paper prototype for the first user test session." />
@@ -138,8 +138,9 @@ export default () => {
                 <img className="medium-image" src="https://kelli.airshipcms.io/assets/images/photo-group-a-1.jpg" alt="Paper prototypes and repurposed board game tokens used during the first play test." />
                 <p className="caption">Paper prototypes and repurposed board game tokens.</p>
               </div>
+              <h2>We found that physical cards were a critical asset in driving user interaction.</h2>
               <p>Users generally seemed to understand the game objectives and were fairly vocal throughout the game. There were moments of confusion, frustration, heated discussion, relief, and finally triumph when they successfully completed their space mission. After the game, Jon led a short discussion to gather feedback.</p>
-              <p>The most surprising observation was that players used the question cards to sort and organize information. We weren’t initially planning to create any physical cards for the final game, though it seemed that the <b>game cards were a critical asset in driving player interaction.</b></p>
+              <p>The most surprising observation was that players used the question cards to sort and organize information. We weren’t initially planning to create any physical cards for the final game, though it seemed that the <b>physical game cards were a critical asset</b> in driving player interaction.</p>
               <div className="test-summary">
                 <div className="test-summary-column">
                   <h4>Things that worked</h4>
@@ -208,12 +209,13 @@ export default () => {
           <div className="block">
             <div className="project-section">
               <h3>Version 2</h3>
-              <h2>We got lost in translation.</h2>
-              <h4>&ldquo;Hackathon&rdquo; Dev Sprint</h4>
+              <h2>We rapidly built a working UI.</h2>
+              {/* <h4>&ldquo;Hackathon&rdquo; Dev Sprint</h4> */}
               <p>We preemptively set up our second test session for the following Saturday. This gave us 1 week to build the game UI.</p>
               <p>We met up with Te Vallee in person to sync up for our development sprint. During a 6-hour hackathon-style Sunday sprint, we were able to complete about 60% of the core game logic and UI. </p>
               <div className="image-box image-box-large">
-                <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/sketch-v1-all-screens-small.png")} className="large-image" src="https://kelli.airshipcms.io/assets/images/sketch-v1-all-screens-small.png" alt="Version 1 Sketch mockups." />
+                {/* <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/sketch-v1-all-screens-small.png")} className="large-image" src="https://kelli.airshipcms.io/assets/images/sketch-v1-all-screens-small.png" alt="Version 1 Sketch mockups." /> */}
+                <a href="https://kelli.airshipcms.io/assets/images/sketch-v1-all-screens-small.png" target="_blank"><img className="large-image" src="https://kelli.airshipcms.io/assets/images/sketch-v1-all-screens-small.png" alt="Version 1 Sketch mockups." /></a>
                 <p className="caption">Version 1 mockups showing 4 player roles and various game outcomes.</p>
               </div>
               <p>Jon tackled game states and logic. Te worked on building out the UI and controls. I focused on layout, rudimentary styling and Q/A.</p>
@@ -227,7 +229,9 @@ export default () => {
                 <img className="medium-image" src="https://kelli.airshipcms.io/assets/images/photo-group-b-1.jpg" alt="Thank you Brandon, Bob, Sean, and Manny!" />
                 <p className="caption">Thank you Brandon, Bob, Sean, and Manny!</p>
               </div>
-              <p>Five minutes after starting the game, we realized that <b>the digital game UI was was ineffective</b>. Several players experienced <b>technical difficulties</b> in syncing their device to the game. Even worse, participants were <b>staring at their phones</b> instead of looking at each other! This digital version of the game was <b>missing the engagement</b> we were able to quickly build up with the first test group.</p>
+              {/* <h2>Five minutes after starting the test, we realized that the digital game UI was wasn't going to be effective.</h2> */}
+              <h2>We took a wrong turn.</h2>
+              <p>Five minutes after starting the test, we realized that <b>the digital game UI was wasn't going to be effective</b>. Several players experienced <b>technical difficulties</b> in syncing their device to the game. Even worse, participants were <b>staring at their phones</b> instead of looking at each other! This digital version of the game was <b>missing the engagement</b> we were able to quickly build up with the first test group.</p>
               <p>We quickly ended the test.</p>
 
               <h4>How did we do?</h4>
@@ -267,7 +271,8 @@ export default () => {
                 <p className="caption">Players spent 10 minutes organizing cards. This was not an intended behavior.</p>
               </div>
               <p>Participants were engaged and excited, and again had a lot of fun playing the game.<b> Revised copy improved clarity</b> about the game rules. We did notice that <b>players spent too much time organizing game elements</b> rather than jumping into discussion, so we realized we would need to do something to reduce this point of friction in game play. </p>
-              <blockquote>Sometimes the best solution is no-tech or low-tech.</blockquote>
+
+              <h2>Sometimes the best solution is no-tech or low-tech.</h2>
               <p>Our most important takeaway: the game didn’t require a digital component. <b>The core game was still based on cards.</b></p>
               
               <div className="test-summary">
@@ -308,12 +313,13 @@ export default () => {
           <div className="block">
             <div className="project-section">
               <h3>Version 3</h3>
-              <h2>We simplified the UI to let the users truly shine.</h2>
+              <h2>We simplified rules, cut the codebase, and reduced the UI from 4 devices to 1.</h2>
               <p>What worked? Cards. When people could touch physical game pieces, they were engaged with the activity. This needed to be the focus of the game.</p>
               <p>The only thing the app really needed to do was serve as an input/output device in response to player actions. With this in mind, we <b>stripped out 75% of the digital game UI functionality.</b></p>
               <p>We also <b>simplified the rules</b> and user roles. Originally, we had created the roles of Captain, Chief Analyst, Commander, and Engineer. In practice, the separation of roles made things complex and negatively impacted gameplay. Omitting this complication made it easier to scale the game to larger group sizes.</p>
               <div className="image-box image-box-large">
-                <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/sketch-v2-all-screens-small.png")} className="large-image" src="https://kelli.airshipcms.io/assets/images/sketch-v2-all-screens-small.png" alt="Four separate user flows were simplified to a single flow in the game UI." />
+                {/* <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/sketch-v2-all-screens-small.png")} className="large-image" src="https://kelli.airshipcms.io/assets/images/sketch-v2-all-screens-small.png" alt="Four separate user flows were simplified to a single flow in the game UI." /> */}
+                <a href="https://kelli.airshipcms.io/assets/images/sketch-v2-all-screens-small.png" target="_blank"><img className="large-image" src="https://kelli.airshipcms.io/assets/images/sketch-v2-all-screens-small.png" alt="Four separate user flows were simplified to a single flow in the game UI." /></a>
                 <p className="caption">Four separate user flows were simplified to a single flow in the game UI.</p>
               </div>
               <p>Randy had noted that there would only be 1 hour available to play the game. We needed to account for this, so we <b>added a time constraint</b> as an optional game factor.</p>
@@ -418,9 +424,11 @@ export default () => {
               </div>
               <p>We held our breath during Randy’s conference. We were in call for technical support, though things must have gone smoothly, because we received no calls. Soon after the conference, Randy called with a report. </p>
               <div className="image-box image-box-large">
-                <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/photo-conference-1.jpg")} className="large-image" src="https://kelli.airshipcms.io/assets/images/photo-conference-1.jpg" alt="In each group, participants organized game materials differently." />
+                {/* <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/photo-conference-1.jpg")} className="large-image" src="https://kelli.airshipcms.io/assets/images/photo-conference-1.jpg" alt="In each group, participants organized game materials differently." /> */}
+                <img className="large-image" src="https://kelli.airshipcms.io/assets/images/photo-conference-1.jpg" alt="In each group, participants organized game materials differently." />
                 <p className="caption">In each group, participants organized game materials differently.</p>
               </div>
+              <h2>It took off smoothly.</h2>
               <p>Teams sorted cards differently than in our test groups. Often, participants stood around a small round table, so they could all see the game components.</p>
               <p>Randy had modified the set up so that one person on a team was selected to be the “Computer Controller” in charge of the mobile device. This allowed the majority of the team members in each group focus on discussion.</p>
               <div className="image-box image-box-photo">
@@ -429,13 +437,14 @@ export default () => {
               </div>
               <p>Randy ran the game in a 1-hour time slot for the first game session. In subsequent sessions, he sometimes had to truncate the game to 30-minute sessions.  The flexibility of the game format allowed him to do this easily.</p>
               <p>We were a little worried that the game may have been too complex. We were only able to test the game on our peers (programmers and gamers), so we weren’t sure if it would translate to a less tech-savvy audience. I had intentionally designed the cards and UI with large type, bold icons and high-contrast colors. It paid off. There were no UI usability issues.</p>
-              <p>In addition, the game UI was mobile responsive, web-browser-based, and offline-capable, so teams could load the game on either a phone, tablet, or laptop. We thought that a phone or tablet would be easier to manage, though in actual use, laptops were extremely convenient in being able to display information a group setting.</p>
+              <p>In addition, the game UI was mobile responsive, web-browser-based, and offline-capable, so teams could load the game on either a phone, tablet, or laptop. We thought that a phone or tablet would be easier to manage, though in actual use, <b>laptops were extremely convenient</b> in being able to display information a group setting.</p>
               <blockquote className="long-quote">
                 “Amazing that the Board was so wrapped up in the experience. I have never seen them get engaged with an exercise like this. It attracted the engineers and accountants as well as everyone else.” <span>— Arturo Fuente, Board Chair GTE Financial</span>
               </blockquote>
               <p>It was thrilling to hear that everything went so smoothly. The game even scaled well to a larger conference size of about 100 participants, each split into teams of 5 - 6 team members.</p>
               <div className="image-box image-box-large">
-                <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/photo-conference-3.jpg")} className="large-image" src="https://kelli.airshipcms.io/assets/images/photo-conference-3.jpg" alt="The game scaled easily to 100-person conference." />
+                {/* <img onClick={openLightLightbox("https://kelli.airshipcms.io/assets/images/photo-conference-3.jpg")} className="large-image" src="https://kelli.airshipcms.io/assets/images/photo-conference-3.jpg" alt="The game scaled easily to 100-person conference." /> */}
+                <img className="large-image" src="https://kelli.airshipcms.io/assets/images/photo-conference-3.jpg" alt="The game scaled easily to 100-person conference." />
                 <p className="caption">The game scaled easily to 100-person conference.</p>
               </div>
               <blockquote className="long-quote">
@@ -475,15 +484,16 @@ export default () => {
           <div className="block">
             <div className="project-section">
               <h3>Key Reflections</h3>
-              <h2>We built a better product.</h2>
-              <p>Instead of sticking to our original game idea which set the stage for a chaotic and stressful situation, the final space scenario had evolved to focus on teamwork, communication, and true collaboration.</p>
+              <h2>Frequent user tests allowed us to build a better product.</h2>
+              <p>Instead of sticking to our original game idea which set the stage for a chaotic and stressful game scenario, the final space scenario had evolved to focus on teamwork, communication, and true collaboration.</p>
               
               <div className="image-box">
                 <img className="small-image" src="https://kelli.airshipcms.io/assets/images/illustration-chaos-vs-collaboration.png" alt="Chaos vs. Collaboration" />
                 <p className="caption">Chaos vs. Collaboration</p>
               </div>
-              
-              <p>What did we discover?</p>
+
+              {/* <h2>We weren't attached to our design or code.</h2> */}
+              <p>With so many people involved in its creation, The Launch was a learning process for everyone. Everyone communicated openly and enthusiastically because we were all a part of creating something together. There was no time or space to be attached to anything we imagined, designed, or coded. So, what did we discover?</p>
               <ul>
                 <li><b>We were entrusted to design an end-to-end solution without any constraints.</b> Randy was fairly hands off from the project, and he trusted us to expand on his ideas to create the best possible product with polished execution.</li>
                 <li><b>We were passionate.</b> When we have the opportunity to, we enjoy creating educational and inspirational games. We cared about what we were building and were invested in its success.</li>

@@ -10,27 +10,16 @@ export default () => {
       <div>
         <div className="container teal-container product-header-container">
           <div className="block product-header-block">
-            <h3>User-Centered Design</h3>
-            <h1 className="white-text h1-product">Case Study: The Launch</h1>
+            <h3>UX / UI</h3>
+            <h1 className="white-text h1-product">Flight Plan</h1>
           </div>
         </div>
 
         <div className="container white-container">
           <div className="block">
             <div className="project-section">
-              <h3>Background</h3>
-              <p>In 2018, we were challenged with creating a space-themed game that could be used as a communication tool to inspire corporate-level board members and executives to step out of their comfort zone and take a more creative approach to decision making.</p>
-              <div className="image-box">
-                <img className="small-image" src="https://kelli.airshipcms.io/assets/images/illustration-background.png" alt="How do you get executives to role-play a SciFi game?" />
-                <p className="caption">How do you get executives to to role-play a SciFi game during a conference?</p>
-              </div>
-              <p>Randy Harrington, Ph.D., had confidently asserted that he would be using the game during a <em>real conference</em> the following month. No matter what, we needed to design, test, and deliver a product in 6 weeks.</p>
-              <p>A typical product development cycle normally consists of thorough discovery and design phases, followed by a single development phase (or time permitting, iterative dev cycles).</p>
-              <p>Unlike typical projects, we were given complete creative freedom to define what we were going to build and how we were going to build it, as long as the final deliverable was an engaging user experience.</p>
-              <div className="image-box image-box-timeline">
-                <img className="small-image" src="https://kelli.airshipcms.io/assets/images/timeline-centered.png" alt="Software Development vs. Launch Timeline" />
-              </div>
-              <p>Instead of following our normal software development process, we approached the project like a hybrid of a UX project and a hackathon. That meant ultra quick planning, thorough user testing, rapid development, and ad-hoc visual design. Above all else, we needed to prove that our game concept was viable. We needed to strategically engineer <em>fun</em>.
+              <h3>About the Project</h3>
+              <p>Designed an experimental UX / UI for an airline ticketing platform. Unlike most contemporary platforms that return hundreds of flight options for price-conscious flyers, this platform targets users that value leisure more than cost. Built during a 24-hour hackathon, the website pulls in realtime flight information from Expedia, as well as airport congestion data, in order to return just a single option for the leisure-seeking traveler. 
               </p>
             </div>
           </div>
