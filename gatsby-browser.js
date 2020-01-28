@@ -5,4 +5,10 @@
  */
 
 // You can delete this file if you're not using it
-import './src/styles/styles.scss';
+require('./src/styles/styles.scss');
+
+exports.onClientEntry = function() {
+  window.addEventListener('load', () => {
+    document.body.className = document.body.className.replace(/\bno-js\b/, '');
+  });
+}
