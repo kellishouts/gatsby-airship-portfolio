@@ -29,13 +29,13 @@ export default () => {
                 <div className="case-study-text">
                   <h3>Product Design</h3>
                   <h2>The Launch</h2>
-                  <p>Designed a team-building and communication game that utilizes both physical components and a digital UI. Case study features user-centered design process spanning a 6-week rapid development sprint.</p>
+                  <p>Designed a team-building and communication game that utilizes both physical components and a digital UI. Case study follows a user-centered design process spanning a 6-week ultra-rapid development cycle from conception to delivery.</p>
                   <a className="button button-solid case-study-button" href="/the-launch">
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="/the-launch" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-the-launch3.png')}>
-                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-the-launch3.png" alt="TO DO: DESCRIPTION" />
+                <a className="case-study-graphic" href="/the-launch" style={setBgImage('https://kelli.airshipcms.io/assets/images/photo-game-assets.jpg')}>
+                  <img src="https://kelli.airshipcms.io/assets/images/photo-game-assets.jpg" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
 
@@ -43,35 +43,35 @@ export default () => {
                 <div className="case-study-text">
                   <h3>Product Owner</h3>
                   <h2>Airship CMS</h2>
-                  <p>Product Owner and UX/UI Designer for the content management and web development platform currently in the beta release stage. Worked closely with software engineers to design the information architecture of the API as well as the user experience of the platform's developer tooling and workflow.</p>
-                  {/* <a className="button button-solid case-study-button" href="/airship-cms">
-                    Case Study <span className="inline-arrow"></span>
-                  </a> */}
+                  <p>Designed the UX/UI for all consumer-facing interfaces and managed the engineering team responsible for building this web development platform targeted at frontend web developers. Case study highlights my interests in the technical aspects of UX/UI design and my pragmatic approach to design as it relates to software engineering.</p>
+                  <a className="button button-solid case-study-button" href="#">
+                    To Do <span className="inline-arrow"></span>
+                  </a>
                 </div>
                 <a className="case-study-graphic" href="#" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
 
-              {/* <div className="case-study case-study-grey">
+              <div className="case-study case-study-grey">
                 <div className="case-study-text">
                   <h3>Data Visualization</h3>
                   <h2>Root + STEM</h2>
-                  <p>Designed a contribution platform in conjunction with an interactive, dynamically generated map of collected data. Worked closely with the team to identify datapoints that could be creatively visualized accross STEM disciplines.</p>
-                  <a className="button button-solid case-study-button" href="/root-and-stem">
-                    Case Study <span className="inline-arrow"></span>
+                  <p>Designed a community resource platform that generates an interactive, dynamic map of collected data. Worked closely with both the developer and the research team on information architecture to ensure that data was standardized and could be visualized in a meaningful and engaging way.</p>
+                  <a className="button button-solid case-study-button" href="#">
+                    To Do <span className="inline-arrow"></span>
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/root-and-stem" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="TO DO: DESCRIPTION" />
                 </a>
-              </div> */}
+              </div>
 
               <div className="case-study case-study-grey">
                 <div className="case-study-text">
                   <h3>UX</h3>
                   <h2>NDWA Membership Signup Flow</h2>
-                  <p>Refactored the user sign up flow for a nonprofit membership organization from a lengthy 13-step process to a 5-step user flow.</p>
+                  <p>Simplified the member sign up flow from X down to X steps. Increased the website's accessibility by designing a user flow that utilizes test-message authentication in order to target an audience that primarily only has access to mobile phone browsers and text messaging.</p>
                   <a className="button button-solid case-study-button" href="/ndwa">
                     Case Study <span className="inline-arrow"></span>
                   </a>
@@ -85,7 +85,7 @@ export default () => {
                 <div className="case-study-text">
                   <h3>UX / UI</h3>
                   <h2>Unicorny Gmail</h2>
-                  <p>Identified the UX and UI pain points in Gmail’s user interface, hacked Google Chrome with CSS overrides to fix the problems, then published my own Chrome Extension.</p>
+                  <p>Identified the UX and UI pain points in Gmail’s user interface, hacked Google Chrome with CSS overrides to fix the problems, published my own Chrome Extension, and documented the process. This blog post was featured on Modus, Medium.com's UX/UI Design blog, and has received over 80k total views.</p>
                   <a className="button button-solid case-study-button" href="/unicorny-gmail">
                     Case Study <span className="inline-arrow"></span>
                   </a>
@@ -95,11 +95,11 @@ export default () => {
                 </a>
               </div>
 
-              {/* <div className="case-study case-study-teal">
+              <div className="case-study case-study-teal">
                 <div className="case-study-text">
                   <h3>UX / UI</h3>
                   <h2>Flight Plan</h2>
-                  <p>During a 24-hour hackathon, re-imagined and built a theoretical user experience for an online airline ticketing platform. Unlike most contemporary platforms for price-conscious flyers, this project targets users that value peace-of-mind and simplicity over cost.</p>
+                  <p>Designed, illustrated, and fully coded a mobile-responsive UI for an experimental user flow that prioritizes leisure and piece-of-mind over price-sensitivity during online airline booking. Case study highlights my process in taking an experimental product from ideation to execution during a 24-hour sprint.</p>
                   <a className="button button-solid case-study-button" href="/flight-plan">
                     Case Study <span className="inline-arrow"></span>
                   </a>
@@ -107,7 +107,7 @@ export default () => {
                 <a className="case-study-graphic" href="/flight-plan" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png" alt="Flight Plan: The re-imagined theoretical user experience for an online airline ticketing platform." />
                 </a>
-              </div> */}
+              </div>
               
             </div>
           </div>
