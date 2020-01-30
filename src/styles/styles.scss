@@ -85,6 +85,11 @@ $flowchart-dark-dashed-lines-color: darken($medium-dark-grey, 10%);
 @import 'partials/foundation_imports';
 
 // FIXES FOUC
+body.no-js{
+  visibility: hidden;
+  opacity: 0;
+}
+
 .no-js [data-responsive-toggle]{
   display:none;
 }
