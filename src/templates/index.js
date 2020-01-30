@@ -15,7 +15,7 @@ export default () => {
             <h1>Kelli Borgonia</h1>
             <p className="person-role">Product Designer</p>
             <p className="person-description">
-            I am an extremely <b>pragmatic designer</b> who is passionate about creating things that are both <b>functional and delightful</b>. I love <b>collaborating with engineers</b> to <b>architect systems</b> that transform ideas into inventive products.
+            I am an extremely <b>pragmatic designer</b> who is passionate about creating things that are both <b>functional and delightful</b>. I love <b>collaborating with engineers</b> to <b>architect systems</b> that transform ideas into inventive solutions and products.
             </p>
           </div>
         </div>
@@ -41,9 +41,9 @@ export default () => {
 
               <div className="case-study case-study-teal">
                 <div className="case-study-text">
-                  <h3>Product Owner</h3>
+                  <h3>Product Ownership / Process</h3>
                   <h2>Airship CMS</h2>
-                  <p>Designed the UX/UI for all consumer-facing interfaces and managed the engineering team responsible for building this web development platform targeted at frontend web developers. Case study highlights my interests in the technical aspects of UX/UI design and my pragmatic approach to design as it relates to software engineering.</p>
+                  <p>Designed the UX/UI for all product interfaces and managed the engineering team responsible for building this web development platform targeted at frontend web developers. Case study is an under-the-hood look at my process and the pragmatic approach I take when working closely with software engineers.</p>
                   <a className="button button-solid case-study-button" href="#">
                     To Do <span className="inline-arrow"></span>
                   </a>
@@ -55,29 +55,43 @@ export default () => {
 
               <div className="case-study case-study-grey">
                 <div className="case-study-text">
-                  <h3>Data Visualization</h3>
-                  <h2>Root + STEM</h2>
-                  <p>Designed a community resource platform that generates an interactive, dynamic map of collected data. Worked closely with both the developer and the research team on information architecture to ensure that data was standardized and could be visualized in a meaningful and engaging way.</p>
+                  <h3>UX / UI</h3>
+                  <h2>Skyport</h2>
+                  <p>Partnered with a UX Researcher to improve the onboarding flow for Airship CMS. Conducted user interviews, something, and something, re-designed the interface, and directed the development and deployment of the newly designed web portal.</p>
                   <a className="button button-solid case-study-button" href="#">
                     To Do <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="/root-and-stem" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
-                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="TO DO: DESCRIPTION" />
+                <a className="case-study-graphic" href="#" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png')}>
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
 
-              <div className="case-study case-study-grey">
+              <div className="case-study case-study-orange">
                 <div className="case-study-text">
                   <h3>UX</h3>
-                  <h2>NDWA Membership Signup Flow</h2>
-                  <p>Simplified the member sign up flow from X down to X steps. Increased the website's accessibility by designing a user flow that utilizes test-message authentication in order to target an audience that primarily only has access to mobile phone browsers and text messaging.</p>
+                  <h2>National Domestic Workers Alliance</h2>
+                  <p>Simplified and the member sign up flow and increased the website's accessibility by designing a user flow that utilizes SMS authentication in order to target an audience that primarily only has access to mobile phone browsers and text messaging.</p>
                   <a className="button button-solid case-study-button" href="/ndwa">
                     Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/ndwa" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-ndwa.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/ndwa.png" alt="TO DO: DESCRIPTION" />
+                </a>
+              </div>
+
+              <div className="case-study case-study-grey">
+                <div className="case-study-text">
+                  <h3>Info Architecture / Data Viz</h3>
+                  <h2>Root + STEM</h2>
+                  <p>Designed a community resource platform that generates an interactive, dynamic map of collected data. Worked closely with both the developer and the research team to ensure that information was standardized and could be visualized in a meaningful and engaging way.</p>
+                  <a className="button button-solid case-study-button" href="#">
+                    To Do <span className="inline-arrow"></span>
+                  </a>
+                </div>
+                <a className="case-study-graphic" href="/root-and-stem" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="TO DO: DESCRIPTION" />
                 </a>
               </div>
 
