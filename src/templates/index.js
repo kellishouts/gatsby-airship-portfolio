@@ -25,7 +25,7 @@ export default () => {
             <h3>Recent Work</h3>
             <div className="case-studies">
 
-              <div className="case-study case-study-orange">
+              <div className="case-study case-study-grey">
                 <div className="case-study-text">
                   <h3>Product Design</h3>
                   <h2>The Launch</h2>
@@ -35,15 +35,15 @@ export default () => {
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/the-launch" style={setBgImage('https://kelli.airshipcms.io/assets/images/photo-game-assets.jpg')}>
-                  <img src="https://kelli.airshipcms.io/assets/images/photo-game-assets.jpg" alt="TO DO: DESCRIPTION" />
+                  <img src="https://kelli.airshipcms.io/assets/images/photo-game-assets.jpg" alt="Game cards and mobile interface for The Launch." />
                 </a>
               </div>
 
-              <div className="case-study case-study-teal">
+              {/* <div className="case-study case-study-teal">
                 <div className="case-study-text">
                   <h3>Product Ownership / Process</h3>
                   <h2>Airship CMS</h2>
-                  <p>Designed the UX/UI for all product interfaces and managed the engineering team responsible for building this web development platform targeted at frontend web developers. Case study is an under-the-hood look at my process and the pragmatic approach I take when working closely with software engineers.</p>
+                  <p>Designed the UX/UI for all product interfaces and managed the engineering team responsible for building this web development platform and content management toolkit. Case study is an under-the-hood look at my process and the pragmatic approach I take when working with and designing for software engineers.</p>
                   <a className="button button-solid case-study-button" href="#">
                     To Do <span className="inline-arrow"></span>
                   </a>
@@ -51,19 +51,19 @@ export default () => {
                 <a className="case-study-graphic" href="#" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png" alt="TO DO: DESCRIPTION" />
                 </a>
-              </div>
+              </div> */}
 
-              <div className="case-study case-study-grey">
+              <div className="case-study case-study-teal">
                 <div className="case-study-text">
                   <h3>UX / UI</h3>
-                  <h2>Skyport</h2>
-                  <p>Partnered with a UX Researcher to improve the onboarding flow for Airship CMS. Conducted user interviews, something, and something, re-designed the interface, and directed the development and deployment of the newly designed web portal.</p>
-                  <a className="button button-solid case-study-button" href="#">
+                  <h2>Airship CMS</h2>
+                  <p>Partnered with a UX Designer to improve the on-boarding flow for the developer interface of the PaaS. Conducted user interviews, [something], and [something]. Redesigned and implemented the UI before the product's official release.</p>
+                  <a className="button button-solid case-study-button" href="/airshipcms">
                     To Do <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="#" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png')}>
-                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png" alt="TO DO: DESCRIPTION" />
+                <a className="case-study-graphic" href="/airshipcms" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png')}>
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png" alt="Redesigned UI for Airship CMS" />
                 </a>
               </div>
 
@@ -73,11 +73,11 @@ export default () => {
                   <h2>National Domestic Workers Alliance</h2>
                   <p>Simplified and the member sign up flow and increased the website's accessibility by designing a user flow that utilizes SMS authentication in order to target an audience that primarily only has access to mobile phone browsers and text messaging.</p>
                   <a className="button button-solid case-study-button" href="/ndwa">
-                    Case Study <span className="inline-arrow"></span>
+                    Clean up Images <span className="inline-arrow"></span>
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/ndwa" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-ndwa.png')}>
-                  <img src="https://kelli.airshipcms.io/assets/images/ndwa.png" alt="TO DO: DESCRIPTION" />
+                  <img src="https://kelli.airshipcms.io/assets/images/ndwa.png" alt="New membership onboarding flow for the National Domestic Workers Alliance." />
                 </a>
               </div>
 
@@ -91,7 +91,7 @@ export default () => {
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/root-and-stem" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
-                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="TO DO: DESCRIPTION" />
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="Interactive data visualization of Hawai'i STEM resources." />
                 </a>
               </div>
 
@@ -105,7 +105,7 @@ export default () => {
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/unicorny-gmail" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-unicorny-gmail.png')}>
-                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-unicorny-gmail.png" alt="A Chrome Extension with custom CSS overrides for Gmail" />
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-unicorny-gmail.png" alt="A Chrome Extension with custom CSS overrides for Gmail." />
                 </a>
               </div>
 
@@ -115,11 +115,11 @@ export default () => {
                   <h2>Flight Plan</h2>
                   <p>Designed, illustrated, and fully coded a mobile-responsive UI for an experimental user flow that prioritizes leisure and piece-of-mind over price-sensitivity during online airline booking. Case study highlights my process in taking an experimental product from ideation to execution during a 24-hour sprint.</p>
                   <a className="button button-solid case-study-button" href="/flight-plan">
-                    Case Study <span className="inline-arrow"></span>
+                    To Do <span className="inline-arrow"></span>
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/flight-plan" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png')}>
-                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png" alt="Flight Plan: The re-imagined theoretical user experience for an online airline ticketing platform." />
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png" alt="A re-imagined theoretical user experience for online airline booking." />
                 </a>
               </div>
               

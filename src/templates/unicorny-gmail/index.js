@@ -27,8 +27,8 @@ export default () => {
                 <p className="caption">Before and after UI Hacks</p>
               </div>
 
-              <p>The blog post was featured on Medium's front page and received about 1.5k "claps" in March 2019 when it was initially published. Somehow, natural traffic caused a second spike on January 5, 2020, and as of January 13, 2020, the post is now up to 3k total "claps." Additionally, the Design Editor of Medium.com's Design Blog, <em>Modus</em> reached out to me to see if I wanted to publish the article to be in their permanent featured collection. I will be updating the post in the next week or so with a few additional tweaks, then it will be featured in <em>Modus</em> sometime at the end of January 2020!
-              </p>
+              <p>The blog post was featured on Medium's front page and received about 1.5k "claps" in March 2019 when it was initially published. Somehow, natural traffic caused a second spike on January 5, 2020, and at the end of January 2020, the post was up to 3.9k total "claps." Additionally, the Design Editor of Medium.com's Design Blog, <em>Modus</em> reached out to me to ask if they could publish the article in their permanent featured collection. To date, it has received over 80k views!</p>
+
               <p>I also took this project a step further, and figured out how to wrap my CSS code to be an actual Chrome Browser extension, which I published <a href="https://chrome.google.com/webstore/detail/unicorny-gmail/pmffbbfjmlgobdognnccbkieanlkkjjk?authuser=2" target="_blank">here</a> so you can download and install it into Chrome (if you use Gmail).</p>
             </div>
           </div>
