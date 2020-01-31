@@ -193,7 +193,7 @@ export default () => {
             <div className="project-section">
               <h3>Part 2: Data Visualization</h3>
 
-              <p>In <b><a href="/root-and-stem-part-2#part2">Part 2</a></b>, I explain the project's theme and my visual design choices. I also do a deep-dive to explain how data is visualized in the Map. Head over to <b><a href="/root-and-stem-part-2#part2">Part 2</a></b>.</p>
+              <p>In <b>Part 2</b>, I explain the project's theme and my visual design choices. I also do a deep-dive to explain how data is visualized in the Map. Head over to <b><a href="/root-and-stem-part-2#part2">Part 2</a></b>.</p>
             </div>
           </div>
         </div>

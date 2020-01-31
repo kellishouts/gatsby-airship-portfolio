@@ -10,8 +10,8 @@ export default () => {
       <div>
         <div className="container teal-container product-header-container">
           <div className="block product-header-block">
-            <h3>Information Architecture</h3>
-            <h1 className="white-text h1-product">Root + STEM <br></br>Information Architecture</h1>
+            <h3>Data Visualization</h3>
+            <h1 className="white-text h1-product">Root + STEM <br></br>Data Visualization</h1>
           </div>
         </div>
 
@@ -25,8 +25,8 @@ export default () => {
                 <li><b>Build an online portal</b> where community members can submit STEM resources.</li>
                 <li><b>Display the data as a searchable archive</b> so that students, teachers, and working professionals can easily navigate those resources.</li>
               </ol>
-              <p>This is <b>Part 1</b> of the case study. Here, I focus on information architecture and extremely technical aspects of data design.</p>
-              <p><b><a href="#part2">Part 2</a></b> is about data visualization and translating information into visual design to make it accessible to a wider audience and merge it with culture, history, and a story.</p>
+              <p><b><a href="/root-and-stem-part-1#part1">Part 1</a></b> is about information architecture and extremely technical aspects of data design.</p>
+              <p>This is <b>Part 2</b> of the case study. Here, I focus on data visualization and translating information into visual design to make it accessible to a wider audience and merge it with culture, history, and a story.</p>
               <div className="project-section-split">
                 <div className="project-section-left">
                   <h4>Our Team</h4>
@@ -44,10 +44,10 @@ export default () => {
             </div>
           </div>
         </div>
-        <div id="part1" className="case-study-divider-marker"></div>
+        <div id="part2" className="case-study-divider-marker"></div>
         <div className="container case-study-divider-container">
           <div className="block case-study-divider-block">
-            <h3>Part 1: Information Architecture</h3>
+            <h3>Part 2: Data Visualization</h3>
           </div>
         </div>
         <div className="container white-container">
