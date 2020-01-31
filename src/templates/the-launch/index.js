@@ -18,7 +18,7 @@ export default () => {
         <div className="container teal-container product-header-container">
           <div className="block product-header-block">
             <h3>User-Centered Design</h3>
-            <h1 className="white-text h1-product">Case Study: The Launch</h1>
+            <h1 className="white-text h1-product">The Launch</h1>
           </div>
         </div>
 

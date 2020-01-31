@@ -41,9 +41,9 @@ export default () => {
 
               {/* <div className="case-study case-study-teal">
                 <div className="case-study-text">
-                  <h3>Product Ownership / Process</h3>
+                  <h3>Product / System Design</h3>
                   <h2>Airship CMS</h2>
-                  <p>Designed the UX/UI for all product interfaces and managed the engineering team responsible for building this web development platform and content management toolkit. Case study is an under-the-hood look at my process and the pragmatic approach I take when working with and designing for software engineers.</p>
+                  <p>Managed the engineering team responsible for building this web development platform and content management toolkit. Case study is an under-the-hood look at extremely technical product design and the pragmatic approach I take when working with and designing for software engineers.</p>
                   <a className="button button-solid case-study-button" href="#">
                     To Do <span className="inline-arrow"></span>
                   </a>
@@ -57,7 +57,7 @@ export default () => {
                 <div className="case-study-text">
                   <h3>UX / UI</h3>
                   <h2>Airship CMS</h2>
-                  <p>Partnered with a UX Designer to improve the on-boarding flow for the developer interface of the PaaS. Conducted user interviews, [something], and [something]. Redesigned and implemented the UI before the product's official release.</p>
+                  <p>Partnered with a UX Designer to improve the on-boarding flow for the developer interface of Airship CMS, our self-built PaaS. Conducted user interviews, [something], and [something]. Redesigned and implemented the UI before the product's official release.</p>
                   <a className="button button-solid case-study-button" href="/airshipcms">
                     To Do <span className="inline-arrow"></span>
                   </a>
@@ -86,11 +86,11 @@ export default () => {
                   <h3>Info Architecture / Data Viz</h3>
                   <h2>Root + STEM</h2>
                   <p>Designed a community resource platform that generates an interactive, dynamic map of collected data. Worked closely with both the developer and the research team to ensure that information was standardized and could be visualized in a meaningful and engaging way.</p>
-                  <a className="button button-solid case-study-button" href="#">
-                    To Do <span className="inline-arrow"></span>
+                  <a className="button button-solid case-study-button" href="/root-and-stem-part-1">
+                    Working <span className="inline-arrow"></span>
                   </a>
                 </div>
-                <a className="case-study-graphic" href="/root-and-stem" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
+                <a className="case-study-graphic" href="/root-and-stem-part-1" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="Interactive data visualization of Hawai'i STEM resources." />
                 </a>
               </div>

@@ -468,6 +468,14 @@ h3{
   @include uppercase;
   text-align: center;
 
+  .case-study-divider-container &{
+    color: $white;
+    
+    &:after{ 
+      display: none;
+    }
+  }
+
   .feature-container &{
     &:after{
       background-color: $medium-dark-dark-grey;

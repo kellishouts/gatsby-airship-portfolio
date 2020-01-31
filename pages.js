@@ -24,8 +24,12 @@ const pages = [
     component: '/airshipcms/index.js'
   },
   {
-    path: '/root-and-stem',
-    component: '/root-and-stem/index.js'
+    path: '/root-and-stem-part-1',
+    component: '/root-and-stem-part-1/index.js'
+  },
+  {
+    path: '/root-and-stem-part-2',
+    component: '/root-and-stem-part-2/index.js'
   },
   {
     path: '/resume',
