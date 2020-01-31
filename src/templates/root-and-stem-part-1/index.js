@@ -25,7 +25,7 @@ export default () => {
                 <li><b>Build an online portal</b> where community members can submit STEM resources.</li>
                 <li><b>Display the data as a searchable archive</b> so that students, teachers, and working professionals can easily navigate those resources.</li>
               </ol>
-              <p>This is <b>Part 1</b> of the case study. Here, I focus on information architecture and extremely technical aspects of data design.</p>
+              <p>This is <b><a href="#part1">Part 1</a></b> of the case study. Here, I focus on information architecture and extremely technical aspects of data design.</p>
               <p><b><a href="/root-and-stem-part-2#part2">Part 2</a></b> is about data visualization and translating information into visual design to make it accessible to a wider audience and merge it with culture, history, and a story.</p>
               <div className="project-section-split">
                 <div className="project-section-left">
