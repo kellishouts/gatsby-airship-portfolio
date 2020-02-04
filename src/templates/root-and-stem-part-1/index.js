@@ -10,7 +10,7 @@ export default () => {
       <div>
         <div className="container teal-container product-header-container">
           <div className="block product-header-block">
-            <h3>informational Architecture</h3>
+            <h3>Information Architecture</h3>
             <h1 className="white-text h1-product">Root + STEM </h1>
           </div>
         </div>

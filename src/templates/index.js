@@ -73,7 +73,7 @@ export default () => {
                   <h2>National Domestic Workers Alliance</h2>
                   <p>Simplified and the member sign up flow and increased the website's accessibility by designing a user flow that utilizes SMS authentication in order to target an audience that primarily only has access to mobile phone browsers and text messaging.</p>
                   <a className="button button-solid case-study-button" href="/ndwa">
-                    Clean up Images <span className="inline-arrow"></span>
+                    Add Images <span className="inline-arrow"></span>
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/ndwa" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-ndwa.png')}>
@@ -87,7 +87,10 @@ export default () => {
                   <h2>Root + STEM</h2>
                   <p>Designed a community resource platform that generates an interactive, dynamic map of collected data. Worked closely with both the developer and the research team to ensure that information was standardized and could be visualized in a meaningful and engaging way.</p>
                   <a className="button button-solid case-study-button" href="/root-and-stem-part-1">
-                    Working <span className="inline-arrow"></span>
+                    Add Images <span className="inline-arrow"></span>
+                  </a>
+                  <a className="button button-solid case-study-button" href="/root-and-stem-part-2">
+                    In Progress <span className="inline-arrow"></span>
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/root-and-stem-part-1" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>

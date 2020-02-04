@@ -11,15 +11,15 @@ export default () => {
         <div className="container teal-container product-header-container">
           <div className="block product-header-block">
             <h3>Data Visualization</h3>
-            <h1 className="white-text h1-product">Root + STEM <br></br>Data Visualization</h1>
+            <h1 className="white-text h1-product">Root + STEM</h1>
           </div>
         </div>
 
         <div className="container white-container">
           <div className="block">
             <div className="project-section">
-              <h3>Background</h3>
-              <p>Prior to developing Root + STEM, only a PDF report existed to document STEM programs available in the state of Hawai’i. Our task was to turn the static resource into a living web app that had the potential to expand through community contributions.</p>
+            <h3>Background</h3>
+              <p>Prior to developing Root + STEM, only a PDF documented the STEM programs that were available in the state of Hawai’i. Our task was to turn the static resource into a living web app that had the potential to expand through community contributions.</p>
               <p>We had two goals:</p>
               <ol>
                 <li><b>Build an online portal</b> where community members can submit STEM resources.</li>
@@ -27,19 +27,18 @@ export default () => {
               </ol>
               <p><b><a href="/root-and-stem-part-1#part1">Part 1</a></b> of the case study focuses on information architecture, data design, and infrastructure.</p>
               <p><b>Part 2</b> focuses on data visualization and the translation of information into visual design to make it accessible to a wider audience and merge it with culture, history, and a story.</p>
-
               <div className="project-section-split">
                 <div className="project-section-left">
                   <h4>Our Team</h4>
                   <p>
-                    <b>Kelli Borgonia</b>, Lead, UX / UI Designer<br></br>
+                    <b>Kelli Borgonia</b>, Project Lead, UI Designer<br></br>
                     <b>Jon Borgonia</b>, Senior Software Architect<br></br>
                     <b>Te Vallee</b>, Full-Stack Developer
                   </p>
                 </div>
                 <div className="project-section-right">
                   <h4>My Role</h4>
-                  <p>(Project lead, Data Structure, System Design, PM, UX/UI, Visual Design, Styling, CSS Animation).</p>
+                  <p>I designed the data infrastructure and worked with the developer to ensure that it was implemented to spec. I designed all layouts and hand-coded all CSS.</p>
                 </div>
               </div>
             </div>
