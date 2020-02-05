@@ -83,12 +83,23 @@ export default () => {
 
               <div className="case-study case-study-grey">
                 <div className="case-study-text">
-                  <h3>Info Architecture / Data Viz</h3>
-                  <h2>Root + STEM</h2>
-                  <p>Designed a community resource platform that generates an interactive, dynamic map of collected data. Worked closely with both the developer and the research team to ensure that information was standardized and could be visualized in a meaningful and engaging way.</p>
+                  <h3>Information Architecture</h3>
+                  <h2>Root + STEM (Part 1)</h2>
+                  <p>Worked closely with both the developer and the research team to ensure that information was standardized and could be translated into [ ] and managed in an efficient infrastructure [ ].</p>
                   <a className="button button-solid case-study-button" href="/root-and-stem-part-1">
                     Add Images <span className="inline-arrow"></span>
                   </a>
+                </div>
+                <a className="case-study-graphic" href="/root-and-stem-part-1" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="Interactive data visualization of Hawai'i STEM resources." />
+                </a>
+              </div>
+
+              <div className="case-study case-study-grey">
+                <div className="case-study-text">
+                  <h3>UI / Data Visualization</h3>
+                  <h2>Root + STEM (Part 2)</h2>
+                  <p>Designed a community resource platform that generates an interactive, dynamic map of collected data. Visualized in a meaningful and engaging way.</p>
                   <a className="button button-solid case-study-button" href="/root-and-stem-part-2">
                     In Progress <span className="inline-arrow"></span>
                   </a>
