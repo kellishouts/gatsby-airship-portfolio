@@ -16,7 +16,7 @@ export default () => {
             <div className="social-media-header">
               <a href="mailto:kelli.borgonia@gmail.com" className="social-media-icon email" target="_blank" ><span>kelli.borgonia@gmail.com</span></a>
               <a href="https://www.linkedin.com/in/kelli-borgonia/" className="social-media-icon linkedin" target="_blank" ><span>linkedin.com/in/kelli-borgonia</span></a>
-              <a href="#" className="social-media-icon download" target="_blank" ><span>Download Resume</span></a>
+              <a href="https://kelli.airshipcms.io/assets/static/resume.pdf" className="social-media-icon download" target="_blank" ><span>Download Resume</span></a>
             </div>
           </div>
         </div>
@@ -34,9 +34,9 @@ export default () => {
                           <span className="highlight">Purely Functional</span><span className="comma">,</span>
                           <span className="date">2011 - Present</span>
                           <span className="pipe">|</span>
-                          <span className="location">Seattle, WA</span>
+                          <span className="location">Remote (Seattle, WA)</span>
                         </h5>
-                        <p>Runs a three-person remote development team in building websites, web applications, and mobile apps. Designs all user flows, prototypes, and high-fidelity layouts, and translates them to fully responsive custom code and styles. Conducts business analyses in order to update existing systems to more efficient content management workflows.</p>
+                        <p>Runs a three-person remote development team in building websites, web applications, and mobile apps. Designs all user flows, prototypes, and high-fidelity layouts, and translates them to fully responsive custom code and styles. Conducts business analyses in order to update existing systems to more efficient management workflows.</p>
                         <ul className="experience-projects">
                           <li><span className="highlight">Hazel Analytics</span>, built a fully responsive marketing website with custom graphics and CSS animations for a Seattle-based SaaS company. (<a
                             href="https://hazelanalytics.com" target="_blank">https://hazelanalytics.com</a>)</li>
@@ -49,6 +49,17 @@ export default () => {
                       </li>
 
                       <li>
+                        <h4>Project Manager</h4>
+                        <h5>
+                          <span className="highlight">Braintrust</span><span className="comma">,</span>
+                          <span className="date">December 2019 - Present</span>
+                          <span className="pipe">|</span>
+                          <span className="location">Remote (San Francisco, CA)</span>
+                        </h5>
+                        <p>Communicates with leadership on a daily basis and manages the team building the company’s new consumer-facing website scheduled to launch in March 2019.</p>
+                      </li>
+
+                      <li>
                         <h4>Product Owner &amp; UX/UI Designer</h4>
                         <h5>
                           <span className="highlight">AirshipCMS</span><span className="comma">,</span>
@@ -56,7 +67,7 @@ export default () => {
                           <span className="pipe">|</span>
                           <span className="location">Seattle, WA</span>
                         </h5>
-                        <p>Manages the overall product, design, and development for all features related to the AirshipCMS SaaS content management system and web deployment platform. Established a design system for the online content management portal and open source modules, designed and built the marketing website, and created and tested user flows for developer tooling, eCommerce, authentication, and content management. Currently managing relationships with 18 clients using the platform. ( <a href="https://airshipcms.io"
+                        <p>Manages the overall product, design, and development for all features of the Airship CMS PaaS web development platform. Established a design system for consumer-facing modules and designed and built the marketing website. Currently managing relationships with 10 clients using the platform. (<a href="https://airshipcms.io"
                           target="_blank">https://airshipcms.io</a> )</p>
                       </li>
 
@@ -92,7 +103,7 @@ export default () => {
                           <span className="pipe">|</span>
                           <span className="location">Honolulu, HI</span>
                         </h5>
-                        <p>Served as a design mentor and guest instructor for DevLeague, Hawaii’s first and only full-stack programming bootcamp. Created curriculum that challenged students to use both older layout techniques and newer styling methodologies for the following topics: responsive web architecture, grid systems, and SCSS. </p>
+                        <p>Served as a design mentor and instructor. Created curriculum for the following topics: responsive web architecture, SCSS, and grid systems. </p>
                       </li>
 
                       <li>
@@ -158,26 +169,26 @@ export default () => {
                       <li>Mobile App Design</li>
                       <li>Responsive Web Design</li>
                       <li>Illustration</li>
-                      <li>Character Design</li>
-                      <li>Game UI Design</li>
+                      {/* <li>Character Design</li> */}
+                      {/* <li>Game UI Design</li> */}
                       <li><span className="highlight">Tools:</span> Illustrator, Sketch, InVision, Photoshop, Animate, Adobe Draw</li>
                     </ul>
                   </div>
                   <div className="resume-skills-column columns medium-6 xlarge-3">
                     <h4>User Experience</h4>
                     <ul className="skills">
-                      <li>Wireframing</li>
-                      <li>Paper Prototyping</li>
-                      <li>Interactive Prototyping</li>
+                      <li>Wireframes</li>
+                      <li>Paper Prototypes</li>
+                      <li>Interactive Prototypes</li>
                       <li>User Flows</li>
                       <li>User Personas</li>
                       <li>Test Group Moderation</li>
                       <li>Information Architecture</li>
-                      <li><span className="highlight">Tools:</span> Sketch, InVision, Currently learning Zeplin & Principle.</li>
+                      <li><span className="highlight">Tools:</span> Sketch, InVision</li>
                     </ul>
                   </div>
                   <div className="resume-skills-column columns medium-6 xlarge-3">
-                    <h4>Interaction / Development</h4>
+                    <h4>Web Development</h4>
                     <ul className="skills">
                       <li>HTML5</li>
                       <li>SCSS/CSS</li>
@@ -197,9 +208,9 @@ export default () => {
                       <li>Client Management</li>
                       <li>User Acceptance Testing</li>
                       <li>Kanban, Agile Workflows</li>
-                      <li>Issue Creation &mp; Tracking</li>
+                      <li>Issue Creation &amp; Tracking</li>
                       <li>Technical Writing</li>
-                      <li><span className="highlight">Tools:</span> Github Projects, Basecamp, Jira, Asana, Trello</li>
+                      <li><span className="highlight">Tools:</span> Github Projects, Basecamp, Asana</li>
                     </ul>
                   </div>
                 </div>
@@ -208,6 +219,14 @@ export default () => {
                 <div className="resume-other-column columns medium-6">
                     <h3>Awards</h3>
                     <ul className="awards">
+                      <li>
+                        <h4>Featured Blog Post</h4>
+                        <h5>
+                          <span className="highlight"><a href="https://medium.com/@airshipcms/gmail-ux-sucks-so-i-fixed-it-for-my-own-sanity-b6f33898ebe3" target="_blank">How I Fixed Gmail’s UX and Saved My Sanity</a></span><span className="comma">,</span> 
+                          <span className="event">Modus.Medium.com</span><span className="comma">,</span>
+                          <span className="date">2020</span>
+                        </h5>
+                      </li>
                       <li>
                         <h4>Best Overall</h4>
                         <h5>
@@ -227,7 +246,7 @@ export default () => {
                       <li>
                         <h4>Popularity Prize</h4>
                         <h5>
-                          <span className="highlight">Unicorns vs. Dragons</span><span className="comma">,</span> 
+                          <span className="highlight"><a href="http://dragons.gomagames.com/" target="_blank">Unicorns vs. Dragons</a></span><span className="comma">,</span> 
                           <span className="event">Node Knockout</span><span className="comma">,</span> 
                           <span className="date">2016</span>
                         </h5>

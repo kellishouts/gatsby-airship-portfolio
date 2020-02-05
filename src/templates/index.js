@@ -15,7 +15,7 @@ export default () => {
             <h1>Kelli Borgonia</h1>
             <p className="person-role">Product Designer</p>
             <p className="person-description">
-            I am an extremely <b>pragmatic designer</b> who is passionate about creating things that are both <b>functional and delightful</b>. I love <b>collaborating with engineers</b> to <b>architect systems</b> that transform ideas into inventive solutions and products.
+            I am an extremely <b>pragmatic designer</b> who is passionate about creating things that are both <b>functional and delightful</b>. I love <b>collaborating with engineers</b> to <b>architect systems</b> that transform ideas into inventive solutions and meaningful products.
             </p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default () => {
                 </a>
               </div> */}
 
-              <div className="case-study case-study-teal">
+              {/* <div className="case-study case-study-teal">
                 <div className="case-study-text">
                   <h3>UX / UI</h3>
                   <h2>Airship CMS</h2>
@@ -65,13 +65,13 @@ export default () => {
                 <a className="case-study-graphic" href="/airshipcms" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-airshipcms3.png" alt="Redesigned UI for Airship CMS" />
                 </a>
-              </div>
+              </div> */}
 
               <div className="case-study case-study-orange">
                 <div className="case-study-text">
                   <h3>UX</h3>
                   <h2>National Domestic Workers Alliance</h2>
-                  <p>Simplified and the member sign up flow and increased the website's accessibility by designing a user flow that utilizes SMS authentication in order to target an audience that primarily only has access to mobile phone browsers and text messaging.</p>
+                  <p>Simplified and the member sign up process and increased the website's accessibility by designing a user flow that utilizes SMS authentication in order to target an audience that primarily only has access to mobile phone browsers and text messaging.</p>
                   <a className="button button-solid case-study-button" href="/ndwa">
                     Add Images <span className="inline-arrow"></span>
                   </a>
@@ -84,8 +84,8 @@ export default () => {
               <div className="case-study case-study-grey">
                 <div className="case-study-text">
                   <h3>Information Architecture</h3>
-                  <h2>Root + STEM (Part 1)</h2>
-                  <p>Worked closely with both the developer and the research team to ensure that information was standardized and could be translated into [ ] and managed in an efficient infrastructure [ ].</p>
+                  <h2>Root + STEM</h2>
+                  <p>Worked closely with both the developer and the research team to ensure that information was standardized and could be translated into a dynamic data visualization with an efficiently maintainable infrastructure.</p>
                   <a className="button button-solid case-study-button" href="/root-and-stem-part-1">
                     Add Images <span className="inline-arrow"></span>
                   </a>
@@ -95,7 +95,7 @@ export default () => {
                 </a>
               </div>
 
-              <div className="case-study case-study-grey">
+              {/* <div className="case-study case-study-grey">
                 <div className="case-study-text">
                   <h3>UI / Data Visualization</h3>
                   <h2>Root + STEM (Part 2)</h2>
@@ -107,7 +107,7 @@ export default () => {
                 <a className="case-study-graphic" href="/root-and-stem-part-1" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="Interactive data visualization of Hawai'i STEM resources." />
                 </a>
-              </div>
+              </div> */}
 
               <div className="case-study case-study-orange">
                 <div className="case-study-text">
@@ -129,7 +129,7 @@ export default () => {
                   <h2>Flight Plan</h2>
                   <p>Designed, illustrated, and fully coded a mobile-responsive UI for an experimental user flow that prioritizes leisure and piece-of-mind over price-sensitivity during online airline booking. Case study highlights my process in taking an experimental product from ideation to execution during a 24-hour sprint.</p>
                   <a className="button button-solid case-study-button" href="/flight-plan">
-                    To Do <span className="inline-arrow"></span>
+                    Add Images <span className="inline-arrow"></span>
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/flight-plan" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png')}>

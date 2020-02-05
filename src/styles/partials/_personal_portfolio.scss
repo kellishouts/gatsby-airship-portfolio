@@ -81,6 +81,8 @@ p.person-description{
 
   @media only screen and (min-width: 500px){
     font-size: 16px;
+    max-width: 450px;
+    margin: auto;
   }
 
   @include breakpoint(medium){
@@ -93,23 +95,23 @@ p.person-description{
 
   @include breakpoint(mlarge){
     font-size: 17px;
-    max-width: 650px;
+    max-width: 575px;
   }
 
   @include breakpoint(large){
     font-size: 17px;
-    max-width: 650px;
+    max-width: 575px;
   }
 
   @include breakpoint(xlarge){
     line-height: 1.9;
     font-size: 18px;
-    max-width: 680px;
+    max-width: 720px;
   }
 
   @include breakpoint(xxlarge){
     font-size: 18.5px;
-    max-width: 690px;
+    max-width: 720px;
   }
   
   .white-container &{

@@ -11,10 +11,15 @@ export default () => {
         <div className="container teal-container product-header-container">
           <div className="block product-header-block">
             <h3>Information Architecture</h3>
-            <h1 className="white-text h1-product">Root + STEM </h1>
+            <h1 className="white-text h1-product">Root + STEM</h1>
           </div>
         </div>
-
+        <div id="part1" className="case-study-divider-marker"></div>
+        {/* <div className="container case-study-divider-container">
+          <div className="block case-study-divider-block">
+            <h3>Part 1: Information Architecture</h3>
+          </div>
+        </div> */}
         <div className="container white-container">
           <div className="block">
             <div className="project-section">
@@ -26,7 +31,7 @@ export default () => {
                 <li><b>Display the data as a searchable archive</b> so that students, teachers, and working professionals can easily navigate those resources.</li>
               </ol>
               <p><b>Part 1</b> of the case study focuses on information architecture, data design, and infrastructure.</p>
-              <p><b><a href="/root-and-stem-part-2#part2">Part 2</a></b> focuses on data visualization and the translation of information into visual design to make it accessible to a wider audience and merge it with culture, history, and a story.</p>
+              <p><b>Part 2</b> focuses on data visualization and the translation of information into visual design to make it accessible to a wider audience and merge it with culture, history, and a story.</p>
               <div className="project-section-split">
                 <div className="project-section-left">
                   <h4>Our Team</h4>
@@ -44,13 +49,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <div id="part1" className="case-study-divider-marker"></div>
-        <div className="container case-study-divider-container">
-          <div className="block case-study-divider-block">
-            <h3>Part 1: Information Architecture</h3>
-          </div>
-        </div>
-        <div className="container white-container">
+        <div className="container very-light-grey-container">
           <div className="block">
             <div className="project-section">
               <h3>Data &amp; Infrastructure</h3>
@@ -69,15 +68,14 @@ export default () => {
               <ol>
                 <li><b>Airship CMS</b> for webpage hosting and conent management</li>
                 <li><b>Firebase</b> for STEM Programs, contributor data, and users</li>
-                <li><b>AWS Somethingname</b> for something</li>
-                <li><b>AWS Somethingname</b> for hosting contributor images</li>
+                <li><b>AWS</b> for hosting the STEM web apps and user-submitted images</li>
               </ol>
-              <p>PIC - JON'S INFRASTRUCTURE DIAGRAM</p>
-              <p>See <a href="#">Jon Borgonia’s Case Study</a> that outlines our experiment using serverless for this project, as well as our encounter with Firebase API rate-limiting and our solution to efficiently work with Firebase’s something cap.</p>
+              {/* <p>PIC - JON'S INFRASTRUCTURE DIAGRAM</p>
+              <p>See <a href="#">Jon Borgonia’s Case Study</a> that outlines our experiment using serverless for this project, as well as our encounter with Firebase API rate-limiting and our solution to efficiently work with Firebase’s something cap.</p> */}
             </div>
           </div>
         </div>
-        <div className="container very-light-grey-container">
+        <div className="container white-container">
           <div className="block">
             <div className="project-section">
               <h3>User Flows</h3>
@@ -89,13 +87,13 @@ export default () => {
                 <li><b>Students and teachers</b> search for STEM programs.</li>
                 <li><b>All others</b> end up at the website leisurely to browse content.</li>
               </ol>
-              <p>From a development standpoint, the web app was extremely simple and functional. However, coming from a visual design / product background, I am always thinking about how we can better engage our audience. I pitched the idea of <b>utilizing strong infographics</b> as a focal point to attract visitors and gain more traction through the rest of the web application. This would also give those browsing for leisure a stronger reason to engage with content.</p>
+              <p>From a development standpoint, the web app was extremely simple and functional. However, coming from a visual design and product background, I am always thinking about how we can better engage our audience. I pitched the idea of <b>utilizing strong infographics</b> as a focal point to attract visitors and gain more traction through the rest of the web application. This would also give those browsing for leisure a stronger reason to engage with content.</p>
 
               <p>PIC - FLOWCHART OF USER DRIVEN BY INFOGRAPHICS FOCAL POINT</p>
             </div>
           </div>
         </div>
-        <div className="container white-container">
+        <div className="container very-light-grey-container">
           <div className="block">
             <div className="project-section">
               <h3>Programs</h3>
@@ -108,7 +106,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <div className="container very-light-grey-container">
+        <div className="container white-container">
           <div className="block">
             <div className="project-section">
 
@@ -129,7 +127,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <div className="container white-container">
+        <div className="container very-light-grey-container">
           <div className="block">
             <div className="project-section">
 
@@ -143,7 +141,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <div className="container very-light-grey-container">
+        <div className="container white-container">
           <div className="block">
             <div className="project-section">
               <h3>Map</h3>
@@ -152,7 +150,7 @@ export default () => {
                 
               <p>PIC - DETAILED SPEC</p>
                 
-              <p>Each STEM Program was visualized on the map with a shape and color that correlated to a value representing the STEM Program's Depth or Breath of content, Learner or Diversity Focus, or Geographic location. I explain this in detail in Part 2.</p>
+              <p>Each STEM Program was visualized on the map with a shape and color that correlated to a value representing the STEM Program's Depth or Breath of content, Learner or Diversity Focus, or Geographic location.</p>
 
               <p>PIC - MAP</p>
 
@@ -160,7 +158,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <div className="container white-container">
+        <div className="container very-light-grey-container">
           <div className="block">
             <div className="project-section">
               <h3>Dynamic Options</h3>
@@ -202,7 +200,7 @@ export default () => {
           </div>
         </div>
 
-        <div className="container very-light-grey-container">
+        <div className="container white-container">
           <div className="block">
             <div className="project-section">
               <h3>Why does this matter?</h3>
@@ -224,7 +222,7 @@ export default () => {
               <p>The result is more costly initial development, an efficient content update cycle decoupled from code, and a reduction of maintenance costs post-launch. This structure makes sense for a product that doesn't have plans to undergo systemic changes in the short to medium term (1 - 2 years), yet needs the flexibility to be extend and configure data within the constraints of the system architecture.</p>
 
               <p className="centered">* * *</p>
-              <p><b>Part 2</b> explains how I add a thematic layer to the project and integrate that theme into a dynamic data visualization. Read <b><a href="/root-and-stem-part-2#part2">Part 2</a></b>.</p>
+              <p><b>Part 2</b> (coming soon) explains how I add a thematic layer to the project and integrate that theme into a dynamic data visualization.</p>
             </div>
           </div>
         </div>
