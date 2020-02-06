@@ -16,7 +16,7 @@ export default () => {
             <div className="social-media-header">
               <a href="mailto:kelli.borgonia@gmail.com" className="social-media-icon email" target="_blank" ><span>kelli.borgonia@gmail.com</span></a>
               <a href="https://www.linkedin.com/in/kelli-borgonia/" className="social-media-icon linkedin" target="_blank" ><span>linkedin.com/in/kelli-borgonia</span></a>
-              <a href="https://kelli.airshipcms.io/assets/static/resume.pdf" className="social-media-icon download" target="_blank" ><span>Download Resume</span></a>
+              <a href="https://kelli.airshipcms.io/assets/static/resume.pdf" className="social-media-icon download" target="_blank" ><span>Download Résumé</span></a>
             </div>
           </div>
         </div>

@@ -73,11 +73,11 @@ export default () => {
                   <h2>National Domestic Workers Alliance</h2>
                   <p>Simplified and the member sign up process and increased the website's accessibility by designing a user flow that utilizes SMS authentication in order to target an audience that primarily only has access to mobile phone browsers and text messaging.</p>
                   <a className="button button-solid case-study-button" href="/ndwa">
-                    Add Images <span className="inline-arrow"></span>
+                    Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/ndwa" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-ndwa.png')}>
-                  <img src="https://kelli.airshipcms.io/assets/images/ndwa.png" alt="New membership onboarding flow for the National Domestic Workers Alliance." />
+                  <img src="https://kelli.airshipcms.io/assets/images/portfolio-ndwa.png" alt="New membership onboarding flow for the National Domestic Workers Alliance." />
                 </a>
               </div>
 
