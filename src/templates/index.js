@@ -71,7 +71,7 @@ export default () => {
                 <div className="case-study-text">
                   <h3>UX</h3>
                   <h2>National Domestic Workers Alliance</h2>
-                  <p>Simplified and the member sign up process and increased the website's accessibility by designing a user flow that utilizes SMS authentication in order to target an audience that primarily only has access to mobile phone browsers and text messaging.</p>
+                  <p>Simplified the member sign up process and increased the website's accessibility. Designing user flows that utilize SMS authentication in order to target an audience that primarily only has access to mobile phone browsers and text messaging.</p>
                   <a className="button button-solid case-study-button" href="/ndwa">
                     Case Study <span className="inline-arrow"></span>
                   </a>
@@ -81,7 +81,7 @@ export default () => {
                 </a>
               </div>
 
-              <div className="case-study case-study-grey">
+              {/* <div className="case-study case-study-grey">
                 <div className="case-study-text">
                   <h3>Information Architecture</h3>
                   <h2>Root + STEM</h2>
@@ -93,7 +93,7 @@ export default () => {
                 <a className="case-study-graphic" href="/root-and-stem-part-1" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="Interactive data visualization of Hawai'i STEM resources." />
                 </a>
-              </div>
+              </div> */}
 
               {/* <div className="case-study case-study-grey">
                 <div className="case-study-text">
@@ -129,7 +129,7 @@ export default () => {
                   <h2>Flight Plan</h2>
                   <p>Designed, illustrated, and fully coded a mobile-responsive UI for an experimental user flow that prioritizes leisure and piece-of-mind over price-sensitivity during online airline booking. Case study highlights my process in taking an experimental product from ideation to execution during a 24-hour sprint.</p>
                   <a className="button button-solid case-study-button" href="/flight-plan">
-                    Add Images <span className="inline-arrow"></span>
+                    Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/flight-plan" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-flight-plan.png')}>
