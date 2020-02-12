@@ -184,6 +184,10 @@ export default () => {
               <p>PIC - OPTIONS CATEGORIES / SUBCATEGORIES.</p>
 
               <p>PIC - HOW THOSE CATEGORIES ARE TRANSLATED.</p>
+
+              <p>!!! Part 2--> the kind of design you wish you had the skills and time to do in college.</p>
+              <p>!!!</p>
+              <p>From a development standpoint, the web app was extremely simple and functional. However, coming from a visual design and product background, I am always thinking about how we can better engage our audience. I pitched the idea of <b>utilizing strong infographics</b> as a focal point to attract visitors and gain more traction through the rest of the web application. This would also give those browsing for leisure a stronger reason to engage with content.</p>
             </div>
           </div>
         </div>

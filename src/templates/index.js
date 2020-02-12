@@ -81,19 +81,19 @@ export default () => {
                 </a>
               </div>
 
-              {/* <div className="case-study case-study-grey">
+              <div className="case-study case-study-grey">
                 <div className="case-study-text">
                   <h3>Information Architecture</h3>
                   <h2>Root + STEM</h2>
                   <p>Worked closely with both the developer and the research team to ensure that information was standardized and could be translated into a dynamic data visualization with an efficiently maintainable infrastructure.</p>
                   <a className="button button-solid case-study-button" href="/root-and-stem-part-1">
-                    Add Images <span className="inline-arrow"></span>
+                    Case Study <span className="inline-arrow"></span>
                   </a>
                 </div>
                 <a className="case-study-graphic" href="/root-and-stem-part-1" style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png')}>
                   <img src="https://kelli.airshipcms.io/assets/images/portfolio-root-and-stem3.png" alt="Interactive data visualization of Hawai'i STEM resources." />
                 </a>
-              </div> */}
+              </div>
 
               {/* <div className="case-study case-study-grey">
                 <div className="case-study-text">
