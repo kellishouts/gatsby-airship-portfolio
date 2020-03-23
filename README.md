@@ -59,6 +59,8 @@ usage:
 
 ```
 style={setBgImage('https://kelli.airshipcms.io/assets/images/portfolio-the-launch3.png')}
+
+style={setBgImage(launchIllustrationBackground)}
 ```
 
 ## SCSS Background Image
