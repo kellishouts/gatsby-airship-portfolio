@@ -1,0 +1,41 @@
+<svg id="header-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1765.62 1219.62" width="1765.62" height="1219.62">
+  <defs>
+    <style>.background-shapes-color{fill:#f0f2f4;}.background-container-color{fill:#fff;}</style>
+  </defs>
+  <title>header-background</title>
+  <g id="header-background-group">
+    <rect id="rectangle2" class="background-shapes-color" x="225.5" y="519.03" width="215.07" height="212.42" transform="translate(-344.57 418.62) rotate(-45)"/>
+    <rect id="rectangle4" class="background-shapes-color" x="134.21" y="903.6" width="94.18" height="212.42" transform="translate(-660.94 423.97) rotate(-45)"/>
+    <rect id="rectangle5" class="background-shapes-color" x="677.09" y="579.63" width="346.79" height="241.16" transform="translate(-246.02 806.47) rotate(-45)"/>
+    <rect id="rectangle1" class="background-shapes-color" x="278.09" y="48.63" width="346.79" height="505.15" transform="translate(-80.75 407.47) rotate(-45)"/>
+    <rect id="rectangle8" class="background-shapes-color" x="1065.37" y="762.25" width="206.27" height="313.25" transform="translate(-307.49 1095.39) rotate(-45)"/>
+    <rect id="rectangle7" class="background-shapes-color" x="912.35" y="241.11" width="346.79" height="322.6" transform="translate(33.46 885.6) rotate(-45)"/>
+    <rect id="rectangle6" class="background-shapes-color" x="1159.56" y="488.32" width="346.79" height="322.6" transform="translate(-68.94 1132.81) rotate(-45)"/>
+    <rect id="rectangle9" class="background-shapes-color" x="1533.41" y="658.1" width="196.39" height="182.69" transform="translate(-52.05 1373.22) rotate(-45)"/>
+    <g id="text1">
+      <rect id="text1line1" class="background-shapes-color" x="-44.96" y="506.95" width="346.79" height="16.48" transform="translate(-326.67 241.71) rotate(-45)"/>
+      <rect id="text1line2" class="background-shapes-color" x="-18.7" y="533.2" width="346.79" height="16.48" transform="translate(-337.55 267.97) rotate(-45)"/>
+      <rect id="text1line3" class="background-shapes-color" x="7.55" y="559.46" width="346.79" height="16.48" transform="translate(-348.43 294.23) rotate(-45)"/>
+    </g>
+    <g id="text2">
+      <rect id="text3line1" class="background-shapes-color" x="485.13" y="500.01" width="346.79" height="16.48" transform="translate(-166.51 614.51) rotate(-45)"/>
+      <rect id="text3line2" class="background-shapes-color" x="511.39" y="526.27" width="346.79" height="16.48" transform="translate(-177.39 640.77) rotate(-45)"/>
+      <rect id="text3line3" class="background-shapes-color" x="537.65" y="552.53" width="346.79" height="16.48" transform="translate(-188.26 667.03) rotate(-45)"/>
+      <rect id="text3line4" class="background-shapes-color" x="563.9" y="578.78" width="346.79" height="16.48" transform="translate(-199.14 693.28) rotate(-45)"/>
+    </g>
+    <g id="text4">
+      <rect id="text4line1" class="background-shapes-color" x="1325.85" y="267.66" width="346.79" height="16.48" transform="translate(244.02 1140.93) rotate(-45)"/>
+      <rect id="text4line2" class="background-shapes-color" x="1352.1" y="293.92" width="346.79" height="16.48" transform="translate(233.15 1167.19) rotate(-45)"/>
+      <rect id="text4line3" class="background-shapes-color" x="1378.36" y="320.18" width="346.79" height="16.48" transform="translate(222.27 1193.45) rotate(-45)"/>
+    </g>
+    <g id="text3">
+      <rect id="text2line1" class="background-shapes-color" x="691.22" y="170.07" width="346.79" height="16.48" transform="translate(127.16 663.6) rotate(-45)"/>
+      <rect id="text2line2" class="background-shapes-color" x="717.48" y="196.32" width="346.79" height="16.48" transform="translate(116.28 689.86) rotate(-45)"/>
+      <rect id="text2line3" class="background-shapes-color" x="743.74" y="222.58" width="346.79" height="16.48" transform="translate(105.41 716.12) rotate(-45)"/>
+      <rect id="text2line4" class="background-shapes-color" x="769.99" y="248.84" width="346.79" height="16.48" transform="translate(94.53 742.37) rotate(-45)"/>
+    </g>
+    <polygon id="x1" class="background-container-color" points="467.54 622.05 334.85 622.05 334.85 489.37 329.85 489.37 329.85 622.05 197.16 622.05 197.16 627.05 329.85 627.05 329.85 759.74 334.85 759.74 334.85 627.05 467.54 627.05 467.54 622.05"/>
+    <rect id="rectangle3" class="background-shapes-color" x="301.56" y="731.69" width="407.76" height="402.75" transform="translate(-511.73 630.69) rotate(-45)"/>
+    <polygon id="x2" class="background-container-color" points="764.5 929.26 508.66 929.26 508.66 675.45 503.66 675.45 503.66 929.26 247.83 929.26 247.83 934.26 503.66 934.26 503.66 1188.07 508.66 1188.07 508.66 934.26 764.5 934.26 764.5 929.26"/>
+  </g>
+</svg>
